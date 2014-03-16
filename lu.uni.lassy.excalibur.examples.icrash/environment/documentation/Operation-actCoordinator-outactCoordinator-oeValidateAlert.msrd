@@ -1,0 +1,45 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:02:00 CET 2014
+*/
+
+
+@@Operation
+icrash.environment.actCoordinator.outactCoordinator.oeValidateAlert
+//parameters
+@parameter "null" "AdtAlertID"
+@endparameters
+
+//return type
+@return "null"
+
+@description
+" the ctCoordinatorActor wants to declare the alert to be consisdered as a valid one."
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//preProtocol descriptions
+@preP
+" 1. the iCrash system has been deployed.
+
+2. a Coordinator has been added to the system.
+
+3. an Alert has been recieved by the system and a coordinator with the correct Domain is aware of the crisis."
+@endPreP
+
+//postFunctional descriptions
+@postF 
+" the crisis is declared as a valid crisis."
+@endPostF
+
+//postProtocol descriptions
+@postP 
+" the status of the validation of the crisis is set to true."
+@endPostP
+
+//example
+@example" the ctCoorinatorActor actor steve sends the message oeValidateAlert(1) to declare that the alert with ID equal to 1 ca be considered as a valdi one."
+

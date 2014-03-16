@@ -1,0 +1,26 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:02:07 CET 2014
+*/
+
+
+@@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtGPSLocation
+
+@description
+" "
+
+@attribute 
+ "\msrcode{latitude: dtLatitude}: "
+
+@attribute 
+ "\msrcode{longitude: dtLongitude}: "
+
+@endattributes
+
+@operation
+ "\msrcode{is}: "
+
+@operation
+ "\msrcode{isNearTo}: "
+
+@endoperations

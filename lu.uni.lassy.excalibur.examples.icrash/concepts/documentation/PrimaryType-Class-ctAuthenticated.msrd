@@ -1,0 +1,29 @@
+/*
+@author nicolas.guelfi
+@author Yan
+@date Tue Feb 04 11:06:01 CET 2014
+*/
+
+
+@@Primary Type Class icrash.concepts.primarytypes.classes.ctAuthenticated
+
+@description
+"
+This abstract class contains the login information of the system users.
+"
+
+@attribute 
+"\msrcode{login}: this attribute is a login name of the system user. The type is a string."
+
+@attribute 
+"\msrcode{pwd}: this attribute is a lpassword of the system user. The type is a string."
+
+@attribute 
+"\msrcode{vpIsLogged}: this boolean attribute takes into account if the user is logged or not."
+
+@endattributes
+
+@operation
+ "\msrcode{init}: this operation initializes ctAuthenticated with necessary attributes."
+
+@endoperations

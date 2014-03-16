@@ -1,0 +1,20 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:02:03 CET 2014
+*/
+
+
+@@Secondary Type Datatype icrash.concepts.secondarytypes.datatypes.dtSMS
+
+@description
+" "
+
+@attribute 
+ "\msrcode{value: null}: "
+
+@endattributes
+
+@operation
+ "\msrcode{is}: "
+
+@endoperations

@@ -1,0 +1,32 @@
+/*
+@author Alexander
+@date Sun Mar 09 19:28:34 CET 2014
+*/
+
+
+@@Operation
+icrash.concepts.primarytypes.classes.ctToken.init
+//parameters
+@parameter "dtTokenID" "AsymetricKey"
+@parameter "dtKey" "AtokenID"
+@endparameters
+
+//return type
+@return "ptBoolean"
+
+@description
+" "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+
+//example
+@example" "
+

@@ -1,0 +1,18 @@
+/*
+* @author nicolas.guelfi
+* @date Fri Sep 27 11:40:10 CEST 2013
+*/
+
+@@view cm-pt-ct-gv-01
+@model Concept
+@level Global
+@sublevel Primary Class
+@number 1
+@description 
+"
+shows the primary types class types together with the association(s) types with the actor classes of the environment model.
+"
+@caption 
+" Associations between primary type classes and Actors.
+"
+@size Real

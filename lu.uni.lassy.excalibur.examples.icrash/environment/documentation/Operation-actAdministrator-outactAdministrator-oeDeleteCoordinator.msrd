@@ -1,0 +1,43 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:01:58 CET 2014
+*/
+
+
+@@Operation
+icrash.environment.actAdministrator.outactAdministrator.oeDeleteCoordinator
+//parameters
+@parameter "null" "AdtCoordinatorID"
+@endparameters
+
+//return type
+@return "null"
+
+@description
+" A Coordinator is beeing deleted from the system. "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//preProtocol descriptions
+@preP
+" 1. the iCrash system has been deployed.
+
+2. the Coordinator has previously been added to the system. "
+@endPreP
+
+//postFunctional descriptions
+@postF 
+" 1. the Coordinator is removed from the system no longer enabling him to use or access the system safely. "
+@endPostF
+
+//postProtocol descriptions
+@postP 
+" 1. All data concerning the Coordinator not including his crisises is removed from the system. "
+@endPostP
+
+//example
+@example" the ctAdministartorActor bill sends the message oeDeleteCoordinator(1) deleting the Coordinator with the ID (i.e. 1) from the system."
+

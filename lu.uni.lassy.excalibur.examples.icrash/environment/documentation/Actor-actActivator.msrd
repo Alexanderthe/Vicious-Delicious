@@ -1,0 +1,37 @@
+/*
+@author Alexander
+@date Mon Mar 10 12:58:37 CET 2014
+*/
+
+
+@@Actor icrash.environment.actActivator
+
+@description
+"An activator is a logical representation of the active part the iCrash system. It represents an implicit
+stakeholder belonging to the system’s environment that interacts with the iCrash system autonomously without
+the need of a external entity. It is usually used for representing time triggered functionalities.
+
+The objectives of a activator are:
+
+to communicate the current time to the system
+
+to notify the administrator that some crisis are still pending for a too long time.
+
+In order to achieve these objectives, the responsibilities of a activator are:
+
+to know the current universal time
+
+to send the messages to the system according to the time constraints specifically defined for it  "
+
+//input events
+
+
+//output events
+@outputEvent
+"\msrcode{oeSollicitateCrisisHandling():ptBoolean}"
+""
+@outputEvent
+"\msrcode{oeSetClock(dtDateAndTime AcurrentClock):ptBoolean}"
+""
+
+@endOutputEvents
