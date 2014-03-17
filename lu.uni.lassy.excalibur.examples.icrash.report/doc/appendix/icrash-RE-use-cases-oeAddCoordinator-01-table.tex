@@ -1,0 +1,55 @@
+\newpage
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{oeAddCoordinator}
+  \addsingletwocolumnrow{Scope}{System}
+  \addsingletwocolumnrow{Altitude}{subfunction}
+   
+  \addrowheading{Parameters}
+  \addnumberedsinglerow{}{\msrcode{CoodrinatorID:dtCrisisID} - the
+  Coordinator's identification}
+  \addnumberedsinglerow{}{\msrcode{Login:dtLogin} - the username of the
+  Coordinator}
+  \addnumberedsinglerow{}{\msrcode{Password:dtPassword} - the password of the
+  Coordinator}
+  
+  \addrowheading{Primary actor(s)}
+  \addnumberedsinglerow{}{\msrcode{actAdministrator[active]}}
+  
+  \addrowheading{Secondary actor(s)}
+  \addnumberedsinglerow{}{\msrcode{actCoordinator[passive]}}
+  
+  \addrowheading{Goal(s) description}
+  \addsinglerow{the \msrcode{actAdministrator}'s goal is to add
+  \msrcode{actCoordinator} to the system as a user, so he can safely use the
+  system.}
+  
+  \addrowheading{Reuse}
+  \addnumberedsinglerow{}{none}
+
+  \addrowheading{Protocol condition(s)}
+  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+  
+  \addrowheading{Pre-condition(s)}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Main post-condition(s)}
+  \addnumberedsinglerow{}{A new \msrcode{actCoordinator} user has been added to
+  the system.}
+  \addnumberedsinglerow{}{The new \msrcode{actCoordinator} user can use the
+  system safely}
+  
+  \addrowheading{Main success steps}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actAdmnistrator} sends the
+  message
+  \msrucname{oeAddCoordinator(CoordinatorID,Login,Password)} to the system.}
+  
+  \addrowheading{Step Constraints Ordering and Extensions}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Additional Information}
+  \addsinglerow{none}
+  
+\end{usecase} 
+

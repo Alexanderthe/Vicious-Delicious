@@ -1,0 +1,61 @@
+\clearpage
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{ugManageCrisis}
+  \addsingletwocolumnrow{Scope}{System}
+  \addsingletwocolumnrow{Altitude}{Summary}
+  
+  \addrowheading{Parameters}
+  \addnumberedsinglerow{}{none}
+
+  \addrowheading{Primary actor(s)}
+  \addnumberedsinglerow{}{\msrcode{\msrcode{actCoordinator[active]}}}
+  
+  \addrowheading{Secondary actor(s)}
+  \addnumberedsinglerow{}{none.}
+  
+  \addrowheading{Goal(s) description}
+  \addsinglerow{The goal is to do an action that makes the handling of a crisis or an alert progress.}
+  
+  \addrowheading{Reuse}
+  \addnumberedsinglerow{}{\msrucname{oeValidateAlert}}
+  \addnumberedsinglerow{}{\msrucname{oeSetCrisisStatus}}
+  \addnumberedsinglerow{}{\msrucname{oeSetCrisisHandler}}
+  \addnumberedsinglerow{}{\msrucname{oeReportOnCrisis}}
+  \addnumberedsinglerow{}{\msrucname{oeCloseCrisis}}
+  \addnumberedsinglerow{}{\msrucname{oeCloseAlert}}
+  
+ \addrowheading{Protocol condition(s)}
+  \addnumberedsinglerow{}{the \msricrash system is started}
+  
+  \addrowheading{Pre-condition(s)}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Main post-condition(s)}
+  \addnumberedsinglerow{}{there exist one alert or one crisis whose related information has been changed.}
+  
+  \addrowheading{Main success steps}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{oeValidateAlert} use case.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{oeSetCrisisStatus} use case.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{oeSetCrisisHandler} use case.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{oeReportOnCrisis} use case.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{oeCloseCrisis} use case.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{oeCloseAlert} use case.}
+  
+  \addrowheading{Step Constraints Ordering and Extensions}
+  \addnumberedsinglerow{}{managing a crisis is doing one of the indicated use cases.}
+\end{usecase}
+
+\clearpage
+
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.95}{
+\includegraphics[width=180mm]{./images/iCrash-UseCase-ugManageCrisis-Diagram.eps} 
+\normalsize}
+\end{center}
+\caption[\msricrash Use Case Diagram: suDeployAndRun]{\msricrash Use Case Diagram: suDeployAndRun}
+\label{fig:icrash-RE-UCD-suDeployAndRun}
+\end{figure}
+\vspace{0.5cm}

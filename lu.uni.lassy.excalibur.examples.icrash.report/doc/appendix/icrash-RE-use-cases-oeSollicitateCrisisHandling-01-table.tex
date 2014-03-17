@@ -1,0 +1,58 @@
+\clearpage
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{oeSollicitateCrisisHandling}
+  \addsingletwocolumnrow{Scope}{System}
+  \addsingletwocolumnrow{Altitude}{subfunction}
+  
+  \addrowheading{Parameters}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Primary actor(s)}
+  \addnumberedsinglerow{}{\msrcode{actActivator[active]}}
+  
+  \addrowheading{Secondary actor(s)}
+  \addnumberedsinglerow{}{\msrcode{actAdministrator[passive]}}
+  \addnumberedsinglerow{}{\msrcode{actCoordinator[passive,multiple]}}
+   
+  \addrowheading{Goal(s) description}
+  \addsinglerow{the \msrcode{actActivator}'s goal is to decrease the number of unhandled crisis.}
+  
+  \addrowheading{Reuse}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Protocol condition(s)}
+  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+  \addnumberedsinglerow{}{there exist some crisis still pending and for which no solicitation has been sent to the administrator and the coordinators for more than a predefined maximum delay.}
+  
+  \addrowheading{Pre-condition(s)}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Main post-condition(s)}
+  \addnumberedsinglerow{}{a simple text message \msrcode{ieMessage('There are alerts not treated since more than the defined delay. Please REACT !')} is sent to the system administrator and to all the coordinators of the environment for each crisis that is known to be not handled and for which no solicitation has been sent to the administrator and the coordinators for more than a predefined maximum delay.}
+  \addnumberedsinglerow{}{the reminder period for the concerned crisis is initialized.}
+  
+  \addrowheading{Main success steps}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actActivator} sends the message \msrucname{oeSollicitateCrisisHandling()} to the system.}
+  
+  \addrowheading{Step Constraints Ordering and Extensions}
+  \addnumberedsinglerow{}{none.}
+  
+  \addrowheading{Additional Information}
+  \addsinglerow{none}
+\end{usecase}
+
+\clearpage
+
+\begin{figure}[htbp] 
+\begin{center} 
+\scalebox{0.95}{
+\includegraphics[width=180mm]{./images/iCrash-UseCase-oeSollicitateCrisisHandling-Diagram.eps} 
+\normalsize}
+\end{center}
+\caption[\msricrash Use Case Diagram:  oeSollicitateCrisisHandling Diagram]{\msricrash Use Case Diagram:  oeSollicitateCrisisHandling}
+\label{fig:icrash-RE-UCD- oeSollicitateCrisisHandling} 
+\end{figure}
+\vspace{0.5cm}
+

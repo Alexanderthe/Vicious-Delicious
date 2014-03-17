@@ -1,0 +1,66 @@
+\clearpage
+\begin{usecaseinstance}
+  \addheading{Use-Case Instance}
+  \adddoublerow{Name}{Simple and Complete DeployAndRun Instance} 
+  \adddoublerow{Instance ID}{01}
+  \adddoublerow{Environmental conditions and assumptions}{The necessary IT infrastructure exists to allow for deployment of the \msricrash system.}
+  \adddoublerow{Inputs}{inputs are sequences of characters interpreted as string or numbers.}
+  
+\addrowheading{Instance flow description}
+\addnumberedsinglerow{}{the \msrcode{actMsrCreator} actor \msrcode{theCreator} sends the message \msrcode{oeCreateSystemAndEnvironment(1)} requesting the initialization of the system and its environment (made of one administrator identified here by \msrcode{bill}), one activator actor (identified by \msrcode{clock}) and indicating that the number of communication company actor instances for the system's environment is 1 (identified here by \msrcode{tango}).
+}
+\addnumberedsinglerow{}{the \msrcode{actActivator} actor \msrcode{clock} sends the message \msrcode{oeSetClock(2017-11-24-at-03-20-00PM)} indicating the current time.}
+\addnumberedsinglerow{}{the \msrcode{actAdministrator} actor \msrcode{bill} sends the message \msrcode{oeLogin(icrashadmin,7WXC1359)} to securely connect to the system.}
+\addnumberedsinglerow{}{the \msrcode{actAdministrator} actor \msrcode{bill}
+sends the message
+\msrcode{oeAddCoordinator(1,Steve,pwdMessirExcalibur2017,tokenID, 'Vehicular,
+Pedestrian, Wildlife, Property, Injury' )} to set up a crisis management team
+made of one coordinator (i.e. identified here by \msrcode{steve}) and indicating
+its identification information in terms of an ID (i.e. \msrcode{1}) and a
+password (i.e. \msrcode{pwdMessirExcalibur2017}), , key from a token (i.e.
+163524275) and specifies his domain of experties(i.e. 'Vehicular, Pedestrian,
+Wildlife, Property, Injury').}
+\addnumberedsinglerow{}{the \msrcode{actAdministrator} actor \msrcode{bill} sends the message \msrcode{oeLogout()} to disconnect from the system.}
+\addnumberedsinglerow{}{the \msrcode{actActivator} actor \msrcode{clock} sends the message \msrcode{oeSetClock(2017-11-26-at-10-15-00AM)} indicating the current time.
+}
+\addnumberedsinglerow{}{the \msrcode{actComCompany} actor \msrcode{tango} sends the message \msrcode{oeAlert(witness, 2017-11-26-at-10-10-16AM,+3524666445252, 49.627675-6.159590,'3 cars involved in an accident.')} to transfer a declaration of a car crash by a witness indicating specific phone number, the date and time, the GPS coordinates of the witnessed car crash and a short message giving additional details.}
+\addnumberedsinglerow{}{the \msrcode{actActivator} actor \msrcode{clock} sends the message \msrcode{oeSetClock(2017-11-26-at-10-30-00AM)} indicating the current time.}
+\addnumberedsinglerow{}{the \msrcode{actActivator} actor \msrcode{clock} sends the periodic message \msrcode{oeSollicitateCrisisHandling()} indicating that there the declared alert is still not handled by the coordinator.}
+\addnumberedsinglerow{}{the \msrcode{actCoordinator} actor \msrcode{steve} sends the message \msrcode{oeLogin(steve,pwdMessirExcalibur2017)} to securely connect to the system.}
+\addnumberedsinglerow{}{the \msrcode{actCoordinator} actor \msrcode{steve} sends
+the message \msrcode{oeGetAlertsSet(pending)} to receive information about all
+the pending crisis.} \addnumberedsinglerow{}{the \msrcode{actCoordinator} actor \msrcode{steve} sends the message \msrcode{oeValidateAlert(1)} to declare that the alert with ID equal to \msrcode{1} can be considered as a valid one.
+}
+\addnumberedsinglerow{}{the \msrcode{actActivator} actor \msrcode{clock} sends the message \msrcode{oeSetClock(2017-11-26-at-10-45-00AM)} indicating the current time.}
+\addnumberedsinglerow{}{the \msrcode{actCoordinator} actor \msrcode{steve} sends
+the message \msrcode{oeSetCrisisHandler(1)} to declare that he is take care about crisis with ID equal to \msrcode{1}.}
+\addnumberedsinglerow{}{the \msrcode{actComCompany} actor \msrcode{tango} sends the message \msrcode{oeAlert(witness, 2017-11-26-at-10-12-18AM,+3524666445314, 49.627095-6.160251,'Please send rescue services.')} to transfer a declaration of a car crash by a witness indicating specific the phone number, the date and time, the GPS coordinates of the witnessed car crash and a short message giving additional details.
+This alert is part of the same crisis as the previous alert since it's at the
+same location.}
+\addnumberedsinglerow{}{the \msrcode{actActivator} actor \msrcode{clock} sends the message \msrcode{oeSetClock(2017-11-26-at-12-45-00PM)} indicating the current time.}
+\addnumberedsinglerow{}{the \msrcode{actCoordinator} actor \msrcode{steve} sends the message \msrcode{oeSetCrisisStatus(1,solved)} to declare the crisis with ID equal to
+ \msrcode{1} as solved.}
+\addnumberedsinglerow{}{the \msrcode{actCoordinator} actor \msrcode{steve}
+sends the message \msrcode{oeInfoFam(2017-11-26-at-10-2-18AM, licence plate,
+accident type etDomains 'Vehicular','Pedestrian','Wildlife', 'Property',
+'Injury') accident level('Minor','Medium','Fatal') and 'NearTo???, +a short
+message}}
+\addnumberedsinglerow{}{the \msrcode{actCoordinator} actor \msrcode{steve} sends the message \msrcode{oeReportOnCrisis(1,'3 victims sent to hospital, 2 cars evacuated and 4 rescue unit mobilized')} to set the report for the crisis with \msrcode{ID} equal to 1 that he is handling.}
+\addnumberedsinglerow{}{the \msrcode{actCoordinator} actor \msrcode{steve} sends the message \msrcode{oeCloseCrisis(1)} to declare the crisis with ID equal to \msrcode{1} as closed.
+}
+  \adddoublerow{Outputs}{at the end of this instance flow the system should have its environment made of one communication company actor instance, one coordinator actor instance, one administrator instance and the creator instance. The system state should contain two alerts defined according to the information received from the communication company, only one crisis that should be considered as solved and being alerted by the two alerts received.}
+\end{usecaseinstance}  
+ 
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.95}{
+%\includegraphics{image} 
+\includegraphics[width=170mm]{./images/ICrash-UseCaseInstance-01-Diagram.eps}   
+\normalsize}
+\end{center}
+%\vspace{-2cm}
+\caption[\msricrash Sequence Diagram 01: A Simple and Complete Use Case
+Description]{\msricrash Sequence Diagram 01: A Simple and Complete Use Case Instance Flow Description}
+\label{fig:icrash-RE-UC-icrash-Test01-Communication-Diagram}
+\end{figure}
+\vspace{0.5cm}

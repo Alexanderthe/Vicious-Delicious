@@ -1,0 +1,62 @@
+\clearpage
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{suGlobalCrisisHandling}
+  \addsingletwocolumnrow{Scope}{System}
+  \addsingletwocolumnrow{Altitude}{Summary}
+  
+  \addrowheading{Parameters}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Primary actor(s)}
+  \addnumberedsinglerow{}{\msrcode{actCoordinator[active]}
+	}
+  \addrowheading{Secondary actor(s)}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Goal(s) description}
+  \addsinglerow{the \msrcode{actCoordinator}'s goal is to monitor the alerts received and the corresponding crisis in order to act as necessary to handle all the crisis.}
+  
+  \addrowheading{Reuse}
+  \addnumberedsinglerow{}{\msrucname{ugSecurelyUseSystem}[1..*]}
+  \addnumberedsinglerow{}{\msrucname{ugMonitor}[1..*]}
+  \addnumberedsinglerow{}{\msrucname{ugManageCrisis}[1..*]}
+  
+  \addrowheading{Protocol condition(s)}
+  \addnumberedsinglerow{}{the \msricrash system has been deployed}
+  \addnumberedsinglerow{}{the coordinator actor involved in the use case has been declared by the actor \msrcode{actAdministrator}.}
+  
+  \addrowheading{Pre-condition(s)}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Main post-condition(s)}
+  \addnumberedsinglerow{}{modifications has been made by the coordinator on existing alerts or crisis
+  \newline OR the coordinator requested an updated status on existing alerts or crisis.}
+  
+  \addrowheading{Main success steps}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{ugSecurelyUseSystem} use case}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{ugMonitor} use case}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{ugManageCrisis} use case}
+
+  \addrowheading{Step Constraints Ordering and Extensions}
+  \addnumberedsinglerow{}{steps (a) (b) and (c) executions are interleaved (steps (b) and (c) have there protocol constrained by steps of (a)).}
+  \addnumberedsinglerow{}{steps (a) (b) and (c) can be executed multiple times.}
+  
+  \addrowheading{Additional Information}
+  \addsinglerow{there might be several actors \msrcode{actCoordinator} that concurrently execute their \msrcode{suGlobalCrisisHandling} use cases.}
+\end{usecase}
+
+
+\clearpage 
+
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.95}{
+\includegraphics[width=180mm]{./images/iCrash-UseCase-suGlobalCrisisHandling-Diagram.eps} 
+\normalsize}
+\end{center}
+\caption[\msricrash Use Case Diagram: suGlobalCrisisHandling]{\msricrash Use Case Diagram: suGlobalCrisisHandling}
+\label{fig:icrash-RE-UCD-suGlobalCrisisHandling}
+\end{figure}
+\vspace{0.5cm}
