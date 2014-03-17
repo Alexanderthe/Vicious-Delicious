@@ -62,13 +62,24 @@ import lu.uni.lassy.messir.libraries.calendar
 				operation oeSetCrisisHandler(etCrisisStatus AetCrisisID):ptBoolean
 				operation oeReportOnCrisis(
 											dtAlertID AdtCrisisID,
-											dtComment AdtComment
+											dtComment AdtComment,
+											dtCoordinatorID AdtCoordinatorID,
+											etCrisisType AdtCrisisType,
+											etCrisisStatus AdtCrisisStatus,
+											dtRecievedMessage AdtReceivedMessage
 											):ptBoolean
 				operation oeSetCrisisStatus(
 											dtCrisisID AdtCrisisID,
 											etCrisisStatus AetCrisisStatus
 											):ptBoolean
-				operation oeValidateAlert(dtAlertID AdtAlertID):ptBoolean
+				operation oeValidateAlert(dtAlertID AdtAlertID, dtGPSLocation AdtGPSLocation,dtDateAndTime AdtDateandTime, ctDomain actDomains):ptBoolean
+				operation oeInfoFam(
+									dtVictimName AVictimename,
+									dtFamilyTel AFamilyTel,
+									dtSocialSecurity ASocialSecurity,
+									dtHospitalName AHospitalName
+									
+				):ptBoolean
 			}
 			
 			input interface inactCoordinator{
@@ -106,7 +117,7 @@ import lu.uni.lassy.messir.libraries.calendar
 			operation init():ptBoolean
 
 			output interface outactAuthenticated{
-				operation oeLogin(dtLogin AdtLogin, dtPassword AdtPassword):ptBoolean
+				operation oeLogin(dtLogin AdtLogin, dtPassword AdtPassword, dtKey AdtKey):ptBoolean
 				operation oeLogout():ptBoolean
 			}
 			
