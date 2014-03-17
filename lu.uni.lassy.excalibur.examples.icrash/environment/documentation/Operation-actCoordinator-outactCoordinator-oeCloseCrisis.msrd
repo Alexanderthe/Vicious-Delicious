@@ -1,0 +1,44 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:01:59 CET 2014
+*/
+
+
+@@Operation
+icrash.environment.actCoordinator.outactCoordinator.oeCloseCrisis
+//parameters
+@parameter "null" "AdtCrisisID"
+@endparameters
+
+//return type
+@return "null"
+
+@description
+"ctCoordinatoActor wants to declare a crisis as closed. "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//preProtocol descriptions
+@preP
+" 1. the iCrash system has been deployed.
+
+2. An alert was received by our system.
+3. The alert was handled by a coordinator."
+@endPreP
+
+//postFunctional descriptions
+@postF 
+" 1. The crisis is closed and stored in the database."
+@endPostF
+
+//postProtocol descriptions
+@postP 
+" The crisis proctocol variable indicating that a crisis is not closed must change"
+@endPostP
+
+//example
+@example" the ctCoordinatorActor actor Steve sends teh message oeCloseCrisis(1) to declare the crisis with ID equal to 1 as closed."
+

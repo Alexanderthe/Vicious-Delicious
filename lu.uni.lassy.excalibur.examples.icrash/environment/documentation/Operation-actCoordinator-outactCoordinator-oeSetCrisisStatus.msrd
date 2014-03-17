@@ -1,0 +1,46 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:02:00 CET 2014
+*/
+
+
+@@Operation
+icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisStatus
+//parameters
+@parameter "null" "AdtCrisisID"
+@parameter "null" "AetCrisisStatus"
+@endparameters
+
+//return type
+@return "null"
+
+@description
+" the ctCorodinatorActor wants to change the declaration of the crisis."
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//preProtocol descriptions
+@preP
+" 1. the iCrash system has been deployed.
+
+2. a Coordinator has been added to the system.
+
+3. an Alert has been recieved by the system and a coordinator with the correct Domain is aware of the crisis."
+@endPreP
+
+//postFunctional descriptions
+@postF 
+" the declaration to the crisis has changed."
+@endPostF
+
+//postProtocol descriptions
+@postP 
+" the protocol variable of the status of the crisis has changed."
+@endPostP
+
+//example
+@example" the ctCoordinator actor steve sends the message oeSetCrisisStatus(1, solved) to declare the crissi with Id eqaul to 1 as solved."
+

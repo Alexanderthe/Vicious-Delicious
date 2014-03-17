@@ -1,0 +1,38 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:02:02 CET 2014
+*/
+
+
+@@Operation
+icrash.environment.actAuthenticated.outactAuthenticated.oeLogout
+//return type
+@return "null"
+
+@description
+" An AuthentcatedActor wants to disconnect from the system. "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//preProtocol descriptions
+@preP
+"1. the iCrash system has been deployed.
+
+2. The AuthenticatedActor has to be logged in. "
+@endPreP
+
+//postFunctional descriptions
+@postF 
+" The AutenticatedActor has been disconnected from the system. "
+@endPostF
+
+//postProtocol descriptions
+@postP 
+" The the protocol variable for the authenticated user executing this opperation, preP must be vpLogged = false "
+@endPostP
+
+//example
+@example" the ctAdministratorActor bill sends the message oeLogout() to disconnect from the system. "

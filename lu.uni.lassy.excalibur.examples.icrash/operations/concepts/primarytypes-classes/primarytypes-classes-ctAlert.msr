@@ -1,0 +1,24 @@
+/*
+* @author nicolas.guelfi
+* @date Mon Sep 30 17:11:03 CEST 2013
+*/
+
+package icrash.operations.concepts.primarytypes.classes.ctAlert{ 
+	
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.calendar
+
+import icrash.concepts.primarytypes.datatypes
+import icrash.concepts.primarytypes.classes
+import icrash.concepts.secondarytypes.datatypes
+import icrash.concepts.secondarytypes.classes
+
+
+Operation Model {
+	
+operation: icrash.concepts.primarytypes.classes.ctAlert.init(dtAlertID Aid, etAlertStatus Astatus, dtGPSLocation Alocation, dtDateAndTime Ainstant, dtComment Acomment):ptBoolean
+	preF: true
+	postF: true
+
+	}
+}

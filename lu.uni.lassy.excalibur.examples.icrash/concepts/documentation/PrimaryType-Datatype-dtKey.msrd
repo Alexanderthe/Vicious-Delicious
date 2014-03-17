@@ -1,0 +1,18 @@
+/*
+@author heidiflinkman
+@date Mon Mar 03 10:03:53 CET 2014
+*/
+
+@@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtKey
+
+@description
+" "
+
+@extends "lu.uni.lassy.messir.libraries.string.dtString"
+@endextends
+
+@operation
+ "\msrcode{is}: "
+
+@endoperations
+

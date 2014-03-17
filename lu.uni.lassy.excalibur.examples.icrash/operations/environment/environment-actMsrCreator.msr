@@ -1,0 +1,76 @@
+package icrash.operations.environment.actMsrCreator{ 
+	
+import icrash.environment
+
+import lu.uni.lassy.messir.libraries.primitives
+
+import icrash.concepts.primarytypes.datatypes
+import icrash.concepts.primarytypes.classes
+import icrash.concepts.secondarytypes.datatypes
+import icrash.concepts.secondarytypes.classes
+
+Operation Model {
+
+operation: icrash.environment.actMsrCreator.outactMsrCreator.oeCreateSystemAndEnvironment(ptInteger AqtyComCompanies):ptBoolean
+
+ocl:
+"
+context Environment::outactMsrCreator::
+oeCreateSystemAndEnvironment(qtyComCompanies:Integer)
+/*--------------------------------------------*/
+pre: 
+/* Pre Protocol:*/
+/* PreF01 */ 	
+true
+/* Pre Functional:*/
+/* PreP01 */	
+and true
+/*--------------------------------------------*/
+post:
+let TheState:PrimaryTypesClasses::ctState in
+let AactMsrCreator:Environment::actMsrCreator in
+
+/* Post Functional:*/
+/* PostF01 */ 
+TheState._init(1,true) 
+
+/* PostF02 */ 
+and TheState.rnactComCompany->size() = qtyComCompanies
+and TheState.rnactComCompany
+	->forAll(cca:Environment::actComCompany | cca._init())
+
+/* PostF03 */ 
+and AactMsrCreator._init()
+
+/* Post Protocol:*/
+/* PostP01 */
+and TheState.vpmStarted = true
+"
+
+		operation: icrash.environment.actComCompany.init():ptBoolean
+
+ocl:
+"
+context Environment::actComCompany::_init():Boolean
+/*--------------------------------------------*/
+pre: true
+/*--------------------------------------------*/
+post: 
+let pIN:Environment::inactComCompany in 
+let pOUT:Environment::outactComCompany in
+if (
+/* Post Functional:*/
+/* Post F01 */
+		self.oclIsNew()
+/* Post F02 */		
+		and pIN.oclIsNew()
+		and pOUT.oclIsNew()
+		and	pIN = self.InterfaceIN
+		and pOUT= self.InterfaceOUT
+  		)
+  	then result = true
+  	else result = false
+  	endif
+ /*--------------------------------------------*/"
+}
+}

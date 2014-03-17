@@ -1,0 +1,41 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:01:59 CET 2014
+*/
+
+
+@@Operation
+icrash.environment.actCoordinator.outactCoordinator.oeGetCrisisSet
+//parameters
+@parameter "null" "AetCrisisStatus"
+@endparameters
+
+//return type
+@return "null"
+
+@description
+" the ctCoordinatorActor wants to receve information about all the pending crisis"
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//preProtocol descriptions
+@preP
+" 1. the iCrash system has been deployed."
+@endPreP
+
+//postFunctional descriptions
+@postF 
+" The ctCoordinatorActor has now recieved informatio about all the pending crisis"
+@endPostF
+
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+
+//example
+@example" the ctCoordinatorActor actor Steve sends the message oeGetCrisisSet(pending) to recieve information about all the pending crisis"
+

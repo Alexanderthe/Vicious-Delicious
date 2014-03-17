@@ -1,0 +1,27 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:02:09 CET 2014
+*/
+
+
+@@Operation
+icrash.concepts.primarytypes.datatypes.etCrisisType.is
+//return type
+@return "null"
+
+@description
+" "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+
+//example
+@example" "
+

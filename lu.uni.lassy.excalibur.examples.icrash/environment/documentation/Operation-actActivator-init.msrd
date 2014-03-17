@@ -1,0 +1,27 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:02:02 CET 2014
+*/
+
+
+@@Operation
+icrash.environment.actActivator.init
+//return type
+@return "null"
+
+@description
+" The decleration of an actor. "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+
+//example
+@example" "
+

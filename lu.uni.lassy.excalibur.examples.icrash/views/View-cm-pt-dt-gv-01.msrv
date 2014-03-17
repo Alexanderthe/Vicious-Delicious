@@ -1,0 +1,18 @@
+/*
+* @author nicolas.guelfi
+* @date Fri Sep 27 11:40:10 CEST 2013
+*/
+
+@@view cm-pt-dt-gv-01
+@model Concept
+@level Global
+@sublevel Primary Datatype
+@number 01
+@description 
+"
+shows the primary types datatype types.
+"
+@caption 
+" 
+"
+@size Real

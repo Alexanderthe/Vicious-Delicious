@@ -1,0 +1,23 @@
+/*
+@author Alexander
+@date Sun Mar 09 19:28:34 CET 2014
+*/
+
+
+@@Primary Type Class icrash.concepts.primarytypes.classes.ctToken
+
+@description
+" "
+
+@attribute 
+"\msrcode{symetricKey: dtKey}: "
+
+@attribute 
+"\msrcode{tokenID: dtTokenID}: "
+
+@endattributes
+
+@operation
+ "\msrcode{init}: "
+
+@endoperations

@@ -1,0 +1,14 @@
+/*
+* @author nicolas.guelfi
+* @date Wed Nov 20 11:54:35 CET 2013
+*/
+
+
+
+@@view em-lv-05-partc-authenticated
+@model Environment
+@level Local
+@number 5
+@description ' '
+@caption ' '
+@size Real

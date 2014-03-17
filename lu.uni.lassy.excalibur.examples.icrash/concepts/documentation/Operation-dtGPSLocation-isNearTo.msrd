@@ -1,0 +1,31 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:02:08 CET 2014
+*/
+
+
+@@Operation
+icrash.concepts.primarytypes.datatypes.dtGPSLocation.isNearTo
+//parameters
+@parameter "dtGPSLocation" "aGPSLocation"
+@endparameters
+
+//return type
+@return "null"
+
+@description
+" "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+
+//example
+@example" "
+

@@ -1,0 +1,27 @@
+/*
+@author Alexander
+@date Mon Mar 17 12:09:46 CET 2014
+*/
+
+
+@@Operation
+icrash.concepts.primarytypes.datatypes.dtRecievedMessage.is
+//return type
+@return "ptBoolean"
+
+@description
+" "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+
+//example
+@example" "
+

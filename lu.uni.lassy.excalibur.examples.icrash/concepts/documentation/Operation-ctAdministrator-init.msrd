@@ -1,0 +1,32 @@
+/*
+@author Alexander
+@date Mon Feb 24 13:02:12 CET 2014
+*/
+
+
+@@Operation
+icrash.concepts.primarytypes.classes.ctAdministrator.init
+//parameters
+@parameter "null" "Alogin"
+@parameter "null" "Apwd"
+@endparameters
+
+//return type
+@return "null"
+
+@description
+" "
+
+//preFunctional descriptions
+@preF
+" None"
+@endPreF
+
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+
+//example
+@example" "
+
