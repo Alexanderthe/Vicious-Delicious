@@ -1,0 +1,9 @@
+# Ignore everything
+*
+# Don't ignore directories, so we can recurse into them
+!*/
+#!README.MD
+!.gitignore
+!lu.uni.lassy.excalibur.examples.icrash
+!lu.uni.lassy.excalibur.examples.icrash/*
+# !lu.uni.lassy.excalibur.examples.icrash.report/doc/
