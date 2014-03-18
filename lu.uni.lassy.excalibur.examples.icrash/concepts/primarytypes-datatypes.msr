@@ -55,6 +55,21 @@ import lu.uni.lassy.messir.libraries.calendar
 				operation is():ptBoolean			
 				operation isNearTo(dtGPSLocation aGPSLocation):ptBoolean
 			}
+			datatype dtRecievedMessage extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtVictimName extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtSocialSecurity extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtFamilyTel extends dtString {
+				operation is():ptBoolean
+			}
+			datatype dtHospitalName extends dtString {
+				operation is():ptBoolean
+			}
 			
 			enum etCrisisStatus {
 				constants["pending", "handled", "solved"]

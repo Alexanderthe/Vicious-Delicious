@@ -1,0 +1,57 @@
+\clearpage
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{ugSecurelyUseSystem}
+  \addsingletwocolumnrow{Scope}{System}
+  \addsingletwocolumnrow{Altitude}{user-goal}
+
+  \addrowheading{Parameters}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Primary actor(s)}
+  \addnumberedsinglerow{}{\msrcode{actAuthenticated[abstract]}}
+  
+  \addrowheading{Secondary actor(s)}
+  \addnumberedsinglerow{}{none}
+
+  \addrowheading{Goal(s) description}
+  \addsinglerow{the \msrcode{actAdministrator}'s goal is to follow an identification procedure to be allowed to add or delete the necessary crisis coordinators that will be granted the responsibility to handle alerts and crisis.}
+  
+  \addrowheading{Reuse}
+  \addnumberedsinglerow{}{\msrucname{oeLogin}}
+  \addnumberedsinglerow{}{\msrucname{oeLogout}}
+  
+  \addrowheading{Protocol condition(s)}
+  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+  
+  \addrowheading{Pre-condition(s)}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Main post-condition(s)}
+  \addnumberedsinglerow{}{the \msrcode{actAuthenticated} is known by the system not to be logged.}
+  
+  \addrowheading{Main success steps}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actAuthenticated} executes the \msrucname{oeLogin} use case.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actAuthenticated} executes the \msrucname{oeLogout} use case}
+  
+  \addrowheading{Step Constraints Ordering and Extensions}
+  \addnumberedsinglerow{}{step (a) must always precede step (b).}
+ 
+  \addrowheading{Additional Information}
+  \addsinglerow{none.}
+\end{usecase}
+
+\clearpage
+
+\begin{figure}[htbp] 
+\begin{center} 
+\scalebox{0.95}{
+\includegraphics[width=180mm]{./images/iCrash-UseCase-ugSecurelyUseSystem-Diagram.eps} 
+\normalsize}
+\end{center}
+\caption[\msricrash Use Case Diagram:  ugAdministrateTheSystem Diagram]{\msricrash Use Case Diagram:  ugAdministrateTheSystem}
+\label{fig:icrash-RE-UCD- ugAdministrateTheSystem} 
+\end{figure}
+\vspace{0.5cm}
+

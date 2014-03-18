@@ -1,0 +1,109 @@
+% Last Modification:
+% @author AUTHOR_NAME
+% @date TODAY_DATE
+
+
+\chapter{Use Case Description Tables}
+\label{chap:APX-UseCaseDescriptionTables}
+
+\section{Use cases list(s)}
+
+\begin{itemize}
+	\item Summary
+	\begin{itemize}
+		\item \msrucname{suDeployAndRun}
+		\item \msrucname{suGlobalCrisisHandling}
+	\end{itemize}
+	\item user-goal
+	\begin{itemize}
+		\item \msrucname{ugAdministrateTheSystem}
+		\item \msrucname{ugManageCrisis}
+		\item \msrucname{ugMonitor}
+		\item \msrucname{ugSecurelyUseSystem}
+	\end{itemize}
+	\item subfunction
+	\begin{itemize}
+		\item \msrucname{oeAddCoordinator}
+		\item \msrucname{oeAlert}
+		\item \msrucname{oeCloseAlert}
+		\item \msrucname{oeCloseCrisis}
+		\item \msrucname{oeCreateSystemAndEnvironment}
+		\item \msrucname{oeDeleteCoordinator}
+		\item \msrucname{oeGetAlertsSet}
+		\item \msrucname{oeGetCrisisSet}
+		\item \msrucname{oeSetCrisisHandler}
+		\item \msrucname{oeLogin}
+		\item \msrucname{oeLogout}
+		\item \msrucname{oeReportOnCrisis}
+		\item \msrucname{oeSetClock}
+		\item \msrucname{oeSetCrisisStatus}
+		\item \msrucname{oeSollicitateCrisisHandling}
+		\item \msrucname{oeValidateAlert}
+	\end{itemize}
+\end{itemize}
+\newpage
+
+\begin{itemize}
+	\item \msrucname{suDeployAndRun}
+		\begin{itemize}
+			\item \msrucname{oeCreateSystemAndEnvironment}
+			\item \msrucname{ugAdministrateTheSystem}
+			\item \msrucname{suGlobalCrisisHandling}
+			\item \msrucname{oeSetClock}
+			\item \msrucname{oeSollicitateCrisisHandling}
+			\item \msrucname{oeAlert}
+		\end{itemize}
+	\item \msrucname{suGlobalCrisisHandling}
+		\begin{itemize}
+			\item \msrucname{ugSecurelyUseSystem}
+			\item \msrucname{ugMonitor}
+			\item \msrucname{ugManageCrisis}
+		\end{itemize}
+	\item \msrucname{ugAdministrateTheSystem}
+		\begin{itemize}
+			\item \msrucname{ugSecurelyUseSystem}
+			\item \msrucname{oeAddCoordinator}
+			\item \msrucname{oeDeleteCoordinator}
+		\end{itemize}
+	\item \msrucname{ugSecurelyUseSystem}
+		\begin{itemize}
+		\item \msrucname{oeLogin}
+		\item \msrucname{oeLogout}
+		\end{itemize}
+	\item \msrucname{ugManageCrisis}
+		\begin{itemize} 
+			\item \msrucname{oeValidateAlert}
+			\item \msrucname{oeSetCrisisStatus}
+			\item \msrucname{oeSetCrisisHandler}
+			\item \msrucname{oeReportOnCrisis}
+			\item \msrucname{oeCloseCrisis}
+			\item \msrucname{oeCloseAlert}		
+	\end{itemize}
+	\item \msrucname{ugMonitor}
+		\begin{itemize} 
+			\item \msrucname{oeGetAlertsSet}
+			\item \msrucname{oeGetCrisisSet}
+	\end{itemize}
+\end{itemize} 
+
+\newpage
+\section{Use case Table(s)}
+
+\subsection{Summary}
+\input{./doc/appendix/icrash-RE-use-cases-suDeployAndRun-01-table.tex}
+\input{./doc/appendix/icrash-RE-use-cases-suGlobalCrisisHandling-01-table.tex}
+
+\subsection{User-goal}
+\input{./doc/appendix/icrash-RE-use-cases-ugAdministrateTheSystem-01-table.tex}
+\input{./doc/appendix/icrash-RE-use-cases-ugSecurelyUseSystem-01-table.tex}
+\input{./doc/appendix/icrash-RE-use-cases-ugManageCrisis-01-table.tex}
+
+\subsection{Subfunction}
+\input{./doc/appendix/icrash-RE-use-cases-oeSollicitateCrisisHandling-01-table.tex}
+\input{./doc/appendix/icrash-RE-use-cases-oeCloseCrisis-01-table.tex}
+\input{./doc/appendix/icrash-RE-use-cases-oeAddCoordinator-01-table.tex}
+
+\newpage
+\section{Use case instance Table(s)}
+
+\input{./doc/appendix/icrash-RE-use-cases-instance-suDeployAndRun-01-table.tex}

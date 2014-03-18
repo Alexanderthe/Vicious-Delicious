@@ -40,7 +40,8 @@ import lu.uni.lassy.messir.libraries.calendar
 										etAlertStatus Astatus,
 										dtGPSLocation Alocation,
 										dtDateAndTime Ainstant,
-										dtComment Acomment):ptBoolean
+										dtComment Acomment,
+										dtRecievedMessage ArecievedMessage):ptBoolean
 			}
 			
 			class ctCrisis role rnctCrisis cardinality [0..*]{
@@ -81,7 +82,8 @@ import lu.uni.lassy.messir.libraries.calendar
 				
 				operation init(
 										dtLogin Alogin,
-										dtPassword Apwd):ptBoolean
+										dtPassword Apwd,
+										dtKey Akey):ptBoolean
 			}
 			
 			class ctCoordinator 
@@ -136,7 +138,7 @@ import lu.uni.lassy.messir.libraries.calendar
 				operation init(
 					
 					dtTokenID AsymetricKey,
-					dtKey	  AtokenID):ptBoolean
+					dtKey	  Akey):ptBoolean
 					
 				
 				
