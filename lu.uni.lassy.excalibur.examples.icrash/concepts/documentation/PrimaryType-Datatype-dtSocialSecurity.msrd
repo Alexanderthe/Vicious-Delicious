@@ -1,0 +1,18 @@
+/*
+@author Alexander
+@date Wed Mar 19 15:34:58 CET 2014
+*/
+
+
+@@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtSocialSecurity
+
+@description
+" "
+
+@extends "lu.uni.lassy.messir.libraries.string.dtString"
+@endextends
+
+@operation
+ "\msrcode{is}: "
+
+@endoperations

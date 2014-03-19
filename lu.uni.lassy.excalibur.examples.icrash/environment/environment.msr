@@ -72,6 +72,7 @@ import lu.uni.lassy.messir.libraries.calendar
 											dtCrisisID AdtCrisisID,
 											etCrisisStatus AetCrisisStatus
 											):ptBoolean
+				operation oeRequestPoliceAssistance();
 				operation oeValidateAlert(dtAlertID AdtAlertID, dtGPSLocation AdtGPSLocation,dtDateAndTime AdtDateandTime, ctDomain actDomains):ptBoolean
 				operation oeInfoFam(
 									dtVictimName AVictimename,
