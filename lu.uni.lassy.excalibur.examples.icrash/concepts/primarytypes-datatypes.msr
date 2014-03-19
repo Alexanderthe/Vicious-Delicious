@@ -70,8 +70,19 @@ import lu.uni.lassy.messir.libraries.calendar
 			datatype dtHospitalName extends dtString {
 				operation is():ptBoolean
 			}
-			
-			
+			datatype dtNbrofVehiculesInAccident extends dtReal {
+				operation is():ptBoolean
+			}
+			datatype dtNbrOfVictims extends dtReal{
+				operation is():ptBoolean
+			}
+			datatype dtRequestID extends dtString{
+				operation is():ptBoolean
+			}
+			enum etEMSCrisisStatus {
+				constants["pending", "handled", "solved"]
+				operation is():ptBoolean
+			}
 			enum etCrisisStatus {
 				constants["pending", "handled", "solved"]
 				operation is():ptBoolean

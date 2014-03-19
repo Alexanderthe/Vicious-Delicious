@@ -66,21 +66,38 @@ import lu.uni.lassy.messir.libraries.calendar
 											dtCoordinatorID AdtCoordinatorID,
 											etCrisisType AdtCrisisType,
 											etCrisisStatus AdtCrisisStatus,
-											dtRecievedMessage AdtReceivedMessage
+											dtRecievedMessage AdtReceivedMessage,
+											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
+					 						dtNbrOfVictims AdtNbrVictims
 											):ptBoolean
 				operation oeSetCrisisStatus(
 											dtCrisisID AdtCrisisID,
 											etCrisisStatus AetCrisisStatus
 											):ptBoolean
-				operation oeRequestPoliceAssistance();
-				operation oeValidateAlert(dtAlertID AdtAlertID, dtGPSLocation AdtGPSLocation,dtDateAndTime AdtDateandTime, ctDomain actDomains):ptBoolean
+				operation oeRequestPoliceAssistance(dtComment AdtComment,
+											dtRequestID AdtRequest,
+											dtGPSLocation AdtGPSLocation,
+											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
+					 						dtNbrOfVictims AdtNbrVictims
+											):ptBoolean
+				operation oeRequestAmbulanceAssistance(dtComment AdtComment,
+											dtRequestID AdtRequest,
+											dtGPSLocation AdtGPSLocation,
+											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
+					 						dtNbrOfVictims AdtNbrVictims
+											):ptBoolean
+				operation oeRequestFireFighterAssistance(dtComment AdtComment,
+											dtRequestID AdtRequest,
+											dtGPSLocation AdtGPSLocation,
+											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
+					 						dtNbrOfVictims AdtNbrVictims
+											):ptBoolean
 				operation oeInfoFam(
 									dtVictimName AVictimename,
 									dtFamilyTel AFamilyTel,
 									dtSocialSecurity ASocialSecurity,
 									dtHospitalName AHospitalName
-									
-				):ptBoolean
+									):ptBoolean
 			}
 			
 			input interface inactCoordinator{
@@ -108,8 +125,8 @@ import lu.uni.lassy.messir.libraries.calendar
 			
 			input interface inactComCompany{
 				operation ieSmsSend(dtPhoneNumber AdtPhoneNumber, 
-														dtSMS AdtSMS
-														):ptBoolean
+										dtSMS AdtSMS
+										):ptBoolean
 	 		}
 		}
 
@@ -127,17 +144,48 @@ import lu.uni.lassy.messir.libraries.calendar
 	 		}
 		}
 
-		actor actActivator role rnactActivator cardinality [1..1]{
+		/*actor actActivator role rnactActivator cardinality [1..1]{
 
 			operation init():ptBoolean
 
 			output interface outactActivator{
-				operation oeSollicitateCrisisHandling():ptBoolean
+				
 				operation oeSetClock(dtDateAndTime AcurrentClock):ptBoolean
 			}
 			
 			input interface inactActivator{
 	 		}
+		}*/
+		actor actDomainExpert role rnactDomainExpert cardinality [1..*] {
+			
+			input interface inDomainExpert {
+				operation ieAlertRecieved(): ptBoolean
+			}
+			output interface outDomainExpert {
+				operation oeValidateAlert(dtAlertID AdtAlertID,
+											dtGPSLocation AdtGPSLocation,
+											dtDateAndTime AdtDateandTime
+											):ptBoolean
+				operation oeSollicitateCrisisHandling() : ptBoolean
+			}
+		}
+		actor actEMS role rnactEMS cardinality [1..*] {
+			
+			input interface inEMS {
+				
+			}
+			output interface outEMS {
+				operation oeReportCrisisStatus(
+											dtCrisisID AdtCrisisID,
+											dtComment AdtComment,
+											etEMSCrisisStatus AdtEMSCrisisStatus
+											):ptBoolean
+				operation oeReplyToRequest(
+											dtCrisisID AdtCrisisID,
+											dtComment AdtComment,
+											dtRequestID AdtRequest
+											):ptBoolean
+			}
 		}
 	}
 }

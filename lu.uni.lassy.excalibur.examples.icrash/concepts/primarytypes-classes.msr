@@ -78,12 +78,14 @@ import lu.uni.lassy.messir.libraries.calendar
 
 				attribute login:dtLogin
 				attribute pwd: dtPassword
+				attribute toeknID: dtTokenID
+				attribute tokenkey: dtKey
 				attribute vpIsLogged:ptBoolean
 				
 				operation init(
 										dtLogin Alogin,
 										dtPassword Apwd,
-										dtKey Akey):ptBoolean
+										dtTokenID Atokenid):ptBoolean
 			}
 			
 			class ctCoordinator 
@@ -97,7 +99,8 @@ import lu.uni.lassy.messir.libraries.calendar
 										dtCoordinatorID Aid,
 										dtLogin Alogin,
 										dtPassword Apwd,
-										dtKey Akey):ptBoolean
+										dtTokenID Atokenid
+										):ptBoolean
 			}
 
 			class ctAdministrator 
@@ -108,7 +111,8 @@ import lu.uni.lassy.messir.libraries.calendar
 				operation init(
 										dtLogin Alogin,
 										dtPassword Apwd,
-										dtKey Akey):ptBoolean
+										dtTokenID Atokenid
+										):ptBoolean
 			}
 			class ctDomain role rnctDomains cardinality [1..*] {
 				
