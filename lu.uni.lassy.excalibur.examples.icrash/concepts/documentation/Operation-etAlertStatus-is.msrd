@@ -10,7 +10,7 @@ icrash.concepts.primarytypes.datatypes.etAlertStatus.is
 @return "null"
 
 @description
-" "
+"Displays the staus of the alert"
 
 //preFunctional descriptions
 @preF
@@ -23,5 +23,5 @@ icrash.concepts.primarytypes.datatypes.etAlertStatus.is
 @endPostF
 
 //example
-@example" "
+@example"The alert status is: validated "
 

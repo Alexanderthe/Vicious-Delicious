@@ -10,7 +10,8 @@ icrash.concepts.primarytypes.datatypes.dtComment.is
 @return "null"
 
 @description
-" "
+"A comment can be added or be included in any message received from a human or EMS. Comments can 
+also be used by Coordinators to add comments into reports."
 
 //preFunctional descriptions
 @preF
@@ -23,5 +24,5 @@ icrash.concepts.primarytypes.datatypes.dtComment.is
 @endPostF
 
 //example
-@example" "
+@example"A message from a witness to iCrash: 'Please send ambulance'"
 

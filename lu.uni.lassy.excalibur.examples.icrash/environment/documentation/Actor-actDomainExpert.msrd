@@ -1,0 +1,25 @@
+/*
+@author heidiflinkman
+@date Mon Mar 24 12:59:33 CET 2014
+*/
+@@Actor icrash.environment.actMsrCreator
+
+@description
+
+"A Domain Expert's responsibility is to assign accident domains to incoming alers. A DomainExpert is
+a human being, separate from Coordinator, Administrator and Creator in terms of an individual role and tasks.
+
+A Domain Expert must posess quality knowledge in different accident types in order to assign a domain into an alert.
+
+A Domain Expert must have knowledge about identification in order to securely use the system."
+
+//input events
+
+
+//output events
+@outputEvent
+""
+
+@endOutputEvents
+
+""

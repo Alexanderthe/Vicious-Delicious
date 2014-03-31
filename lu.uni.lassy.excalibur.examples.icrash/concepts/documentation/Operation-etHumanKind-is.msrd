@@ -10,7 +10,7 @@ icrash.concepts.primarytypes.datatypes.etHumanKind.is
 @return "null"
 
 @description
-" "
+"Descibes the sender of the original SMS about the accident: "
 
 //preFunctional descriptions
 @preF
@@ -23,5 +23,5 @@ icrash.concepts.primarytypes.datatypes.etHumanKind.is
 @endPostF
 
 //example
-@example" "
+@example"The humankind is: anonymous "
 

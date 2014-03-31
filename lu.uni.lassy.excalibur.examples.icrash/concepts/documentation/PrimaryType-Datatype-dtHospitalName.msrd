@@ -7,7 +7,8 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtHospitalName
 
 @description
-" "
+" This describes the name of the possible hospital where the victim's were taken to. This same hospital
+name is sent to the victim's family for later reunion."
 
 @extends "lu.uni.lassy.messir.libraries.string.dtString"
 @endextends

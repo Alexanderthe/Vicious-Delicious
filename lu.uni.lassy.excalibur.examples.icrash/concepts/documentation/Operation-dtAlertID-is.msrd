@@ -10,7 +10,7 @@ icrash.concepts.primarytypes.datatypes.dtAlertID.is
 @return "null"
 
 @description
-" "
+"Displays the ID for an alert"
 
 //preFunctional descriptions
 @preF
@@ -23,5 +23,5 @@ icrash.concepts.primarytypes.datatypes.dtAlertID.is
 @endPostF
 
 //example
-@example" "
+@example"The alert ID is:789879"
 

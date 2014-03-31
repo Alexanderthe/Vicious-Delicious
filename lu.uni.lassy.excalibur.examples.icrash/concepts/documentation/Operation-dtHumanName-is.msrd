@@ -10,7 +10,7 @@ icrash.concepts.primarytypes.datatypes.dtHumanName.is
 @return "null"
 
 @description
-" "
+"This operation displays the name of victim of the accident"
 
 //preFunctional descriptions
 @preF
@@ -23,5 +23,5 @@ icrash.concepts.primarytypes.datatypes.dtHumanName.is
 @endPostF
 
 //example
-@example" "
+@example"The name of the victim is: Ben Bengtsson"
 

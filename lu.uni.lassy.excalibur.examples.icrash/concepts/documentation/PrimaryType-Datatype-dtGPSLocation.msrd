@@ -7,7 +7,7 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtGPSLocation
 
 @description
-" "
+"Describes the longitude and latitude GPS-coordinates of the accident location. "
 
 @attribute 
  "\msrcode{latitude: dtLatitude}: "

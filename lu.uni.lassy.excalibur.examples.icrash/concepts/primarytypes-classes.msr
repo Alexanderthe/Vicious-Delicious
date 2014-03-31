@@ -147,6 +147,15 @@ import lu.uni.lassy.messir.libraries.calendar
 				
 				
 			}
+			class DomainExpert role rnctDomainExpert cardinality [1..*] extends ctAuthenticated {
+    
+    operation init(
+          dtLogin Alogin,
+          dtPassword Apwd,
+          dtTokenID Atokenid
+          ):ptBoolean
+    
+   }
 		}
 	}
 }

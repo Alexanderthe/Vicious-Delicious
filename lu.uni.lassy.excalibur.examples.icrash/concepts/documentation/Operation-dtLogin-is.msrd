@@ -10,7 +10,7 @@ icrash.concepts.primarytypes.datatypes.dtLogin.is
 @return "null"
 
 @description
-" "
+"This operation displays a login username associated with any Administrator, Coordinator or DomainExpert with "
 
 //preFunctional descriptions
 @preF
@@ -23,5 +23,5 @@ icrash.concepts.primarytypes.datatypes.dtLogin.is
 @endPostF
 
 //example
-@example" "
+@example"The username is: Coordinator012"
 

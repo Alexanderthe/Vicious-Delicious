@@ -10,7 +10,7 @@ icrash.environment.actAuthenticated.outactAuthenticated.oeLogout
 @return "null"
 
 @description
-" An AuthentcatedActor wants to disconnect from the system. "
+"An AuthentcatedActor wants to disconnect from the system."
 
 //preFunctional descriptions
 @preF
