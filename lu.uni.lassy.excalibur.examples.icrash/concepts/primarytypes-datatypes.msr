@@ -23,7 +23,7 @@ import lu.uni.lassy.messir.libraries.calendar
 			datatype dtPassword extends dtString {
 				operation is():ptBoolean
 			}
-			datatype dtCoordinatorID extends dtString {
+			datatype dtUserID extends dtString {
 				operation is():ptBoolean
 			}
 			datatype dtHumanName extends dtString {
@@ -53,18 +53,9 @@ import lu.uni.lassy.messir.libraries.calendar
 				attribute latitude: dtLatitude 
 				attribute longitude: dtLongitude
 				operation is():ptBoolean			
-				operation isNearTo(dtGPSLocation aGPSLocation):ptBoolean
+				operation isNearTo(dtGPSLocation aGPSLocation, dtGPSLocation bGPSLocation):ptBoolean
 			}
 			datatype dtRecievedMessage extends dtString {
-				operation is():ptBoolean
-			}
-			datatype dtVictimName extends dtString {
-				operation is():ptBoolean
-			}
-			datatype dtSocialSecurity extends dtString {
-				operation is():ptBoolean
-			}
-			datatype dtFamilyTel extends dtString {
 				operation is():ptBoolean
 			}
 			datatype dtHospitalName extends dtString {
@@ -77,6 +68,15 @@ import lu.uni.lassy.messir.libraries.calendar
 				operation is():ptBoolean
 			}
 			datatype dtRequestID extends dtString{
+				operation is():ptBoolean
+			}
+			datatype dtName extends dtString{
+				operation is():ptBoolean
+			}
+			datatype dtVictimICEContactName extends dtString{
+				operation is():ptBoolean
+			}
+			datatype dtVictimICEContactPhoneNumber extends dtString{
 				operation is():ptBoolean
 			}
 			enum etEMSCrisisStatus {

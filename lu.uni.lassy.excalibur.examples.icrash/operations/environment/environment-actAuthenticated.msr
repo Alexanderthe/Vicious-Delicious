@@ -11,7 +11,7 @@ import icrash.concepts.secondarytypes.classes
 
 Operation Model {
 
-operation: icrash.environment.actAuthenticated.outactAuthenticated.oeLogin(dtLogin AdtLogin, dtPassword AdtPassword):ptBoolean
+operation: icrash.environment.actAuthenticated.outactAuthenticated.oeLogin(dtLogin AdtLogin, dtPassword AdtPassword, dtKey AdtKey):ptBoolean
 //------------------------------------------
 preF: true
 //------------------------------------------
@@ -19,6 +19,11 @@ preP:
 // PreP 01 
 let theSystemPre:ctState in
 theSystem
+
+operation: icrash.environment.actAuthenticated.outactAuthenticated.oeLogout():ptBoolean
+	preF: true
+	postF: true
+
 
 }
 }

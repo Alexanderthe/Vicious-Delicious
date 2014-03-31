@@ -64,6 +64,7 @@ import lu.uni.lassy.messir.libraries.calendar
 
 			class ctHuman role rnctHuman cardinality [0..*]{
 				attribute id:dtPhoneNumber
+				attribute name:dtName
 				attribute kind:etHumanKind
 				
 				operation init(
@@ -93,10 +94,10 @@ import lu.uni.lassy.messir.libraries.calendar
 					cardinality [0..*]
 					extends ctAuthenticated{
 			
-				attribute id:dtCoordinatorID
+				attribute id:dtUserID
 				
 				operation init(
-										dtCoordinatorID Aid,
+										dtUserID Aid,
 										dtLogin Alogin,
 										dtPassword Apwd,
 										dtTokenID Atokenid
@@ -134,6 +135,34 @@ import lu.uni.lassy.messir.libraries.calendar
 			
 				
 			}
+			
+			class ctEMStype role rnctEMStypesrequested cardinality [1..*] {
+				
+				attribute vpRequestFireFigher	:ptBoolean
+				attribute vpRequestPolice		:ptBoolean
+				attribute vpRequestAmbulance	:ptBoolean
+				
+			operation init(
+				
+				ptBoolean AvpRequestFireFighter,
+				ptBoolean AvpRequestPolice,
+				ptBoolean AvpRequestAmublance): ptBoolean
+			
+				
+			}
+			
+			class Victim role victimofaCarCrash cardinality [1..*] extends ctHuman {
+				
+				attribute VictimICEPhoneNumber:dtPhoneNumber
+				attribute VictimICEContactName:dtName
+				
+			operation init(
+				
+				ptBoolean dtPhoneNumber ,
+				ptBoolean dtName ):ptBoolean
+			
+				
+			}
 			class ctToken role rnctSysmetricKey cardinality [1..*] {
 				
 				attribute symetricKey:dtKey
@@ -145,6 +174,18 @@ import lu.uni.lassy.messir.libraries.calendar
 					dtKey	  Akey):ptBoolean
 					
 				
+				
+			}
+			class ctDomainExpert role rnctDomainExpert cardinality [1..*] extends ctAuthenticated {
+				
+				attribute id:dtUserID
+				
+				operation init(
+										dtUserID Aid,
+										dtLogin Alogin,
+										dtPassword Apwd,
+										dtTokenID Atokenid
+										):ptBoolean
 				
 			}
 		}

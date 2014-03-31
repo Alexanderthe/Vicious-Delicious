@@ -22,15 +22,26 @@ association assctAlertctHuman
 association assctCrisisctCoordinator
 	ctCrisis(rnHandled)[0..*]
 	ctCoordinator(rnHandler)[0..1]
+	
 association assctCrisisctDomains
 	ctCrisis(rnTheCrisis)[1..1]
 	ctDomain(rnCrisisDomains)[1..*]
+	
 association assctCoordinatorctDomains
 	ctCoordinator(rnHandler)[1..1]
 	ctDomain(rnCrisisDomains)[1..*]
+association assctDomainExpertDomainsctDomains
+	ctDomainExpert(rnCrisisDomains)[1..*]
+	ctDomainExpert(rnDomainExpertDomains)[1..*]
+	
+association assDomainExpertctDomains
+ ctDomainExpert(rnAlertDomainSetter)[1..1] 
+ ctDomain(rnCrisisDomains)[1..*]
+	
 association assctAlertctDomains
 	ctAlert(rnAlerts)[1..1]
 	ctDomain(rnCrisisDomains)[1..*]
+	
 association assctAuthenticatedctToken
 	ctAuthenticated(rnctAuthenticated)[1..1]
 	ctToken(rnToken)[1..1]
@@ -43,11 +54,20 @@ association assctAuthenticatedctToken
  					
  		association assctCoordinatoractCoordinator 
  					ctCoordinator(rnctCoordinator)[0..*]
- 					actCoordinator(rnactComCompany)[1..1]
+ 					actCoordinator(rnactCoordinator)[1..1]
  					
  		association assctAuthenticatedactAuthenticated 
  					ctAuthenticated(rnctAuthenticated)[1..1]
  					actAuthenticated(rnctactAuthenticated)[1..1]
+ 					
+ 		association assctDomainExpertDomainExpert
+ 					ctDomainExpert(rnctDomainExpert)[0..*]
+ 					actDomainExpert(rnactDomainExpert)[1..1]
+ 					
+ 		association assctEMSEMS
+ 					ctHuman(rnctHuman)[0..*]
+ 					actEMS(rnactEMS)[1..1]
+ 					
  		
 			
 		}

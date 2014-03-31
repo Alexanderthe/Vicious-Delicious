@@ -31,19 +31,20 @@ import lu.uni.lassy.messir.libraries.calendar
 
 			output interface outactAdministrator{
 				
-				operation oeAddCoordinator(
-											dtCoordinatorID AdtCoordinatorID,
+				operation oeAddUser(
+											dtUserID AdtUserID,
 											dtLogin AdtLogin, 
-											dtPassword AdtPassword):ptBoolean
+											dtPassword AdtPassword,
+											dtTokenID AdtTokenID):ptBoolean
 											
-				operation oeDeleteCoordinator(
-											dtCoordinatorID AdtCoordinatorID):ptBoolean
+				operation oeDeleteUser(
+											dtUserID AdtUserID):ptBoolean
 			}
 			
 			input interface inactAdministrator{
 				
-				operation ieCoordinatorAdded():ptBoolean
-				operation ieCoordinatorDeleted():ptBoolean
+				operation ieUserAdded():ptBoolean
+				operation ieUserDeleted():ptBoolean
 	 		}
 		}
 		
@@ -55,15 +56,15 @@ import lu.uni.lassy.messir.libraries.calendar
 			operation init():ptBoolean
 
 			output interface outactCoordinator{
-				operation oeCloseAlert(dtAlertID AdtAlertID):ptBoolean
+				operation oeCloseAlert(dtAlertID AdtAlertID):ptBoolean //Never used
 				operation oeCloseCrisis(dtCrisisID AdtCrisisID):ptBoolean
 				operation oeGetAlertsSet(etAlertStatus AetAlertStatus):ptBoolean
-				operation oeGetCrisisSet(etCrisisStatus AetCrisisStatus):ptBoolean
+				operation oeGetCrisisSet(etCrisisStatus AetCrisisStatus):ptBoolean //never used
 				operation oeSetCrisisHandler(etCrisisStatus AetCrisisID):ptBoolean
 				operation oeReportOnCrisis(
 											dtAlertID AdtCrisisID,
 											dtComment AdtComment,
-											dtCoordinatorID AdtCoordinatorID,
+											dtUserID AdtUserID,
 											etCrisisType AdtCrisisType,
 											etCrisisStatus AdtCrisisStatus,
 											dtRecievedMessage AdtReceivedMessage,
@@ -74,29 +75,18 @@ import lu.uni.lassy.messir.libraries.calendar
 											dtCrisisID AdtCrisisID,
 											etCrisisStatus AetCrisisStatus
 											):ptBoolean
-				operation oeRequestPoliceAssistance(dtComment AdtComment,
+				operation oeRequestEMSAssistance(
+											dtComment AdtComment,
 											dtRequestID AdtRequest,
 											dtGPSLocation AdtGPSLocation,
 											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
 					 						dtNbrOfVictims AdtNbrVictims
-											):ptBoolean
-				operation oeRequestAmbulanceAssistance(dtComment AdtComment,
-											dtRequestID AdtRequest,
-											dtGPSLocation AdtGPSLocation,
-											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
-					 						dtNbrOfVictims AdtNbrVictims
-											):ptBoolean
-				operation oeRequestFireFighterAssistance(dtComment AdtComment,
-											dtRequestID AdtRequest,
-											dtGPSLocation AdtGPSLocation,
-											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
-					 						dtNbrOfVictims AdtNbrVictims
+					 						
 											):ptBoolean
 				operation oeInfoFam(
-									dtVictimName AVictimename,
-									dtFamilyTel AFamilyTel,
-									dtSocialSecurity ASocialSecurity,
-									dtHospitalName AHospitalName
+									dtComment AdtComment,	
+									dtPhoneNumber AdtVictimICEContactPhoneNumber,
+									dtHospitalName AdtHospitalName
 									):ptBoolean
 			}
 			
@@ -158,13 +148,16 @@ import lu.uni.lassy.messir.libraries.calendar
 		}*/
 		actor actDomainExpert role rnactDomainExpert cardinality [1..*] {
 			
+			operation init():ptBoolean
+			
 			input interface inDomainExpert {
 				operation ieAlertRecieved(): ptBoolean
 			}
 			output interface outDomainExpert {
 				operation oeValidateAlert(dtAlertID AdtAlertID,
 											dtGPSLocation AdtGPSLocation,
-											dtDateAndTime AdtDateandTime
+											dtDateAndTime AdtDateandTime,
+											etAlertStatus edtAlertStatus
 											):ptBoolean
 				operation oeSollicitateCrisisHandling() : ptBoolean
 			}
@@ -175,7 +168,7 @@ import lu.uni.lassy.messir.libraries.calendar
 				
 			}
 			output interface outEMS {
-				operation oeReportCrisisStatus(
+				operation oeReportEMSCrisisStatus(
 											dtCrisisID AdtCrisisID,
 											dtComment AdtComment,
 											etEMSCrisisStatus AdtEMSCrisisStatus
@@ -183,7 +176,12 @@ import lu.uni.lassy.messir.libraries.calendar
 				operation oeReplyToRequest(
 											dtCrisisID AdtCrisisID,
 											dtComment AdtComment,
-											dtRequestID AdtRequest
+											dtRequestID AdtRequest,
+											etEMSCrisisStatus AdtEMsCrisisStatus,
+											dtHospitalName AdtHospitalName,
+											dtName AdtVictimsName,
+											dtName AdtVictimICEContactNamme,
+											dtPhoneNumber AdtVictimICEContactPhoneNumber
 											):ptBoolean
 			}
 		}
