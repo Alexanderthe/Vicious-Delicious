@@ -1,5 +1,5 @@
 /*
-@author Alexander
+@author heidiflinkman
 @date Mon Feb 24 13:02:13 CET 2014
 */
 
@@ -7,5 +7,5 @@
 @@Primary Type Association icrash.concepts.primarytypes.associations.assctCrisisctCoordinator
 
 @description
-" "
+"Every crisis has as specialist handling it, this specialist is called a Coordinator."
 

@@ -10,7 +10,7 @@ icrash.concepts.primarytypes.datatypes.dtSocialSecurity.is
 @return "ptBoolean"
 
 @description
-" "
+"This operation displays the social security number of the victim"
 
 //preFunctional descriptions
 @preF
@@ -23,5 +23,5 @@ icrash.concepts.primarytypes.datatypes.dtSocialSecurity.is
 @endPostF
 
 //example
-@example" "
+@example"The social security number is: 196409167564"
 

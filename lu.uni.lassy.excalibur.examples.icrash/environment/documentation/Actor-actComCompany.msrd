@@ -1,5 +1,5 @@
 /*
-@author Alexander
+@author heidiflinkman
 @date Mon Mar 10 13:02:10 CET 2014
 */
 
@@ -7,20 +7,15 @@
 @@Actor icrash.environment.actComCompany
 
 @description
-" A Communication Company is a company that has the capacity to ensure communication of information between
-its customers and the iCrash system. The objectives of a Communication Company are:
+" A Communication Company works as communication link between witness/anonymous/victim and iCrash 
+message exchange and victim's family and iCrash system. Communication 
 
- to be able to deliver any SMS sent by any human to the iCrash ’s phone number.
+Company is responsible for delivering SMS messages from humans to iCrash phone number, as well as transmitting SMS messages
+from iCrash system to any human with a SMS enabling device with phone number. 
 
- to be able to transmit SMS messages from the ABC company that owns the iCrash system to any human
-having a SMS compatible device accessible using a phone number.
+Integrity and confidentiality, reliabiliy and availability  of the information and message delivery
+system must be guaranteed by Communication Company for any SMS communication to/from iCrash and humans."
 
-In order to achieve these objectives, the responsibilities of a Communication Company are:
-
- ensure confidentiality and integrity of the information sent by a human to the iCrash system or from the
-system to a human.
-
- to be always available and reliable. "
 
 //input events
 @inputEvent

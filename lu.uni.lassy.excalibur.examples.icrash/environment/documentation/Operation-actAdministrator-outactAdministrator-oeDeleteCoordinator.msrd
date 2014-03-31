@@ -14,7 +14,7 @@ icrash.environment.actAdministrator.outactAdministrator.oeDeleteCoordinator
 @return "null"
 
 @description
-" A Coordinator is beeing deleted from the system. "
+"A Coordinator is beeing deleted from the system by an Administrator."
 
 //preFunctional descriptions
 @preF
@@ -23,14 +23,20 @@ icrash.environment.actAdministrator.outactAdministrator.oeDeleteCoordinator
 
 //preProtocol descriptions
 @preP
-" 1. the iCrash system has been deployed.
+" 
+1. the iCrash system has been deployed.
 
-2. the Coordinator has previously been added to the system. "
+2. the Coordinator has previously been added to the system. 
+
+"
 @endPreP
 
 //postFunctional descriptions
 @postF 
-" 1. the Coordinator is removed from the system no longer enabling him to use or access the system safely. "
+
+" 1. the Coordinator is removed from the system no longer enabling him to use or access the system safely. 
+
+"
 @endPostF
 
 //postProtocol descriptions

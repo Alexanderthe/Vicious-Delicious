@@ -7,7 +7,7 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtTokenID
 
 @description
-" "
+"Every token has a unique tokenID, therefore every human with a login has a unique tokenID."
 
 @extends "lu.uni.lassy.messir.libraries.string.dtString"
 @endextends

@@ -14,7 +14,7 @@ icrash.environment.actCoordinator.outactCoordinator.oeCloseAlert
 @return "null"
 
 @description
-"  "
+"Actor Coordinator closes an alert when its   "
 
 //preFunctional descriptions
 @preF

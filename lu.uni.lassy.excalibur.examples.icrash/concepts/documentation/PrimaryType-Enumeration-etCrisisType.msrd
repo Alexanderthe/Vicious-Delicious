@@ -7,7 +7,7 @@
 @@Primary Type Enumeration icrash.concepts.primarytypes.datatypes.etCrisisType
 
 @description
-" "
+"Describes the type of the crises (Pedestrian, Wildlife, Property, Injury) "
 
 @operation
  "\msrcode{is}: "

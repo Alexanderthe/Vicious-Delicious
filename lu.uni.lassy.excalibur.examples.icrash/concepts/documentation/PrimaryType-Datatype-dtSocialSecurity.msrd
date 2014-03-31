@@ -7,7 +7,8 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtSocialSecurity
 
 @description
-" "
+"Every victim of the accident has a social security number. Information about social security number
+is received from EMS."
 
 @extends "lu.uni.lassy.messir.libraries.string.dtString"
 @endextends

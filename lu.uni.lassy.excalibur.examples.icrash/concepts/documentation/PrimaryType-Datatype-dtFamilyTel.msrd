@@ -7,7 +7,8 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtFamilyTel
 
 @description
-" "
+"Describes the phone number of the victim's family, this information is most often received from EMS 
+collecting infomation from the accident scene."
 
 @extends "lu.uni.lassy.messir.libraries.string.dtString"
 @endextends

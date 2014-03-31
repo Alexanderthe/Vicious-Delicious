@@ -7,7 +7,8 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtPhoneNumber
 
 @description
-" "
+" This datatype includes the phone number of for example witness who sent a message about the accident
+or phone number of the vitim's family. "
 
 @extends "null"
 @endextends

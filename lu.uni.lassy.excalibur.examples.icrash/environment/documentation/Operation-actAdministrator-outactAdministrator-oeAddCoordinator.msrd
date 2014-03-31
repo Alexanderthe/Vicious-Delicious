@@ -16,7 +16,7 @@ icrash.environment.actAdministrator.outactAdministrator.oeAddCoordinator
 @return "null"
 
 @description
-"The ctAdminidtratorActor's goal is to add a new Coordinator to the system as a CoordinatorActor, so he can safely use the system "
+"ActAdministrator's goal is to add a new Coordinator to the system as a CoordinatorActor, so the the Coordinator can safely use the system"
 
 //preFunctional descriptions
 @preF

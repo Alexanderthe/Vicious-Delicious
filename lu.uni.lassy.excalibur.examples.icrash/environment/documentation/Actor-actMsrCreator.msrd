@@ -1,5 +1,5 @@
 /*
-@author Alexander
+@author heidiflinkman
 @date Mon Mar 10 13:09:04 CET 2014
 */
 
@@ -7,17 +7,14 @@
 @@Actor icrash.environment.actMsrCreator
 
 @description
-" A Creator is a technician who is installing the iCrash system on the infrastructure of the ABC company. The
-objectives of a Creator are:
 
- to install the iCrash system
+"A Creator is a human working at/for company ABC, possessing high enough technical 
+capabilities to perform the installation of iCrash. 
 
- to define the values for the initial system’s state
+In addition to installation of iCrash, a Creator's role also includes definition of values for intial 
+system's state and environment.
 
- to define the values for the initial system’s environment
-
-In Messir each system has a creator stakeholder who is different from a technical system administrator. Although those two
-roles can be fulfilled by the same person. "
+A Creator and Administrator are separate humans and one cannot behold the tasks of both."
 
 //input events
 

@@ -14,7 +14,7 @@ icrash.concepts.primarytypes.datatypes.dtHospitalName.is
 
 //preFunctional descriptions
 @preF
-" "
+"This operation displays the name of the hospital where the possible victims of the accident were taken to"
 @endPreF
 
 //postFunctional descriptions
@@ -23,5 +23,5 @@ icrash.concepts.primarytypes.datatypes.dtHospitalName.is
 @endPostF
 
 //example
-@example" "
+@example"Hospital name is: Hôpital Kirchberg"
 

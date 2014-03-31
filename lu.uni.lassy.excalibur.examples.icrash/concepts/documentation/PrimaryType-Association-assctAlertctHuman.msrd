@@ -7,5 +7,6 @@
 @@Primary Type Association icrash.concepts.primarytypes.associations.assctAlertctHuman
 
 @description
-" "
+"Every alert is associated with a human (witness, anonymous, victim) who sent 
+the initial SMS about the accident to iCrash "
 

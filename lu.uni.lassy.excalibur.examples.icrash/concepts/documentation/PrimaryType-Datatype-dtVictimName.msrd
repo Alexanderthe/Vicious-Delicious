@@ -7,7 +7,7 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtVictimName
 
 @description
-" "
+"This describes the name of the victim received from the human at the accident venue or latest from EMS."
 
 @extends "lu.uni.lassy.messir.libraries.string.dtString"
 @endextends

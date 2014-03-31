@@ -10,7 +10,7 @@ icrash.concepts.primarytypes.datatypes.dtCoordinatorID.is
 @return "null"
 
 @description
-" "
+"This operation describes the unique identification number assigned to each Coordinator"
 
 //preFunctional descriptions
 @preF
@@ -23,5 +23,5 @@ icrash.concepts.primarytypes.datatypes.dtCoordinatorID.is
 @endPostF
 
 //example
-@example" "
+@example"Coordinator has id: 3 "
 
