@@ -7,7 +7,7 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtRecievedMessage
 
 @description
-" "
+""
 
 @extends "lu.uni.lassy.messir.libraries.string.dtString"
 @endextends

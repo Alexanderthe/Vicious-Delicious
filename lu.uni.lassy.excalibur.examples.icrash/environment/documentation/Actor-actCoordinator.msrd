@@ -1,5 +1,5 @@
 /*
-@author Alexander
+@author Heidi
 @date Mon Mar 10 13:00:07 CET 2014
 */
 
@@ -7,7 +7,12 @@
 @@Actor icrash.environment.actCoordinator
 
 @description
-" "
+"A Coordinator is a human who has the following tasks in ordert to complete its objectives (monitoring excisting alerts and crisis and to manage alerts and
+crisis until they have been declared resolved: 
+- communicating with EMS though iCrash system in order to request for dispatch of vehicles
+- to be available for crising handling (requests and alerts) 
+- to 
+- to "
 
 @extends "icrash.environment.actAuthenticated"
 @endextends

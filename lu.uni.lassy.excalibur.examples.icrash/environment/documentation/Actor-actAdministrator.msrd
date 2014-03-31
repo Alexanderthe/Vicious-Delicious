@@ -1,5 +1,5 @@
 /*
-@author Alexander
+@author Heidi
 @date Mon Mar 10 13:00:52 CET 2014
 */
 
@@ -7,14 +7,12 @@
 @@Actor icrash.environment.actAdministrator
 
 @description
-" An administrator is a employee of the ABC company being responsible of administrating the iCrash system.
-The objectives of a coordinator are:
- to add or delete coordinator actors from the system and its environment.
-In order to achieve these objectives, the responsibilities of a coordinator are:
-know the company employees that can be coordinators and that have access to the system.
- to know its system identification information for secure usage of the system.
- to know the security policy of the ABC company.
- to communicate the coordinators their identification information for secure system usage. "
+"Administrating the iCrash system is the responsibility of an Administrator. To fullfill his/her objective (adding and deleting Coodrinators to and from 
+the system and its environment), the other responsibilites of an Administrator include: 
+- Identifying the company ABC employees that are Coordinators with access to the system
+- Be aware of the security policies of company ABC
+- Be aware of the the system's identification information for secure system usage
+- Communication with coordinators in order to provide them with identification information to guarantee the secure use of the system."
 
 @extends "icrash.environment.actAuthenticated"
 @endextends

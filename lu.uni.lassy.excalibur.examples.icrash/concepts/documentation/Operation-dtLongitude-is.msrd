@@ -10,7 +10,7 @@ icrash.concepts.primarytypes.datatypes.dtLongitude.is
 @return "null"
 
 @description
-" "
+"This operation displays the longitude GPS-coordinates of the accident."
 
 //preFunctional descriptions
 @preF
@@ -23,5 +23,5 @@ icrash.concepts.primarytypes.datatypes.dtLongitude.is
 @endPostF
 
 //example
-@example" "
+@example"The longitude coordinate is: 38.955509."
 

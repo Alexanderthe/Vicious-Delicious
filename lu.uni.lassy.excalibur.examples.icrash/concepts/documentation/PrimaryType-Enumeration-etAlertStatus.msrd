@@ -7,7 +7,7 @@
 @@Primary Type Enumeration icrash.concepts.primarytypes.datatypes.etAlertStatus
 
 @description
-" "
+"Describes the status of the alert (pending, active, resolved) "
 
 @operation
  "\msrcode{is}: "

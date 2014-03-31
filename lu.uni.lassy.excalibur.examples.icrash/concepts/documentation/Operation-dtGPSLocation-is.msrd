@@ -10,7 +10,7 @@ icrash.concepts.primarytypes.datatypes.dtGPSLocation.is
 @return "null"
 
 @description
-" "
+"This operation displays the GPS-location of the accident, including longitude and latitude."
 
 //preFunctional descriptions
 @preF
@@ -23,5 +23,5 @@ icrash.concepts.primarytypes.datatypes.dtGPSLocation.is
 @endPostF
 
 //example
-@example" "
+@example"The accident location is:+40.689060  -74.044636"
 

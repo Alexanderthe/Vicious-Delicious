@@ -7,7 +7,8 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtLogin
 
 @description
-" "
+" Every user (actAdministrator, actCoordinator, actDomainExpert, actEMS) must have a username for 
+logging in."
 
 @extends "null"
 @endextends

@@ -7,7 +7,8 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtHumanName
 
 @description
-" "
+"This presents the name of the accident victim or for example a witness, whatever the system Coordinator
+thinks is important to save into the system regarding the crisis. "
 
 @extends "null"
 @endextends

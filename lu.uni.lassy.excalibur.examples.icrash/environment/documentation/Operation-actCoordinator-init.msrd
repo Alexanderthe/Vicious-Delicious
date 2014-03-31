@@ -14,7 +14,11 @@ icrash.environment.actCoordinator.init
 
 //preFunctional descriptions
 @preF
-" "
+"
+1. the iCrash system has been deployed.
+
+
+ "
 @endPreF
 
 //postFunctional descriptions

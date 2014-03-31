@@ -7,7 +7,7 @@
 @@Primary Type Enumeration icrash.concepts.primarytypes.datatypes.etCrisisStatus
 
 @description
-" "
+"Describes the status of the crisis (pending, active, resolved) "
 
 @operation
  "\msrcode{is}: "

@@ -1,5 +1,5 @@
 /*
-@author Alexander
+@author Heidi
 @date Mon Mar 10 12:58:37 CET 2014
 */
 
@@ -7,6 +7,8 @@
 @@Actor icrash.environment.actActivator
 
 @description
+
+" "
 "An activator is a logical representation of the active part the iCrash system. It represents an implicit
 stakeholder belonging to the system’s environment that interacts with the iCrash system autonomously without
 the need of a external entity. It is usually used for representing time triggered functionalities.

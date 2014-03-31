@@ -17,7 +17,8 @@ icrash.environment.actCoordinator.outactCoordinator.oeInfoFam
 @return "ptBoolean"
 
 @description
-" "
+" The actCoordinator aims to send information to the accident victim's family through Communication
+Company that delivers the message as an SMS. "
 
 //preFunctional descriptions
 @preF

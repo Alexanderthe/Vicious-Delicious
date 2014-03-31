@@ -1,5 +1,5 @@
 /*
-@author Alexander
+@author heidiflinkman
 @date Mon Feb 24 13:01:59 CET 2014
 */
 
@@ -14,7 +14,7 @@ icrash.environment.actCoordinator.outactCoordinator.oeGetAlertsSet
 @return "null"
 
 @description
-" "
+" The actCoordinator -actor wants to reecive information about all the pending alerts. "
 
 //preFunctional descriptions
 @preF
