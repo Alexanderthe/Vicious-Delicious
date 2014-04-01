@@ -23,12 +23,4 @@ Therefore the responsibilities are:
 
 
 //output events
-@outputEvent
-
-
-@outputEvent
-""
-
-@endOutputEvents
-
-""
+@outputEvent "" "" @endOutputEvents

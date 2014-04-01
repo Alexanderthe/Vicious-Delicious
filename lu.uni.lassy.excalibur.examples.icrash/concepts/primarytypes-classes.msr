@@ -40,8 +40,7 @@ import lu.uni.lassy.messir.libraries.calendar
 										etAlertStatus Astatus,
 										dtGPSLocation Alocation,
 										dtDateAndTime Ainstant,
-										dtComment Acomment,
-										dtRecievedMessage ArecievedMessage):ptBoolean
+										dtComment Acomment):ptBoolean
 			}
 			
 			class ctCrisis role rnctCrisis cardinality [0..*]{
@@ -151,7 +150,7 @@ import lu.uni.lassy.messir.libraries.calendar
 				
 			}
 			
-			class Victim role victimofaCarCrash cardinality [1..*] extends ctHuman {
+			class ctVictim role victimofaCarCrash cardinality [1..*] extends ctHuman {
 				
 				attribute VictimICEPhoneNumber:dtPhoneNumber
 				attribute VictimICEContactName:dtName

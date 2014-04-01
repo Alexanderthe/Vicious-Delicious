@@ -20,8 +20,8 @@
   
   \addrowheading{Reuse}
   \addnumberedsinglerow{}{\msrucname{ugSecurelyUseSystem}[1..*]}
-  \addnumberedsinglerow{}{\msrucname{oeAddCoordinator}[1..*]}
-  \addnumberedsinglerow{}{\msrucname{oeDeleteCoordinator}[1..*]}
+  \addnumberedsinglerow{}{\msrucname{oeAddUser}[1..*]}
+  \addnumberedsinglerow{}{\msrucname{oeDeleteUser}[1..*]}
   
   \addrowheading{Protocol condition(s)}
   \addnumberedsinglerow{}{the \msricrash system has been deployed.}
@@ -34,8 +34,10 @@
   
   \addrowheading{Main success steps}
   \addalphanumberedsinglerow{}{the actor \msrcode{actAdministrator} executes the \msrucname{ugSecurelyUseSystem} use case.}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actAdministrator} executes the \msrucname{oeAddCoordinator} use case.}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actAdministrator} executes the \msrucname{oeDeleteCoordinator} use case.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actAdministrator} executes the
+  \msrucname{oeAddUser} use case.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actAdministrator} executes the
+  \msrucname{oeDeleteUser} use case.}
   
   \addrowheading{Step Constraints Ordering and Extensions}
   \addnumberedsinglerow{}{steps (a) (b) and (c) executions are interleaved (steps (b) and (c) have there protocol constrained by steps of (a)).}

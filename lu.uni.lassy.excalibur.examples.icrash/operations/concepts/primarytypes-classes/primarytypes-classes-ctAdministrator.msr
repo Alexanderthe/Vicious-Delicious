@@ -19,7 +19,8 @@ Operation Model {
 	
 	operation: icrash.concepts.primarytypes.classes.ctAdministrator.init(
 			dtLogin Alogin,
-			dtPassword Apwd
+			dtPassword Apwd,
+			dtTokenID Awptoken
 	):ptBoolean
 		preF: true
 		postF: true

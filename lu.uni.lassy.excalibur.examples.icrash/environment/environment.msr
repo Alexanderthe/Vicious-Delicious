@@ -35,7 +35,9 @@ import lu.uni.lassy.messir.libraries.calendar
 											dtUserID AdtUserID,
 											dtLogin AdtLogin, 
 											dtPassword AdtPassword,
-											dtTokenID AdtTokenID):ptBoolean
+											dtTokenID AdtTokenID,
+											etUserType AdtUserType
+											):ptBoolean
 											
 				operation oeDeleteUser(
 											dtUserID AdtUserID):ptBoolean
@@ -80,8 +82,8 @@ import lu.uni.lassy.messir.libraries.calendar
 											dtRequestID AdtRequest,
 											dtGPSLocation AdtGPSLocation,
 											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
-					 						dtNbrOfVictims AdtNbrVictims
-					 						
+					 						dtNbrOfVictims AdtNbrVictims,
+					 						ctEMStype ActEMSType
 											):ptBoolean
 				operation oeInfoFam(
 									dtComment AdtComment,	
@@ -125,7 +127,7 @@ import lu.uni.lassy.messir.libraries.calendar
 			operation init():ptBoolean
 
 			output interface outactAuthenticated{
-				operation oeLogin(dtLogin AdtLogin, dtPassword AdtPassword, dtKey AdtKey):ptBoolean
+				operation oeLogin(dtLogin AdtLogin, dtPassword AdtPassword, dtKey Adtkey):ptBoolean
 				operation oeLogout():ptBoolean
 			}
 			
@@ -153,35 +155,34 @@ import lu.uni.lassy.messir.libraries.calendar
 			input interface inDomainExpert {
 				operation ieAlertRecieved(): ptBoolean
 			}
-			output interface outDomainExpert {
+			output interface outactDomainExpert {
 				operation oeValidateAlert(dtAlertID AdtAlertID,
 											dtGPSLocation AdtGPSLocation,
 											dtDateAndTime AdtDateandTime,
-											etAlertStatus edtAlertStatus
+											etAlertStatus edtAlertStatus,
+											ctDomain ActDomain
 											):ptBoolean
 				operation oeSollicitateCrisisHandling() : ptBoolean
 			}
 		}
 		actor actEMS role rnactEMS cardinality [1..*] {
 			
-			input interface inEMS {
+			input interface inactEMS {
 				
 			}
-			output interface outEMS {
+			output interface outactEMS {
 				operation oeReportEMSCrisisStatus(
 											dtCrisisID AdtCrisisID,
 											dtComment AdtComment,
-											etEMSCrisisStatus AdtEMSCrisisStatus
+											etEMSCrisisStatus AdtEMSCrisisStatus,
+											dtHospitalName AdtHospitalName,
+											ctVictim ActVictim
 											):ptBoolean
 				operation oeReplyToRequest(
 											dtCrisisID AdtCrisisID,
 											dtComment AdtComment,
 											dtRequestID AdtRequest,
-											etEMSCrisisStatus AdtEMsCrisisStatus,
-											dtHospitalName AdtHospitalName,
-											dtName AdtVictimsName,
-											dtName AdtVictimICEContactNamme,
-											dtPhoneNumber AdtVictimICEContactPhoneNumber
+											etEMSCrisisStatus AdtEMsCrisisStatus
 											):ptBoolean
 			}
 		}

@@ -1,6 +1,6 @@
 % Last Modification:
-% @author AUTHOR_NAME
-% @date TODAY_DATE
+% @author Alexander
+% @date 01/04/2014
 
 
 \chapter{Use Case Description Tables}
@@ -32,10 +32,13 @@
 		\item \msrucname{oeGetAlertsSet}
 		\item \msrucname{oeGetCrisisSet}
 		\item \msrucname{oeSetCrisisHandler}
+		\item \msrucname{oeInfoFam}
 		\item \msrucname{oeLogin}
 		\item \msrucname{oeLogout}
 		\item \msrucname{oeReportOnCrisis}
-		\item \msrucname{oeSetClock}
+		\item \msrucname{oeRequestEMSAssistance}
+		\item \msrucname{oeReportEMSCrisisStatus}
+		\item \msrucname{oeReplyToRequest}
 		\item \msrucname{oeSetCrisisStatus}
 		\item \msrucname{oeSollicitateCrisisHandling}
 		\item \msrucname{oeValidateAlert}
@@ -49,8 +52,6 @@
 			\item \msrucname{oeCreateSystemAndEnvironment}
 			\item \msrucname{ugAdministrateTheSystem}
 			\item \msrucname{suGlobalCrisisHandling}
-			\item \msrucname{oeSetClock}
-			\item \msrucname{oeSollicitateCrisisHandling}
 			\item \msrucname{oeAlert}
 		\end{itemize}
 	\item \msrucname{suGlobalCrisisHandling}
@@ -62,8 +63,8 @@
 	\item \msrucname{ugAdministrateTheSystem}
 		\begin{itemize}
 			\item \msrucname{ugSecurelyUseSystem}
-			\item \msrucname{oeAddCoordinator}
-			\item \msrucname{oeDeleteCoordinator}
+			\item \msrucname{oeAddUser}
+			\item \msrucname{oeDeleteUser}
 		\end{itemize}
 	\item \msrucname{ugSecurelyUseSystem}
 		\begin{itemize}
@@ -72,17 +73,18 @@
 		\end{itemize}
 	\item \msrucname{ugManageCrisis}
 		\begin{itemize} 
-			\item \msrucname{oeValidateAlert}
 			\item \msrucname{oeSetCrisisStatus}
 			\item \msrucname{oeSetCrisisHandler}
 			\item \msrucname{oeReportOnCrisis}
+			\item \msrucname{oeRequestEMSAssistance}
 			\item \msrucname{oeCloseCrisis}
-			\item \msrucname{oeCloseAlert}		
 	\end{itemize}
 	\item \msrucname{ugMonitor}
 		\begin{itemize} 
-			\item \msrucname{oeGetAlertsSet}
 			\item \msrucname{oeGetCrisisSet}
+			\item \msrucname{oeValidateAlert}
+			\item \msrucname{oeSollicitateCrisisHandling}
+			
 	\end{itemize}
 \end{itemize} 
 

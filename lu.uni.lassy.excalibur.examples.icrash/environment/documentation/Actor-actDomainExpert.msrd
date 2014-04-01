@@ -18,8 +18,5 @@ A Domain Expert must have knowledge about identification in order to securely us
 
 //output events
 @outputEvent
-""
-
+"" ""
 @endOutputEvents
-
-""

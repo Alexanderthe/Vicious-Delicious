@@ -100,6 +100,10 @@ import lu.uni.lassy.messir.libraries.calendar
 				constants["witness", "victim", "anonymous"]
 				operation is():ptBoolean
 			}
+			enum etUserType {
+				constants["Coordinator","DomainExpert","EMS"]
+				operation is():ptBoolean
+			}
 			
 			
 		}
