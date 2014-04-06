@@ -2,38 +2,41 @@
 
 \begin{usecase}
   \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{oeCloseCrisis}
+  \addsingletwocolumnrow{Name}{oeSetCrisisHandler}
   \addsingletwocolumnrow{Scope}{System}
   \addsingletwocolumnrow{Altitude}{subfunction}
   
   \addrowheading{Parameters}
-  \addnumberedsinglerow{}{\msrcode{crisisID:dtCrisisID} - the crisis identification}
+  \addnumberedsinglerow{}{\msrcode{AlertID:dtAlertID} – the Alert's unique identification.}
+  \addnumberedsinglerow{}{\msrcode{Crisisdata:ctCrisis} – the data required to initiate a crisis(CrisisType, CrisisStatus, GPSLocation, Date and Time).}
   
   \addrowheading{Primary actor(s)}
   \addnumberedsinglerow{}{\msrcode{actCoordinator[active]}}
   
   \addrowheading{Secondary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actComCompany[passive]}}
+  \addnumberedsinglerow{}{None.}
   
   \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actCoordinator}'s goal is to declare a crisis as closed.}
+  \addsinglerow{the \msrcode{actCoordinator}'s goal is to indicate to the system that he will take care of a certain Alert and thus create a crisis in the system.}
   
   \addrowheading{Reuse}
   \addnumberedsinglerow{}{none}
 
   \addrowheading{Protocol condition(s)}
   \addnumberedsinglerow{}{the \msricrash system has been deployed.}
-  \addnumberedsinglerow{}{a crisis with the given ID exsits in the system.}
+  \addnumberedsinglerow{}{the \msrcode{actCoordinator} has logged on to the system.}
+  \addnumberedsinglerow{}{the \msrcode{actCoordinator} has to have the right domains of expertise to be allowed access to the crisis.}
 
   \addrowheading{Pre-condition(s)}
   \addnumberedsinglerow{}{none}
   
   \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{the crisis is closed.}
-  \addnumberedsinglerow{}{a message \msrcode{ieSmsSend(AdtPhoneNumber,AdtComment)} is sent to the \msrcode{actComCompany} actor for each registered alert declared by a SMS coming from phone number \msrcode{AdtPhoneNumber} and related to the crisis \msrcode{crisisID}. All the messages have the same textual message \msrcode{AdtComment} giving them the minimal information on the crisis they alerted.}
+  \addnumberedsinglerow{}{ A crisis has been created for a certain Alert.}
+  \addnumberedsinglerow{}{the \msrcode{actCoordinator} has indicated to the system that he will now take care of the Alert sepecified.}
+  
   
   \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} sends the message \msrucname{oeCloseCrisis(crisisID)} to the system.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} sends the message \msrucname{oeSetCrisisHandler(AlertID,ctCrisis)} to the system.}
   
   \addrowheading{Step Constraints Ordering and Extensions}
   \addnumberedsinglerow{}{none}
@@ -54,4 +57,4 @@
 \caption[\msricrash Use Case Diagram:  oeCloseCrisis Diagram]{\msricrash Use Case Diagram:  oeCloseCrisis}
 \label{fig:icrash-RE-UCD- oeCloseCrisis} 
 \end{figure}
-\vspace{0.5cm}
+\vspace{0.5cm} 

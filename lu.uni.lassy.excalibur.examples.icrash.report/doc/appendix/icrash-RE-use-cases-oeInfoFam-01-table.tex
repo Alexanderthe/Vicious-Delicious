@@ -1,0 +1,54 @@
+\newpage
+
+\begin{usecase}
+  \addheading{Use-Case Description}
+  \addsingletwocolumnrow{Name}{oeInfoFam}
+  \addsingletwocolumnrow{Scope}{System}
+  \addsingletwocolumnrow{Altitude}{subfunction}
+   
+  \addrowheading{Parameters}
+  \addnumberedsinglerow{}{\msrcode{Message:dtComment} -
+  the message that will be sent to the family members.}
+  \addnumberedsinglerow{}{\msrcode{VictimDescription:ctVictim} – included in this data are all the information about the victim. This includes the victims Name, phone number as well as the ICE contacts phone number and name.}
+  \addnumberedsinglerow{}{\msrcode{NameofHospital:dtHospitalName} – the name of the hospital that the victim was brought to.}
+  
+  \addrowheading{Primary actor(s)}
+  \addnumberedsinglerow{}{\msrcode{ComCompany[active]}}
+  
+  \addrowheading{Secondary actor(s)}
+  \addnumberedsinglerow{}{\msrcode{actCoordinator}}
+  
+  \addrowheading{Goal(s) description}
+  \addsinglerow{the \msrcode{actComcompany}'s goal is send a message edited by
+  the \msrcode{actCoordinator}.}
+  
+  \addrowheading{Reuse}
+  \addnumberedsinglerow{}{none}
+
+  \addrowheading{Protocol condition(s)}
+  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+  \addnumberedsinglerow{}{the \msrcode{actEMS} reports that a victim was
+  delivered to the hospital.}
+  
+  \addrowheading{Pre-condition(s)}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Main post-condition(s)}
+  \addnumberedsinglerow{}{A message is sent to a victims ICE contact.}
+  
+  \addrowheading{Main success steps}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoodinator} sends the
+  message 
+  
+  \msrcode{oeInfoFam(dtComment AdtComment, ctVictim ActVictim
+  dtHospitalName AdtHospitalName)} to the system.}
+  
+  \addrowheading{Step Constraints Ordering and Extensions}
+  \addnumberedsinglerow{}{none}
+  
+  \addrowheading{Additional Information}
+  \addsinglerow{The coordinator ultimately decides what information is put into
+  the message to the family members the shown data types are only meant as an example of what can be added to such a message.}
+  
+\end{usecase} 
+

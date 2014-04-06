@@ -36,7 +36,8 @@ import lu.uni.lassy.messir.libraries.calendar
 											dtLogin AdtLogin, 
 											dtPassword AdtPassword,
 											dtTokenID AdtTokenID,
-											etUserType AdtUserType
+											etUserType AdtUserType,
+											ctDomain ActDomain
 											):ptBoolean
 											
 				operation oeDeleteUser(
@@ -62,9 +63,9 @@ import lu.uni.lassy.messir.libraries.calendar
 				operation oeCloseCrisis(dtCrisisID AdtCrisisID):ptBoolean
 				operation oeGetAlertsSet(etAlertStatus AetAlertStatus):ptBoolean
 				operation oeGetCrisisSet(etCrisisStatus AetCrisisStatus):ptBoolean //never used
-				operation oeSetCrisisHandler(etCrisisStatus AetCrisisID):ptBoolean
+				operation oeSetCrisisHandler(dtAlertID AdtAlertID,ctCrisis ActCrisis):ptBoolean
 				operation oeReportOnCrisis(
-											dtAlertID AdtCrisisID,
+											dtCrisisID AdtCrisisID,
 											dtComment AdtComment,
 											dtUserID AdtUserID,
 											etCrisisType AdtCrisisType,
@@ -85,11 +86,7 @@ import lu.uni.lassy.messir.libraries.calendar
 					 						dtNbrOfVictims AdtNbrVictims,
 					 						ctEMStype ActEMSType
 											):ptBoolean
-				operation oeInfoFam(
-									dtComment AdtComment,	
-									dtPhoneNumber AdtVictimICEContactPhoneNumber,
-									dtHospitalName AdtHospitalName
-									):ptBoolean
+				
 			}
 			
 			input interface inactCoordinator{
@@ -113,6 +110,8 @@ import lu.uni.lassy.messir.libraries.calendar
 										dtGPSLocation AdtGPSLocation, 
 										dtComment AdtComment
 										):ptBoolean
+										
+				
 			}
 			
 			input interface inactComCompany{

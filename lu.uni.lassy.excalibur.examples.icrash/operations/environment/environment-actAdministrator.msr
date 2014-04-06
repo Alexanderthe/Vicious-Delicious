@@ -17,16 +17,17 @@ operation: icrash.environment.actAdministrator.outactAdministrator.oeAddUser(
 											dtLogin AdtLogin, 
 											dtPassword AdtPassword,
 											dtTokenID AdtTokenID,
-											ptString AdtString,
 											etUserType AdtUserType
 											):ptBoolean
 	preF: true
 	postF: true
+	ocl:""
 
 operation: icrash.environment.actAdministrator.outactAdministrator.oeDeleteUser(
 											dtUserID AdtUserID):ptBoolean
 	preF: true
 	postF: true
+	ocl:""
 
 
 }

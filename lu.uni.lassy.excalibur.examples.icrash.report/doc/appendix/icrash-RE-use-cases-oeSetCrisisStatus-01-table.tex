@@ -2,12 +2,13 @@
 
 \begin{usecase}
   \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{oeCloseCrisis}
+  \addsingletwocolumnrow{Name}{oeSetCrisisStatus}
   \addsingletwocolumnrow{Scope}{System}
   \addsingletwocolumnrow{Altitude}{subfunction}
   
   \addrowheading{Parameters}
-  \addnumberedsinglerow{}{\msrcode{crisisID:dtCrisisID} - the crisis identification}
+  \addnumberedsinglerow{}{\msrcode{crisisID:dtCrisisID} - the crisis identification.}
+  \addnumberedsinglerow{}{\msrcode{CrisisStatus:etCrisisStatus} - the status of the crisis.(in-handling, handled and solved)}
   
   \addrowheading{Primary actor(s)}
   \addnumberedsinglerow{}{\msrcode{actCoordinator[active]}}

@@ -56,8 +56,7 @@ import lu.uni.lassy.messir.libraries.calendar
 										etCrisisType Atype,
 										etCrisisStatus Astatus,
 										dtGPSLocation Alocation,
-										dtDateAndTime Ainstant,
-										dtComment Acomment
+										dtDateAndTime Ainstant
 										):ptBoolean
 			}
 
@@ -66,7 +65,7 @@ import lu.uni.lassy.messir.libraries.calendar
 				attribute name:dtName
 				attribute kind:etHumanKind
 				
-				operation init(
+				operation init(			dtName AName,
 										dtPhoneNumber Aid,
 										etHumanKind Akind):ptBoolean
 			}
@@ -157,8 +156,8 @@ import lu.uni.lassy.messir.libraries.calendar
 				
 			operation init(
 				
-				ptBoolean dtPhoneNumber ,
-				ptBoolean dtName ):ptBoolean
+				ptBoolean VictimICEPhoneNumber ,
+				ptBoolean VictimICEContactName ):ptBoolean
 			
 				
 			}

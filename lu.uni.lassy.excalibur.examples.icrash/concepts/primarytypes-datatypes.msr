@@ -16,6 +16,7 @@ import lu.uni.lassy.messir.libraries.calendar
 		
 			datatype dtCrisisID extends dtString {
 				operation is():ptBoolean
+				operation isSameCrisis(dtDate aDate, dtTime aTimeandDate,dtDate bDate, dtTime bTime):ptBoolean
 			}
 			datatype dtLogin extends dtString {
 				operation is():ptBoolean
@@ -52,8 +53,9 @@ import lu.uni.lassy.messir.libraries.calendar
 			datatype dtGPSLocation {
 				attribute latitude: dtLatitude 
 				attribute longitude: dtLongitude
-				operation is():ptBoolean			
-				operation isNearTo(dtGPSLocation aGPSLocation, dtGPSLocation bGPSLocation):ptBoolean
+				operation is():ptBoolean
+				operation isNearTo(dtGPSLocation aGPSLocation, dtGPSLocation bGPSLocation):ptBoolean			
+				
 			}
 			datatype dtRecievedMessage extends dtString {
 				operation is():ptBoolean
@@ -84,7 +86,7 @@ import lu.uni.lassy.messir.libraries.calendar
 				operation is():ptBoolean
 			}
 			enum etCrisisStatus {
-				constants["pending", "handled", "solved"]
+				constants["in-handling", "handled", "solved"]
 				operation is():ptBoolean
 			}
 			enum etAlertStatus {

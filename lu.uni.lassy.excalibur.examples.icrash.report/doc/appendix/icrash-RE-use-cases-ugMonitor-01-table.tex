@@ -2,7 +2,7 @@
 
 \begin{usecase}
   \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{ugManageCrisis}
+  \addsingletwocolumnrow{Name}{ugMonitor}
   \addsingletwocolumnrow{Scope}{System}
   \addsingletwocolumnrow{Altitude}{Summary}
   
@@ -10,21 +10,21 @@
   \addnumberedsinglerow{}{none}
 
   \addrowheading{Primary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{\msrcode{actCoordinator[active]}}}
+  \addnumberedsinglerow{}{\msrcode{actCoordinator[active]}}
+  \addnumberedsinglerow{}{\msrcode{actDomainExpert[active]}}
   
   \addrowheading{Secondary actor(s)}
-  \addnumberedsinglerow{}{none.}
+  \addnumberedsinglerow{}{None.}
   
   \addrowheading{Goal(s) description}
   \addsinglerow{The goal is to use all operations available to the coordinator
   for the successful handling of a crisis or an alert received by our system.}
   
   \addrowheading{Reuse}
-  \addnumberedsinglerow{}{\msrucname{oeSetCrisisStatus}}
-  \addnumberedsinglerow{}{\msrucname{oeSetCrisisHandler}}
-  \addnumberedsinglerow{}{\mrsucname{oeRequestEMSAssistance}}
-  \addnumberedsinglerow{}{\msrucname{oeReportOnCrisis}}
-  \addnumberedsinglerow{}{\msrucname{oeCloseCrisis}}
+  \addnumberedsinglerow{}{\msrucname{oeGetAlertSet}}
+  \addnumberedsinglerow{}{\msrucname{oeValidateAlert}}
+  \addnumberedsinglerow{}{\msrucname{oeSollicitateCrisisHandling}}
+
   
  \addrowheading{Protocol condition(s)}
   \addnumberedsinglerow{}{the \msricrash system has been started}
@@ -32,26 +32,25 @@
   system.}
   \addnumberedsinglerow{}{the \msrcode{actCoordinator} has safely logged on to
   the system.}
-  \addnumberedsinglerow{}{the \msrcode{actDomainExpert} has validated the alert.}
-  \addnumberedsinglerow{}{the \msrcode{actCoordinator} has the right domains of expertise to manage this alert.}
+  \addnumberedsinglerow{}{the \msrcode{actDomainExpert} has safely logged on to system.}
   
   \addrowheading{Pre-condition(s)}
   \addnumberedsinglerow{}{none}
   
   \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{there is a crisis whose related
-  information has been changed.}
+  \addnumberedsinglerow{}{the system is being monitored by the  \msrcode{actCoordinator} and \msrcode{actDomainExpert}.}
   
   \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the  \msrucname{oeSetCrisisHandler} use case.}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{oeSetCrisisStatus} use case.}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{oeReportOnCrisis} use case.}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the \msrucname{oeCloseCrisis} use case.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actDomainExpert} executes the \msrucname{oeValidateAlert} use case.}
+
+\addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} executes the  \msrucname{oeGetAlertSet} use case.}
+  
+  \addalphanumberedsinglerow{}{the actor \msrcode{actDomainExpert} executes the \msrucname{oeSollicitateCrisisHandling} use case.}
   
   \addrowheading{Step Constraints Ordering and Extensions}
   \addnumberedsinglerow{}{Step a) must be executed first.}
-  \addnumberedsinglerow{}{Step d) must be executed last.}
-  \addnumberedsinglerow{}{Steps b)to c) can be executed multiple times in order to manage a crisis.}
+  \addnumberedsinglerow{}{Step b) can be executed as a reaction to c) or to monitor the crisis by itself.}
+  \addnumberedsinglerow{}{Steps a),b) and c) can be executed multiple times in order to monitor a crisis.}
 \end{usecase}
 
 \clearpage

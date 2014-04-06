@@ -10,31 +10,42 @@
   \addnumberedsinglerow{}{none}
   
   \addrowheading{Primary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actActivator[active]}}
+  \addnumberedsinglerow{}{\msrcode{actDomainExpert[active]}}
   
   \addrowheading{Secondary actor(s)}
   \addnumberedsinglerow{}{\msrcode{actAdministrator[passive]}}
   \addnumberedsinglerow{}{\msrcode{actCoordinator[passive,multiple]}}
    
   \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actActivator}'s goal is to decrease the number of unhandled crisis.}
+  \addsinglerow{the \msrcode{actDomainExpert}'s goal is to point out that there
+  are crisies still not being handled by any coordinator. And he wants to
+  change that.}
   
   \addrowheading{Reuse}
   \addnumberedsinglerow{}{none}
   
   \addrowheading{Protocol condition(s)}
   \addnumberedsinglerow{}{the \msricrash system has been deployed.}
-  \addnumberedsinglerow{}{there exist some crisis still pending and for which no solicitation has been sent to the administrator and the coordinators for more than a predefined maximum delay.}
+  \addnumberedsinglerow{}{there are some crisis still pending and for which
+  demand has been sent to the administrator and the coordinators for a certain
+  amount of time.}
   
   \addrowheading{Pre-condition(s)}
   \addnumberedsinglerow{}{none}
   
   \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{a simple text message \msrcode{ieMessage('There are alerts not treated since more than the defined delay. Please REACT !')} is sent to the system administrator and to all the coordinators of the environment for each crisis that is known to be not handled and for which no solicitation has been sent to the administrator and the coordinators for more than a predefined maximum delay.}
+  \addnumberedsinglerow{}{a simple text message \msrcode{ieMessage('Some alert
+  have been untreated for more than the 10 min. Please REACT !')} is
+  sent to the system administrator and to all the coordinators of the
+  environment for each alert that is unhandled and for which no
+  demand has been sent to the administrator and the coordinators for more than a
+  a certain amount of time.}
   \addnumberedsinglerow{}{the reminder period for the concerned crisis is initialized.}
   
   \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actActivator} sends the message \msrucname{oeSollicitateCrisisHandling()} to the system.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actDomainExpert} sends the
+  message
+  \msrucname{oeSollicitateCrisisHandling()} to the system.}
   
   \addrowheading{Step Constraints Ordering and Extensions}
   \addnumberedsinglerow{}{none.}
