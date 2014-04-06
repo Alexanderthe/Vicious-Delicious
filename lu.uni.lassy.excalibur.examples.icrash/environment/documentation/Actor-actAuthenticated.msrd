@@ -8,8 +8,12 @@
 @@Actor icrash.environment.actAuthenticated
 
 @description
-"Authenticated is a super user of iCrash System whom all other users inherit from for safe use of
-the system."
+"
+Authenticated is a super user of iCrash System whom all other users inherit from for safe use of
+the system.
+
+
+"
 
 //input events
 @inputEvent
@@ -20,7 +24,7 @@ the system."
 
 //output events
 @outputEvent
-"\msrcode{oeLogin(dtLogin AdtLogin,dtPassword AdtPassword):ptBoolean}"
+"\msrcodeoperation{oeLogin(dtLogin AdtLogin, dtPassword AdtPassword, dtKey AdtKey):ptBoolean}"
 ""
 @outputEvent
 "\msrcode{oeLogout():ptBoolean}"

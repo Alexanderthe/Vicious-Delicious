@@ -10,16 +10,19 @@ icrash.concepts.primarytypes.datatypes.dtHumanName.is
 @return "null"
 
 @description
-"This operation displays the name of victim of the accident"
+"
+Presents the name of the accident victim or name of the witness for example.
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

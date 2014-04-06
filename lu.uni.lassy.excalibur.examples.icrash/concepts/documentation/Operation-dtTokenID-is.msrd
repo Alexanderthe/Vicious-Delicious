@@ -10,16 +10,19 @@ icrash.concepts.primarytypes.datatypes.dtTokenID.is
 @return "ptBoolean"
 
 @description
-" This operation displays the unique identification number associated with each token"
+" 
+This presents the unique identification number associated with each token.
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

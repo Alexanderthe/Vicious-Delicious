@@ -10,16 +10,20 @@ icrash.concepts.primarytypes.datatypes.dtCoordinatorDomain.is
 @return "ptBoolean"
 
 @description
-"Coordinator gets assigned an accident domain (wildlife, property, injury) by the DomainExpert"
+" 
+Coordinator gets assigned an accident domain (wildlife, property, injury, pedestrian) by 
+the DomainExpert.
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

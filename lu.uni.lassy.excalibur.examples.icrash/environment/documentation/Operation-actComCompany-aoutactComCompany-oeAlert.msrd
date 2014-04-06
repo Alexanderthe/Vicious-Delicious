@@ -25,7 +25,8 @@ icrash.environment.actComCompany.outactComCompany.oeAlert
 @return "ptBoolean"
 
 @description
-" The ComCompany transfers a decleration of a car crash by an etHumanKind indicating specific information. "
+" The ComCompany transfers a decleration of a car crash by an etHumanKind (victim, anonymous, witness) 
+indicating specific information about the accident. "
 
 //preFunctional descriptions
 @preF

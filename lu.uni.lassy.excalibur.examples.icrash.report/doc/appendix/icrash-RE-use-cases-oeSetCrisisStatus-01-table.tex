@@ -17,24 +17,24 @@
   \addnumberedsinglerow{}{\msrcode{actComCompany[passive]}}
   
   \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actCoordinator}'s goal is to declare a crisis as closed.}
+  \addsinglerow{the \msrcode{actCoordinator}'s goal is to change the status of
+  a crisis.}
   
   \addrowheading{Reuse}
   \addnumberedsinglerow{}{none}
 
   \addrowheading{Protocol condition(s)}
   \addnumberedsinglerow{}{the \msricrash system has been deployed.}
-  \addnumberedsinglerow{}{a crisis with the given ID exsits in the system.}
+  \addnumberedsinglerow{}{a crisis with the given ID exists in the system.}
 
   \addrowheading{Pre-condition(s)}
   \addnumberedsinglerow{}{none}
   
   \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{the crisis is closed.}
-  \addnumberedsinglerow{}{a message \msrcode{ieSmsSend(AdtPhoneNumber,AdtComment)} is sent to the \msrcode{actComCompany} actor for each registered alert declared by a SMS coming from phone number \msrcode{AdtPhoneNumber} and related to the crisis \msrcode{crisisID}. All the messages have the same textual message \msrcode{AdtComment} giving them the minimal information on the crisis they alerted.}
+  \addnumberedsinglerow{}{the status of the crisis has changed.}
   
   \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} sends the message \msrucname{oeCloseCrisis(crisisID)} to the system.}
+  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} sends the message \msrucname{oeSetCrisisStatus(dtCrisisID, etCrisisStatus)} to the system.}
   
   \addrowheading{Step Constraints Ordering and Extensions}
   \addnumberedsinglerow{}{none}

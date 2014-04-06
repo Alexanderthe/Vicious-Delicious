@@ -10,7 +10,9 @@ icrash.environment.actAuthenticated.init
 @return "null"
 
 @description
-" "
+" 
+The declaration of the actor Authenticated.
+"
 
 //preFunctional descriptions
 @preF

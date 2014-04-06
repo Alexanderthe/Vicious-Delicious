@@ -14,7 +14,10 @@ icrash.environment.actMsrCreator.outactMsrCreator.oeCreateSystemAndEnvironment
 @return "ptBoolean"
 
 @description
-"  the ctMSRCreatorActor wants to create the system and envrioment "
+" 
+Actor MsrCreator aims to create the iCrash system and envrioment at company ABC. 
+
+"
 
 //preFunctional descriptions
 @preF

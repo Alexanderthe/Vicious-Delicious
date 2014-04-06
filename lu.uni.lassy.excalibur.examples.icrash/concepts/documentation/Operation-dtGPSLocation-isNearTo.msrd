@@ -14,17 +14,20 @@ icrash.concepts.primarytypes.datatypes.dtGPSLocation.isNearTo
 @return "null"
 
 @description
-"This operation compares two location GPS-location points in order to confirm that
-they are the same or not. The GPS-location points are first received from the human (victim/anonymous/witness) and then later on from EMS."
+"
+This operation compares two location GPS-location points in order to confirm that
+they are the same or not. The GPS-location points are first received from the human 
+(victim/anonymous/witness) and then later on from EMS.
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

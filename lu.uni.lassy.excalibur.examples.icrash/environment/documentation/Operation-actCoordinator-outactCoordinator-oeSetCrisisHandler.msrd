@@ -14,7 +14,7 @@ icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisHandler
 @return "null"
 
 @description
-" the DomainEActor wants to declare that he is taking care of the crisis."
+" Actor DomainExpert wants to declare that he is taking care of the crisis."
 
 //preFunctional descriptions
 @preF

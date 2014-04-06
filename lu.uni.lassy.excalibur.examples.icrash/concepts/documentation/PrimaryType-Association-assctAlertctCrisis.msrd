@@ -7,5 +7,8 @@
 @@Primary Type Association icrash.concepts.primarytypes.associations.assctAlertctCrisis
 
 @description
-"Every alert is turned into a crisis after.."
+"
+Every alert is turned into a crisis after the alert has been validated by the Coordinator.
+
+"
 

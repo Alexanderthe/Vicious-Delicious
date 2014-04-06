@@ -10,16 +10,19 @@ icrash.concepts.primarytypes.datatypes.dtLogin.is
 @return "null"
 
 @description
-"This operation displays a login username associated with any Administrator, Coordinator or DomainExpert with "
+"
+This presents a login username associated with any Administrator, Coordinator, DomainExpert or EMS agent.
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

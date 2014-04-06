@@ -7,32 +7,40 @@
 @@Actor icrash.environment.actAdministrator
 
 @description
-"Administrating the iCrash system is the responsibility of an Administrator. To fullfill his/her objective (adding and deleting Coodrinators to and from 
-the system and its environment), the other responsibilites of an Administrator include: 
-- Identifying the company ABC employees that are Coordinators with access to the system
+"
+Administrating the iCrash system is the responsibility of an Administrator, who is also a human. To fullfill his/her objective: 
+
+- Adding users (Coordinators, EMS or DomainExpert) to and from the system and its environment
+- Deleting users to and from the system and its environment
+
+The responsibilities include:
+
+- Identifying the company ABC employees that are users with access to the system
 - Be aware of the security policies of company ABC
 - Be aware of the the system's identification information for secure system usage
-- Communication with coordinators in order to provide them with identification information to guarantee the secure use of the system."
+- Communication with users (Coordinators, EMS or DomainExpert) in order to provide them with identification information to guarantee the secure use of the system.
+
+"
 
 @extends "icrash.environment.actAuthenticated"
 @endextends
 
 //input events
 @inputEvent
-"\msrcode{ieCoordinatorAdded():ptBoolean}"
+"\msrcode{ieUserAdded():ptBoolean}"
 ""
 @inputEvent
-"\msrcode{ieCoordinatorDeleted():ptBoolean}"
+"\msrcode{ieUserDeleted():ptBoolean}"
 ""
 
 @endInputEvents
 
 //output events
 @outputEvent
-"\msrcode{oeAddCoordinator(dtCoordinatorID AdtCoordinatorID,dtLogin AdtLogin,dtPassword AdtPassword):ptBoolean}"
+"\msrcode{oeAddUser(dtUserID AdtUserID, dtLogin AdtLogin, dtPassword AdtPassword, dtTokenID AdtTokenID):ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeDeleteCoordinator(dtCoordinatorID AdtCoordinatorID):ptBoolean}"
+"\msrcode{oeDeleteUser(dtUserID AdtUserID):ptBoolean}"
 ""
 
 @endOutputEvents

@@ -13,10 +13,12 @@ import icrash.concepts.secondarytypes.classes
 
 Operation Model {
 
-operation: icrash.environment.actDomainExpert.outactDomainExpert.oeValidateAlert(dtAlertID AdtAlertID,
+operation: icrash.environment.actDomainExpert.outactDomainExpert.oeValidateAlert(
+											dtAlertID AdtAlertID,
 											dtGPSLocation AdtGPSLocation,
 											dtDateAndTime AdtDateandTime,
-											etAlertStatus edtAlertStatus
+											etAlertStatus edtAlertStatus,
+											ctDomain ActDomain
 											):ptBoolean
 	preF: true
 	postF: true

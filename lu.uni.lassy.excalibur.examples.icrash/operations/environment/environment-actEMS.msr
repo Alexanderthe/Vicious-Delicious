@@ -13,9 +13,12 @@ import icrash.concepts.secondarytypes.classes
 
 	Operation Model { 
 		
-		operation: icrash.environment.actEMS.outactEMS.oeReportEMSCrisisStatus(dtCrisisID AdtCrisisID, dtComment AdtComment,
-		etEMSCrisisStatus AdtEMSCrisisStatus
-		):ptBoolean
+		operation: icrash.environment.actEMS.outactEMS.oeReportEMSCrisisStatus(dtCrisisID AdtCrisisID,
+											dtComment AdtComment,
+											etEMSCrisisStatus AdtEMSCrisisStatus,
+											dtHospitalName AdtHospitalName,
+											ctVictim ActVictim
+											):ptBoolean
 			preF: true
 			postF: true
 			
@@ -23,11 +26,7 @@ import icrash.concepts.secondarytypes.classes
 											dtCrisisID AdtCrisisID,
 											dtComment AdtComment,
 											dtRequestID AdtRequest,
-											etEMSCrisisStatus AdtEMsCrisisStatus,
-											dtHospitalName AdtHospitalName,
-											dtName AdtVictimsName,
-											dtName AdtVictimICEContactNamme,
-											dtPhoneNumber AdtVictimICEContactPhoneNumber
+											etEMSCrisisStatus AdtEMsCrisisStatus
 											):ptBoolean
 			preF: true
 			postF: true

@@ -10,18 +10,22 @@ icrash.concepts.primarytypes.datatypes.etCrisisStatus.is
 @return "null"
 
 @description
-"This operation displays the status of the crisis "
+"
+
+This operation displays the status of the crisis.
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example
-@example"The crisis status is: resolved"
+@example"The crisis status is: resolved."
 

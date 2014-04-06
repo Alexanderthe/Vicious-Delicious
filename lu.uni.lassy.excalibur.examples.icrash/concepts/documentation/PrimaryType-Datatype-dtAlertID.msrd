@@ -7,7 +7,7 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtAlertID
 
 @description
-"Every alert is assigned an alert ID"
+"Every alert is auto-assigned an AlertID by the system."
 
 @extends "null"
 @endextends

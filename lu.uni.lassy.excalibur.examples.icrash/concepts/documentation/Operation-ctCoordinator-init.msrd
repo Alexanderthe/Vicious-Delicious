@@ -16,16 +16,16 @@ icrash.concepts.primarytypes.classes.ctCoordinator.init
 @return "null"
 
 @description
-" "
+" This operation initialises the class Coordinator. "
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

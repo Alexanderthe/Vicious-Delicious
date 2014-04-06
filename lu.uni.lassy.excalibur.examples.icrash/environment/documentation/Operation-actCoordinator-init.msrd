@@ -10,7 +10,7 @@ icrash.environment.actCoordinator.init
 @return "null"
 
 @description
-" "
+" Declaration of the actor Coordinator."
 
 //preFunctional descriptions
 @preF

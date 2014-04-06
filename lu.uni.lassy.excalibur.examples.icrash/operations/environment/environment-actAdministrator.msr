@@ -17,7 +17,8 @@ operation: icrash.environment.actAdministrator.outactAdministrator.oeAddUser(
 											dtLogin AdtLogin, 
 											dtPassword AdtPassword,
 											dtTokenID AdtTokenID,
-											etUserType AdtUserType
+											etUserType AdtUserType,
+											ctDomain AdtDomain
 											):ptBoolean
 	preF: true
 	postF: true

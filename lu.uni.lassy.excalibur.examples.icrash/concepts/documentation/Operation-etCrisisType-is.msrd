@@ -10,16 +10,19 @@ icrash.concepts.primarytypes.datatypes.etCrisisType.is
 @return "null"
 
 @description
-"This operation displays the severity of a crisis"
+"
+This operation presents the severity of a crisis (mild, severe, fatal).
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

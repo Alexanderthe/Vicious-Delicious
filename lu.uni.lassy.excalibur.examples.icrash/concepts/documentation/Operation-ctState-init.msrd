@@ -20,11 +20,11 @@ icrash.concepts.primarytypes.classes.ctState.init
 @return "null"
 
 @description
-" "
+" This operation initialises the class State. "
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
@@ -33,4 +33,4 @@ icrash.concepts.primarytypes.classes.ctState.init
 @endPostF
 
 //example
-@example" "
+@example" True "

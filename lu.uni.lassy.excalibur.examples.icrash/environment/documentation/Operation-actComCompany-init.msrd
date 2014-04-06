@@ -10,7 +10,7 @@ icrash.environment.actComCompany.init
 @return "null"
 
 @description
-" "
+" This declares the actor ComCompany. "
 
 //preFunctional descriptions
 @preF

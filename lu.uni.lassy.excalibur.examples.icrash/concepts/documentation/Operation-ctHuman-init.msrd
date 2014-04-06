@@ -15,16 +15,16 @@ icrash.concepts.primarytypes.classes.ctHuman.init
 @return "null"
 
 @description
-" "
+" This operation initialises the class Human. "
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

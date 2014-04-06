@@ -10,16 +10,16 @@ icrash.concepts.primarytypes.datatypes.dtRecievedMessage.is
 @return "ptBoolean"
 
 @description
-" "
+" This describes the "
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

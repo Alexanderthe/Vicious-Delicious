@@ -41,7 +41,7 @@ import icrash.concepts.secondarytypes.classes
 		postF: true	
 	
 	operation: icrash.environment.actCoordinator.outactCoordinator.oeReportOnCrisis(
-											dtAlertID AdtAlert,
+											dtCrisisID AdtCrisisID,
 											dtComment AdtComment,
 											dtUserID AdtUserID,
 											etCrisisType AdtCrisisType,
@@ -65,18 +65,13 @@ import icrash.concepts.secondarytypes.classes
 											dtRequestID AdtRequest,
 											dtGPSLocation AdtGPSLocation,
 											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
-					 						dtNbrOfVictims AdtNbrVictims
+					 						dtNbrOfVictims AdtNbrVictims,
+					 						ctEMStype ActEMSType
 											):ptBoolean
 		preF: true
 		postF: true
 		
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeInfoFam(
-									dtComment AdtComment,	
-									dtPhoneNumber AdtVictimICEContactPhoneNumber,
-									dtHospitalName AdtHospitalName
-									):ptBoolean
-		preF: true
-		postF: true
+	
 	
 
 
