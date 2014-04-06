@@ -14,7 +14,7 @@ icrash.environment.actCoordinator.outactCoordinator.oeCloseAlert
 @return "null"
 
 @description
-"Actor Coordinator closes an alert when its   "
+" A Coordinator closes the alert at the same time as the crisis is closed. "
 
 //preFunctional descriptions
 @preF
@@ -23,10 +23,11 @@ icrash.environment.actCoordinator.outactCoordinator.oeCloseAlert
 
 //preProtocol descriptions
 @preP
-" 1. the iCrash system has been deployed.
-
+" 
+1. the iCrash system has been deployed.
 2. An alert was received by our system.
-3. The alert was handled by a coordinator."
+3. The alert was handled by a coordinator.
+"
 @endPreP
 
 //postFunctional descriptions

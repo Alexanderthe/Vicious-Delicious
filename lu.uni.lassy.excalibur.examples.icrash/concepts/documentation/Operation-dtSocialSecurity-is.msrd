@@ -14,12 +14,12 @@ icrash.concepts.primarytypes.datatypes.dtSocialSecurity.is
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

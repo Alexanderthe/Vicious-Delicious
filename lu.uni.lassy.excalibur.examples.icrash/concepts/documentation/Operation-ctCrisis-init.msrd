@@ -19,16 +19,16 @@ icrash.concepts.primarytypes.classes.ctCrisis.init
 @return "null"
 
 @description
-" "
+" This opration initialises the class Crisis. "
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

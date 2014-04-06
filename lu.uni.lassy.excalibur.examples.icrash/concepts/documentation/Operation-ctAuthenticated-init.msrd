@@ -15,16 +15,16 @@ icrash.concepts.primarytypes.classes.ctAuthenticated.init
 @return "null"
 
 @description
-" "
+" This operation initialises the class Authenticated. "
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

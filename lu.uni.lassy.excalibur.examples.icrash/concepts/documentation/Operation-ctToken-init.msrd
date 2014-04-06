@@ -15,16 +15,16 @@ icrash.concepts.primarytypes.classes.ctToken.init
 @return "ptBoolean"
 
 @description
-" "
+" This operation initialises the class Token. "
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

@@ -15,11 +15,16 @@ A Domain Expert must have knowledge about identification in order to securely us
 
 //input events
 
+@inputEvent
+"\msrcode{ieAlertRecieved(): ptBoolean}"
 
 //output events
+
 @outputEvent
+"\msrcode{oeValidateAlert(dtAlertID AdtAlertID,dtGPSLocation AdtGPSLocation,dtDateAndTime AdtDateandTime,etAlertStatus edtAlertStatus
+):ptBoolean}"
 ""
-
+@outputEvent
+"\msrcode{oeSollicitateCrisisHandling() : ptBoolean}"
+""
 @endOutputEvents
-
-""

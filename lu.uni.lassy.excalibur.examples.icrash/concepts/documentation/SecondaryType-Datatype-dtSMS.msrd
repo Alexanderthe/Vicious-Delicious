@@ -7,7 +7,8 @@
 @@Secondary Type Datatype icrash.concepts.secondarytypes.datatypes.dtSMS
 
 @description
-"This describes the message containing detailed information about the accident and its victimes sent to the family."
+"This describes the message containing detailed information about the accident and its 
+victimes sent to the family."
 
 @attribute 
  "\msrcode{value: null}: "

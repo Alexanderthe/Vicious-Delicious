@@ -10,17 +10,20 @@ icrash.concepts.primarytypes.datatypes.dtFamilyTel.is
 @return "ptBoolean"
 
 @description
-"This operation displays a phone number to contact the victim's family. The information about
-phone number is received either from witness/anonymous/victim or EMS"
+"
+This operation displays a phone number to contact the victim's family. The information about
+phone number is received either from witness/anonymous/victim or EMS together with other information 
+included in the emergency contact of the victim.
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

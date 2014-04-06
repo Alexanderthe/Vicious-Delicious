@@ -10,16 +10,19 @@ icrash.concepts.primarytypes.datatypes.dtLatitude.is
 @return "null"
 
 @description
-"This operation displays the latitude coordinates of the accident"
+"
+This displays the latitude coordinates of the accident.
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

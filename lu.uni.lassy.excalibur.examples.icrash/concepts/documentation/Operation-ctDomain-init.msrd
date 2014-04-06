@@ -18,16 +18,16 @@ icrash.concepts.primarytypes.classes.ctDomain.init
 @return "ptBoolean"
 
 @description
-" "
+" This opration initialises the class Domain. "
 
 //preFunctional descriptions
 @preF
-" "
+" True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True"
 @endPostF
 
 //example

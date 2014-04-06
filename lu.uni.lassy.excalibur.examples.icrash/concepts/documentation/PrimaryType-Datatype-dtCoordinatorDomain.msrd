@@ -7,7 +7,12 @@
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtCoordinatorDomain
 
 @description
-" "
+" 
+
+This describes the different accident domains (pedestrian, wildlife, injury, property) assinged at 
+Coordinators.
+
+"
 
 @extends "lu.uni.lassy.messir.libraries.string.dtString"
 @endextends

@@ -7,5 +7,8 @@
 @@Primary Type Association icrash.concepts.primarytypes.associations.assctCrisisctDomains
 
 @description
-"Every crisis gets assigned a Domain (pedestrian, wildlife, property) "
+"
+Every crisis gets assigned a Domain (pedestrian, wildlife, property, injury).
+
+"
 

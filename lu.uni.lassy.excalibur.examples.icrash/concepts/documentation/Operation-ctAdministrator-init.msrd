@@ -15,16 +15,16 @@ icrash.concepts.primarytypes.classes.ctAdministrator.init
 @return "null"
 
 @description
-" "
+" This operation initialises the class Administrator."
 
 //preFunctional descriptions
 @preF
-" None"
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

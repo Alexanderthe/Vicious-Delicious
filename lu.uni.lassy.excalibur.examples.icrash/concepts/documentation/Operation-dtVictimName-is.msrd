@@ -10,16 +10,19 @@ icrash.concepts.primarytypes.datatypes.dtVictimName.is
 @return "ptBoolean"
 
 @description
-"This operation displays the accident victim's name."
+" 
+This presents the accident victim's name.
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

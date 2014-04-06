@@ -10,16 +10,19 @@ icrash.concepts.primarytypes.datatypes.etDomains.is
 @return "ptBoolean"
 
 @description
-"Displays the domain of the accident (pedestrian, wildlife, property) "
+"
+Displays the domain of the accident (pedestrian, wildlife, property, injury).
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

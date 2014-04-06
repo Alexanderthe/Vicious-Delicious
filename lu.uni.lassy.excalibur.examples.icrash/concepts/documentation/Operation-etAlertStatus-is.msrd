@@ -10,16 +10,19 @@ icrash.concepts.primarytypes.datatypes.etAlertStatus.is
 @return "null"
 
 @description
-"Displays the staus of the alert"
+"
+Displays the staus of the alert.
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

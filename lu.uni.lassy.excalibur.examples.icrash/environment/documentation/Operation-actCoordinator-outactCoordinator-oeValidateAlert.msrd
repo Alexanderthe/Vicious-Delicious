@@ -14,7 +14,7 @@ icrash.environment.actCoordinator.outactCoordinator.oeValidateAlert
 @return "null"
 
 @description
-" the ctCoordinatorActor wants to declare the alert to be consisdered as a valid one."
+" The ctCoordinatorActor wants to declare the alert to be consisdered as a valid one."
 
 //preFunctional descriptions
 @preF

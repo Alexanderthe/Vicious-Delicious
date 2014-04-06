@@ -8,13 +8,16 @@
 
 @description
 " A Communication Company works as communication link between witness/anonymous/victim and iCrash 
-message exchange and victim's family and iCrash system. Communication 
+message exchange and victim's family and iCrash system. Communication Company's objectives are: 
 
-Company is responsible for delivering SMS messages from humans to iCrash phone number, as well as transmitting SMS messages
-from iCrash system to any human with a SMS enabling device with phone number. 
+- Delivering SMS messages from humans to iCrash phone number
+- Transmitting SMS messages from iCrash system to Humans (including witness, anonymous, victim, family member) with an
+ SMS enabling device with phone number. 
 
-Integrity and confidentiality, reliabiliy and availability  of the information and message delivery
-system must be guaranteed by Communication Company for any SMS communication to/from iCrash and humans."
+The responsibilities of a Communication Company therefore are: 
+
+- Guaranteeing integrity, confidentiality, reliabiliy and availability of the information 
+and message delivery system for any SMS communication between iCrash and Humans."
 
 
 //input events

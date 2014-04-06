@@ -7,7 +7,8 @@
 
 @description
 
-"EMS services is an acronym of Emergency Services. The person operating at EMS end of the system is a human provided with 
+"
+EMS services is an acronym of Emergency Services. The person operating at EMS end of the system is a human provided with 
 an interface including a login, password and tokenID. The objectives of EMS services are:
 
 - To communicate with a Coordinator at company ABC by receiving and sending messages through iCrash
@@ -24,11 +25,10 @@ Therefore the responsibilities are:
 
 //output events
 @outputEvent
-
+"\msrcode{oeReplyToRequest(dtCrisisID AdtCrisisID,dtComment AdtComment,dtRequestID AdtRequest,etEMSCrisisStatus AdtEMsCrisisStatus,
+dtHospitalName AdtHospitalName,dtName AdtVictimsName,dtName AdtVictimICEContactNamme,dtPhoneNumber AdtVictimICEContactPhoneNumber):ptBoolean}"										""
 
 @outputEvent
+"\msrcode{oeReportEMSCrisisStatus(dtCrisisID AdtCrisisID,dtComment AdtComment,etEMSCrisisStatus AdtEMSCrisisStatus):ptBoolean}"
 ""
-
 @endOutputEvents
-
-""

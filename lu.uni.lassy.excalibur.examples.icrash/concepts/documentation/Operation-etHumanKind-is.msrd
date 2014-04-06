@@ -10,16 +10,19 @@ icrash.concepts.primarytypes.datatypes.etHumanKind.is
 @return "null"
 
 @description
-"Descibes the sender of the original SMS about the accident: "
+"
+Presents the sender of the original SMS about the accident (victim, witness, anonymous). 
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

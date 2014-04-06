@@ -10,17 +10,20 @@ icrash.concepts.primarytypes.datatypes.dtPhoneNumber.is
 @return "null"
 
 @description
-"This operation displays the mobile phone number of the human sending in the initial SMS about
-the accident."
+"
+This presents the mobile phone number of the human sending in the initial SMS about
+the accident as well as the phone number of the family contact.
+
+"
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

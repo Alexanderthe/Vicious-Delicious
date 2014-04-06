@@ -7,7 +7,9 @@
 @@Primary Type Enumeration icrash.concepts.primarytypes.datatypes.etHumanKind
 
 @description
-"Describes the sender of the original message (victim, witness, anonymous) "
+"
+Describes the sender of the original message (victim, witness, anonymous). 
+"
 
 @operation
  "\msrcode{is}: "

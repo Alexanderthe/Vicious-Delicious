@@ -18,16 +18,16 @@ icrash.concepts.primarytypes.classes.ctAlert.init
 @return "null"
 
 @description
-" "
+" This operation initialises the class Alert. "
 
 //preFunctional descriptions
 @preF
-" "
+" True "
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+" True "
 @endPostF
 
 //example

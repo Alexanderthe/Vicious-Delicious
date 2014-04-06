@@ -134,18 +134,6 @@ import lu.uni.lassy.messir.libraries.calendar
 	 		}
 		}
 
-		/*actor actActivator role rnactActivator cardinality [1..1]{
-
-			operation init():ptBoolean
-
-			output interface outactActivator{
-				
-				operation oeSetClock(dtDateAndTime AcurrentClock):ptBoolean
-			}
-			
-			input interface inactActivator{
-	 		}
-		}*/
 		actor actDomainExpert role rnactDomainExpert cardinality [1..*] {
 			
 			operation init():ptBoolean
