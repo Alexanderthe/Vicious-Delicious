@@ -1,0 +1,41 @@
+/*
+@author Alexander
+@date Sun Apr 06 23:51:52 CEST 2014
+*/
+
+
+@@Operation
+icrash.environment.actAdministrator.outactAdministrator.oeDeleteUser
+//parameters
+@parameter "dtUserID" "AdtUserID"
+@endparameters
+
+//return type
+@return "ptBoolean"
+
+@description
+" "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+
+//example
+@example" "
+

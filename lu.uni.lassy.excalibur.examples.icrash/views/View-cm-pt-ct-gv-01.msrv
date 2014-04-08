@@ -15,4 +15,4 @@ shows the primary types class types together with the association(s) types with 
 @caption 
 " Associations between primary type classes and Actors.
 "
-@size Real
+@size Scaled

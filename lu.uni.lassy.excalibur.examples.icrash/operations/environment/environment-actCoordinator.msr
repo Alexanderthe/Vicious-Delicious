@@ -23,7 +23,7 @@ import icrash.concepts.secondarytypes.classes
 		ocl: ""
 		
 			
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeCloseCrisis(dtCrisisID AdtCrisisID):ptBoolean
+	operation: icrash.environment.actCoordinator.outactCoordinator.oeCloseCrisis(dtCrisisID AdtCrisisoID):ptBoolean
 		preF: true
 		postF: true
 	
@@ -32,23 +32,28 @@ import icrash.concepts.secondarytypes.classes
 		postF: true
 	
 			
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeGetCrisisSet(etCrisisStatus AetCrisisStatus):ptBoolean//Never used
+	operation: icrash.environment.actCoordinator.outactCoordinator.oeGetCrisisSet(etCrisisStatus AetCrisisoStatus):ptBoolean//Never used
 		preF: true
 		postF: true
 		
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisHandler(etCrisisStatus AetCrisisID):ptBoolean
+	operation: icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisHandler(dtCrisisID AdtCrisisuID,
+																					  etCrisisType AetCrisisType,
+																					  etCrisisStatus AetCrisisuStatus,
+																					  dtGPSLocation AdtGPSLocatino, 
+																					  dtDateAndTime AdtDateAndTime
+																					  ):ptBoolean
 		preF: true
 		postF: true	
 	
 	operation: icrash.environment.actCoordinator.outactCoordinator.oeReportOnCrisis(
-											dtCrisisID AdtCrisisID,
-											dtComment AdtComment,
+											dtCrisisID AdtCrisislID,
+											dtComment AdtCommento,
 											dtUserID AdtUserID,
 											etCrisisType AdtCrisisType,
 											etCrisisStatus AdtCrisisStatus,
 											dtRecievedMessage AdtReceivedMessage,
-											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
-					 						dtNbrOfVictims AdtNbrVictims
+											dtNbrofVehiculesInAccident AdtVehiculesInAccidento,
+					 						dtNbrOfVictims AdtNbrVictimso
 											):ptBoolean
 		preF: true
 		postF: true			
@@ -73,6 +78,6 @@ import icrash.concepts.secondarytypes.classes
 		
 	
 	
-
+}
 
 }

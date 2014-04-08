@@ -1,0 +1,45 @@
+/*
+@author Alexander
+@date Sun Apr 06 23:51:50 CEST 2014
+*/
+
+
+@@Operation
+icrash.environment.actEMS.outactEMS.oeReportEMSCrisisStatus
+//parameters
+@parameter "dtCrisisID" "AdtCrisisID"
+@parameter "dtComment" "AdtComment"
+@parameter "etEMSCrisisStatus" "AdtEMSCrisisStatus"
+@parameter "dtHospitalName" "AdtHospitalName"
+@parameter "ctVictim" "ActVictim"
+@endparameters
+
+//return type
+@return "ptBoolean"
+
+@description
+" "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+
+//example
+@example" "
+

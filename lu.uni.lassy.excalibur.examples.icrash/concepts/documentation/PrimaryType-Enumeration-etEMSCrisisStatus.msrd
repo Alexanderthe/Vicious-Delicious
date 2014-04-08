@@ -1,0 +1,15 @@
+/*
+@author Alexander
+@date Sun Apr 06 23:51:54 CEST 2014
+*/
+
+
+@@Primary Type Enumeration icrash.concepts.primarytypes.datatypes.etEMSCrisisStatus
+
+@description
+" "
+
+@operation
+ "\msrcode{is}: "
+
+@endoperations

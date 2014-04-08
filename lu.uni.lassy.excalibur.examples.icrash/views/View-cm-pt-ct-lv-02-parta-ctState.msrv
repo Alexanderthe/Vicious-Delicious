@@ -12,4 +12,4 @@
 @number 2
 @description ' '
 @caption ' '
-@size Real
+@size Scaled

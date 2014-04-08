@@ -63,7 +63,7 @@ import lu.uni.lassy.messir.libraries.calendar
 				operation oeCloseCrisis(dtCrisisID AdtCrisisID):ptBoolean
 				operation oeGetAlertsSet(etAlertStatus AetAlertStatus):ptBoolean
 				operation oeGetCrisisSet(etCrisisStatus AetCrisisStatus):ptBoolean //never used
-				operation oeSetCrisisHandler(dtAlertID AdtAlertID,ctCrisis ActCrisis):ptBoolean
+				operation oeSetCrisisHandler(dtCrisisID AdtCrisisID,etCrisisType AetCrisisType, etCrisisStatus AetCrisisStatus, dtGPSLocation AdtGPSLocatino, dtDateAndTime AdtDateAndTime ):ptBoolean
 				operation oeReportOnCrisis(
 											dtCrisisID AdtCrisisID,
 											dtComment AdtComment,
@@ -159,7 +159,11 @@ import lu.uni.lassy.messir.libraries.calendar
 		}
 		actor actEMS role rnactEMS cardinality [1..*] {
 			
+			operation init():ptBoolean
+			
 			input interface inactEMS {
+				
+				operation ieRequest():ptBoolean
 				
 			}
 			output interface outactEMS {

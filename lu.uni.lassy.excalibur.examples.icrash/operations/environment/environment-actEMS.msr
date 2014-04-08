@@ -13,8 +13,8 @@ import icrash.concepts.secondarytypes.classes
 
 	Operation Model { 
 		
-		operation: icrash.environment.actEMS.outactEMS.oeReportEMSCrisisStatus(dtCrisisID AdtCrisisID,
-											dtComment AdtComment,
+		operation: icrash.environment.actEMS.outactEMS.oeReportEMSCrisisStatus(dtCrisisID AdtCrisisIDo,
+											dtComment AdtCommento,
 											etEMSCrisisStatus AdtEMSCrisisStatus,
 											dtHospitalName AdtHospitalName,
 											ctVictim ActVictim

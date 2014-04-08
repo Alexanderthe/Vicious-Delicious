@@ -11,4 +11,4 @@
 @number 3
 @description ' '
 @caption ' '
-@size Real
+@size Scaled

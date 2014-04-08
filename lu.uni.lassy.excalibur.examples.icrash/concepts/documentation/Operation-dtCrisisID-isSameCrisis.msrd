@@ -1,0 +1,34 @@
+/*
+@author Alexander
+@date Sun Apr 06 23:51:52 CEST 2014
+*/
+
+
+@@Operation
+icrash.concepts.primarytypes.datatypes.dtCrisisID.isSameCrisis
+//parameters
+@parameter "dtDate" "aDate"
+@parameter "dtTime" "aTimeandDate"
+@parameter "dtDate" "bDate"
+@parameter "dtTime" "bTime"
+@endparameters
+
+//return type
+@return "ptBoolean"
+
+@description
+" "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+
+//example
+@example" "
+

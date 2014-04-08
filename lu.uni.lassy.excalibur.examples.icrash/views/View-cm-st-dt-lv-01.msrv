@@ -9,4 +9,4 @@
 @number 1
 @description 'shows the secondary types datatype types.'
 @caption 'Local view of the secondary types datatype types'
-@size Real
+@size Scaled

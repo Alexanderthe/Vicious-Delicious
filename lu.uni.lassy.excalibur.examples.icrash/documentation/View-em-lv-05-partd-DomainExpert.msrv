@@ -1,0 +1,14 @@
+/*
+* @author Alexander
+* @date Mon Apr 07 10:53:47 CEST 2014
+*/
+
+
+
+@@view em-lv-05-partd-DomainExpert
+@model Concept
+@level Local
+@sublevel Primary Class
+@number 8
+@description ' '
+@caption ' '

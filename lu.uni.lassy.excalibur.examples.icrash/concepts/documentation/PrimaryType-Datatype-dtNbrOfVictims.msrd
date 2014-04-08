@@ -1,0 +1,18 @@
+/*
+@author Alexander
+@date Sun Apr 06 23:51:53 CEST 2014
+*/
+
+
+@@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtNbrOfVictims
+
+@description
+" "
+
+@extends "lu.uni.lassy.messir.libraries.math.dtReal"
+@endextends
+
+@operation
+ "\msrcode{is}: "
+
+@endoperations

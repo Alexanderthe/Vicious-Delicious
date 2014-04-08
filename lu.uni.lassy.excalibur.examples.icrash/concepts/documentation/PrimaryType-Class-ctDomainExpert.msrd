@@ -1,0 +1,23 @@
+/*
+@author Alexander
+@date Sun Apr 06 23:51:54 CEST 2014
+*/
+
+
+@@Primary Type Class icrash.concepts.primarytypes.classes.ctDomainExpert
+
+@description
+" "
+
+@extends "icrash.concepts.primarytypes.classes.ctAuthenticated"
+@endextends
+
+@attribute 
+"\msrcode{id: dtUserID}: "
+
+@endattributes
+
+@operation
+ "\msrcode{init}: "
+
+@endoperations

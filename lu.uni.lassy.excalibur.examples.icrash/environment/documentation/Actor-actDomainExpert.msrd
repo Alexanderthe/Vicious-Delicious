@@ -1,32 +1,27 @@
 /*
-@author heidiflinkman
-@date Mon Mar 24 12:59:33 CET 2014
+@author Alexander
+@date Sun Apr 06 23:51:52 CEST 2014
 */
-@@Actor icrash.environment.actMsrCreator
+
+
+@@Actor icrash.environment.actDomainExpert
 
 @description
-
-"A Domain Expert's responsibility is to assign accident domains to incoming alers. A DomainExpert is
-a human being, separate from Coordinator, Administrator and Creator in terms of an individual role and tasks.
-
-A Domain Expert must posess quality knowledge in different accident types in order to assign a domain into an alert.
-
-A Domain Expert must have knowledge about identification in order to securely use the system."
+" "
 
 //input events
-
 @inputEvent
-"\msrcode{ieAlertRecieved(): ptBoolean}"
+"\msrcode{ieAlertRecieved():ptBoolean}"
 ""
+
 @endInputEvents
 
 //output events
+@outputEvent
+"\msrcode{oeValidateAlert(dtAlertID AdtAlertID,dtGPSLocation AdtGPSLocation,dtDateAndTime AdtDateandTime,etAlertStatus edtAlertStatus,ctDomain ActDomain):ptBoolean}"
+""
+@outputEvent
+"\msrcode{oeSollicitateCrisisHandling():ptBoolean}"
+""
 
-@outputEvent
-"\msrcode{oeValidateAlert(dtAlertID AdtAlertID,dtGPSLocation AdtGPSLocation,dtDateAndTime AdtDateandTime,etAlertStatus edtAlertStatus
-):ptBoolean}"
-""
-@outputEvent
-"\msrcode{oeSollicitateCrisisHandling() : ptBoolean}"
-""
 @endOutputEvents

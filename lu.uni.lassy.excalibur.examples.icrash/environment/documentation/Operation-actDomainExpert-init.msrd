@@ -1,0 +1,27 @@
+/*
+@author Alexander
+@date Sun Apr 06 23:51:52 CEST 2014
+*/
+
+
+@@Operation
+icrash.environment.actDomainExpert.init
+//return type
+@return "ptBoolean"
+
+@description
+" "
+
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+
+//example
+@example" "
+
