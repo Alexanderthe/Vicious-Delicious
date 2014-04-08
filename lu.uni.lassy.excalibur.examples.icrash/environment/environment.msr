@@ -1,10 +1,4 @@
-/*  
-* @author nicolas.guelfi
-* @date Mon May 06 18:10:54 CEST 2013
-*/
-
-package icrash.environment{
-	
+package icrash.environment {
 import icrash.concepts.primarytypes.datatypes
 import icrash.concepts.primarytypes.classes
 import icrash.concepts.secondarytypes.datatypes
@@ -12,175 +6,137 @@ import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.calendar
 
-	Environment Model { 
+Environment Model {
+    actor actMsrCreator role rnactMsrCreator cardinality [0..1] {
+        input interface inactMsrCreator {
+        }
 
-		actor actMsrCreator role rnactMsrCreator cardinality [0..1] {
-		 input interface inactMsrCreator {
-		 }
-			output interface outactMsrCreator {
-				operation oeCreateSystemAndEnvironment(ptInteger AqtyComCompanies):ptBoolean
-			}
-		}
+        output interface outactMsrCreator {
+            operation oeCreateSystemAndEnvironment(ptInteger AqtyComCompanies): ptBoolean
+        }
+    }
+    
+    actor actAdministrator role rnactAdministrator cardinality [1..1] extends actAuthenticated {
+        operation init(): ptBoolean
+        output interface outactAdministrator {
+            operation oeAddUser(
+                dtUserID AdtUserID,
+                dtLogin AdtLogin,
+                dtPassword AdtPassword,
+                dtTokenID AdtTokenID,
+                etUserType AdtUserType,
+                ctDomain ActDomain): ptBoolean
+                
+                operation oeDeleteUser(dtUserID AdtUserID): ptBoolean
+        }
+        
+        input interface inactAdministrator {
+            operation ieUserAdded(): ptBoolean
+            operation ieUserDeleted(): ptBoolean
+        }
+    }
+    
+    actor actCoordinator role rnctactCoordinator cardinality [0..*] extends actAuthenticated {
+        operation init():ptBoolean
+        output interface outactCoordinator {
+            operation oeCloseAlert(dtAlertID AdtAlertID): ptBoolean
+            operation oeCloseCrisis(dtCrisisID AdtCrisisID): ptBoolean
+            operation oeGetAlertsSet(etAlertStatus AetAlertStatus): ptBoolean
+            operation oeGetCrisisSet(etCrisisStatus AetCrisisStatus): ptBoolean
+            operation oeSetCrisisHandler(dtCrisisID AdtCrisisID,
+                etCrisisType AetCrisisType,
+                etCrisisStatus AetCrisisStatus,
+                dtGPSLocation AdtGPSLocatino,
+                dtDateAndTime AdtDateAndTime): ptBoolean
+            operation oeReportOnCrisis(dtCrisisID AdtCrisisID,
+                dtComment AdtComment, dtUserID AdtUserID,
+                etCrisisType AdtCrisisType,
+                etCrisisStatus AdtCrisisStatus,
+                dtRecievedMessage AdtReceivedMessage,
+                dtNbrofVehiculesInAccident AdtVehiculesInAccident,
+                dtNbrOfVictims AdtNbrVictims): ptBoolean
+            operation oeSetCrisisStatus(dtCrisisID AdtCrisisID,
+                etCrisisStatus AetCrisisStatus): ptBoolean
+            operation oeRequestEMSAssistance(dtComment AdtComment,
+                dtRequestID AdtRequest,
+                dtGPSLocation AdtGPSLocation,
+                dtNbrofVehiculesInAccident AdtVehiculesInAccident,
+                dtNbrOfVictims AdtNbrVictims,
+                ctEMStype ActEMSType): ptBoolean
+        }
+        
+        input interface inactCoordinator {
+            operation ieSendAnAlert(ctAlert AclAlert): ptBoolean
+            operation ieSendACrisis(ctCrisis ActCrisis): ptBoolean
+            operation ieMessage(ptString AMessage): ptBoolean
+        }
+    }
+    
+    actor actComCompany role rnactComCompany cardinality [0..*] {
+        operation init(): ptBoolean
+        output interface outactComCompany {
+            operation oeAlert(etHumanKind AetKind,
+                dtDate AdtMyDate,
+                dtTime AdtTime,
+                dtPhoneNumber AdtPhoneNumber,
+                dtGPSLocation AdtGPSLocation,
+                dtComment AdtComment): ptBoolean
+            operation oeInfoFam(ctVictim ActVictim,
+                dtHospitalName AHospitalName): ptBoolean
+        }
 
-		actor actAdministrator 
-						role rnactAdministrator 
-						cardinality [1..1] 
-						extends actAuthenticated {
+        input interface inactComCompany {
+            operation ieSmsSend(dtPhoneNumber AdtPhoneNumber,
+                dtSMS AdtSMS): ptBoolean
+        }
+    }
 
-			operation init():ptBoolean
+    actor actAuthenticated role rnactAuthenticated cardinality [0..*] {
+        operation init(): ptBoolean
+        output interface outactAuthenticated {
+            operation oeLogin(dtLogin AdtLogin,
+                dtPassword AdtPassword,
+                dtKey Adtkey): ptBoolean
+            operation oeLogout(): ptBoolean
+        }
+        
+        input interface inactAuthenticated {
+            operation ieMessage(ptString AMessage): ptBoolean
+        }
+    }
 
-			output interface outactAdministrator{
-				
-				operation oeAddUser(
-											dtUserID AdtUserID,
-											dtLogin AdtLogin, 
-											dtPassword AdtPassword,
-											dtTokenID AdtTokenID,
-											etUserType AdtUserType,
-											ctDomain ActDomain
-											):ptBoolean
-											
-				operation oeDeleteUser(
-											dtUserID AdtUserID):ptBoolean
-			}
-			
-			input interface inactAdministrator{
-				
-				operation ieUserAdded():ptBoolean
-				operation ieUserDeleted():ptBoolean
-	 		}
-		}
-		
-		actor actCoordinator 
-						role rnctactCoordinator 
-						cardinality [0..*] 
-						extends actAuthenticated{
-
-			operation init():ptBoolean
-
-			output interface outactCoordinator{
-				operation oeCloseAlert(dtAlertID AdtAlertID):ptBoolean //Never used
-				operation oeCloseCrisis(dtCrisisID AdtCrisisID):ptBoolean
-				operation oeGetAlertsSet(etAlertStatus AetAlertStatus):ptBoolean
-				operation oeGetCrisisSet(etCrisisStatus AetCrisisStatus):ptBoolean //never used
-				operation oeSetCrisisHandler(dtCrisisID AdtCrisisID,etCrisisType AetCrisisType, etCrisisStatus AetCrisisStatus, dtGPSLocation AdtGPSLocatino, dtDateAndTime AdtDateAndTime ):ptBoolean
-				operation oeReportOnCrisis(
-											dtCrisisID AdtCrisisID,
-											dtComment AdtComment,
-											dtUserID AdtUserID,
-											etCrisisType AdtCrisisType,
-											etCrisisStatus AdtCrisisStatus,
-											dtRecievedMessage AdtReceivedMessage,
-											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
-					 						dtNbrOfVictims AdtNbrVictims
-											):ptBoolean
-				operation oeSetCrisisStatus(
-											dtCrisisID AdtCrisisID,
-											etCrisisStatus AetCrisisStatus
-											):ptBoolean
-				operation oeRequestEMSAssistance(
-											dtComment AdtComment,
-											dtRequestID AdtRequest,
-											dtGPSLocation AdtGPSLocation,
-											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
-					 						dtNbrOfVictims AdtNbrVictims,
-					 						ctEMStype ActEMSType
-											):ptBoolean
-				
-			}
-			
-			input interface inactCoordinator{
-				operation ieSendAnAlert(ctAlert AclAlert):ptBoolean
-				operation ieSendACrisis(ctCrisis ActCrisis):ptBoolean
-				operation ieMessage(ptString AMessage):ptBoolean
-	 		}
-		}
-		
-		
-		actor actComCompany role rnactComCompany cardinality [0..*]{
-
-			operation init():ptBoolean
-
-			output interface outactComCompany{
-				operation oeAlert(
-										etHumanKind AetKind, 
-										dtDate AdtMyDate, 
-										dtTime AdtTime, 
-										dtPhoneNumber AdtPhoneNumber,
-										dtGPSLocation AdtGPSLocation, 
-										dtComment AdtComment
-										):ptBoolean
-										
-				operation oeInfoFam (
-										ctVictim ActVictim,
-										dtHospitalName AHospitalName
-				):ptBoolean
-										
-				
-			}
-			
-			input interface inactComCompany{
-				operation ieSmsSend(dtPhoneNumber AdtPhoneNumber, 
-										dtSMS AdtSMS
-										):ptBoolean
-	 		}
-		}
-
-		actor actAuthenticated role rnactAuthenticated cardinality [0..*]{
-
-			operation init():ptBoolean
-
-			output interface outactAuthenticated{
-				operation oeLogin(dtLogin AdtLogin, dtPassword AdtPassword, dtKey Adtkey):ptBoolean
-				operation oeLogout():ptBoolean
-			}
-			
-			input interface inactAuthenticated{
-				operation ieMessage(ptString AMessage):ptBoolean
-	 		}
-		}
-
-		actor actDomainExpert role rnactDomainExpert cardinality [1..*] {
-			
-			operation init():ptBoolean
-			
-			input interface inDomainExpert {
-				operation ieAlertRecieved(): ptBoolean
-			}
-			output interface outactDomainExpert {
-				operation oeValidateAlert(dtAlertID AdtAlertID,
-											dtGPSLocation AdtGPSLocation,
-											dtDateAndTime AdtDateandTime,
-											etAlertStatus edtAlertStatus,
-											ctDomain ActDomain
-											):ptBoolean
-				operation oeSollicitateCrisisHandling() : ptBoolean
-			}
-		}
-		actor actEMS role rnactEMS cardinality [1..*] {
-			
-			operation init():ptBoolean
-			
-			input interface inactEMS {
-				
-				operation ieRequest():ptBoolean
-				
-			}
-			output interface outactEMS {
-				operation oeReportEMSCrisisStatus(
-											dtCrisisID AdtCrisisID,
-											dtComment AdtComment,
-											etEMSCrisisStatus AdtEMSCrisisStatus,
-											dtHospitalName AdtHospitalName,
-											ctVictim ActVictim
-											):ptBoolean
-				operation oeReplyToRequest(
-											dtCrisisID AdtCrisisID,
-											dtComment AdtComment,
-											dtRequestID AdtRequest,
-											etEMSCrisisStatus AdtEMsCrisisStatus
-											):ptBoolean
-			}
-		}
-	}
-}
+    actor actDomainExpert role rnactDomainExpert cardinality [1..*] {
+        operation init(): ptBoolean
+        input interface inDomainExpert {
+            operation ieAlertRecieved(): ptBoolean
+        }
+        
+        output interface outactDomainExpert {
+            operation oeValidateAlert(dtAlertID AdtAlertID,
+                dtGPSLocation AdtGPSLocation,
+                dtDateAndTime AdtDateandTime,
+                etAlertStatus edtAlertStatus,
+                ctDomain ActDomain): ptBoolean
+            operation oeSollicitateCrisisHandling(): ptBoolean
+        }
+    }
+    
+    actor actEMS role rnactEMS cardinality [1..*] {
+        operation init(): ptBoolean
+        input interface inactEMS {
+            operation ieRequest(): ptBoolean
+        }
+        
+        output interface outactEMS {
+            operation oeReportEMSCrisisStatus(dtCrisisID AdtCrisisID,
+                dtComment AdtComment,
+                etEMSCrisisStatus AdtEMSCrisisStatus,
+                dtHospitalName AdtHospitalName,
+                ctVictim ActVictim): ptBoolean
+            operation oeReplyToRequest(dtCrisisID AdtCrisisID,
+                dtComment AdtComment,
+                dtRequestID AdtRequest,
+                etEMSCrisisStatus AdtEMsCrisisStatus): ptBoolean
+        }
+    }
+}}

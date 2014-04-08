@@ -1,62 +1,58 @@
 package icrash.concepts.primarytypes.associations {
-	
+
 import icrash.concepts.primarytypes.datatypes
 import icrash.concepts.primarytypes.classes
 import icrash.environment
 
-
-	Concept Model {
-		
-		Primary Types{
+Concept Model {
+    Primary Types {
 
 // Internal
 
 association assctAlertctCrisis
-	ctAlert(rnAlerts)[1..*]
-	ctCrisis (rnTheCrisis)[1..1]
+    ctAlert(rnAlerts)[1..*]
+    ctCrisis(rnTheCrisis)[1..1]
 
 association assctAlertctHuman
-	ctAlert(rnSignaled)[1..*]
-	ctHuman (rnSignaler)[1..*]
+    ctAlert(rnSignaled)[1..*]
+    ctHuman (rnSignaler)[1..*]
 
 association assctCrisisctCoordinator
-	ctCrisis(rnHandled)[0..*]
-	ctCoordinator(rnHandler)[0..1]
-	
+    ctCrisis(rnHandled)[0..*]
+    ctCoordinator(rnHandler)[0..1]
+
 association assctCrisisctDomains
-	ctCrisis(rnTheCrisis)[1..1]
-	ctDomain(rnCrisisDomains)[1..1]
-	
+    ctCrisis(rnTheCrisis)[1..1]
+    ctDomain(rnCrisisDomains)[1..1]
+
 association assctCoordinatorctDomains
-	ctCoordinator(rnHandler)[1..1]
-	ctDomain(rnCrisisDomains)[1..1]
-	
+    ctCoordinator(rnHandler)[1..1]
+    ctDomain(rnCrisisDomains)[1..1]
+
 association assctAlertctDomains
-	ctAlert(rnAlerts)[1..1]
-	ctDomain(rnCrisisDomains)[1..1]
-	
+    ctAlert(rnAlerts)[1..1]
+    ctDomain(rnCrisisDomains)[1..1]
+
 association assctAuthenticatedctToken
-	ctAuthenticated(rnctAuthenticated)[1..1]
-	ctToken(rnToken)[1..1]
-	
+    ctAuthenticated(rnctAuthenticated)[1..1]
+    ctToken(rnToken)[1..1]
+
 // With Actors
 
- association assctHumanactComCompany 
- 	ctHuman(rnctHuman)[0..*]
- 	actComCompany(rnactComCompany)[1..1]
- 				
- association assctCoordinatoractCoordinator 
- 	ctCoordinator(rnctCoordinator)[1..1]
- 	actCoordinator(rnactCoordinator)[1..1]
- 					
- association assctAuthenticatedactAuthenticated 
- 	ctAuthenticated(rnctAuthenticated)[1..1]
- 	actAuthenticated(rnctactAuthenticated)[1..1]
- 					
- association assctDomainExpertDomainExpert
- 	ctDomainExpert(rnctDomainExpert)[1..1]
- 	actDomainExpert(rnactDomainExpert)[1..1]					
-			
-		}
-	}
-}
+association assctHumanactComCompany
+    ctHuman(rnctHuman)[0..*]
+    actComCompany(rnactComCompany)[1..1]
+
+association assctCoordinatoractCoordinator
+    ctCoordinator(rnctCoordinator)[1..1]
+    actCoordinator(rnactCoordinator)[1..1]
+
+association assctAuthenticatedactAuthenticated
+    ctAuthenticated(rnctAuthenticated)[1..1]
+    actAuthenticated(rnctactAuthenticated)[1..1]
+
+association assctDomainExpertDomainExpert
+    ctDomainExpert(rnctDomainExpert)[1..1]
+    actDomainExpert(rnactDomainExpert)[1..1]
+
+}}}

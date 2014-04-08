@@ -1,9 +1,3 @@
-/*
-@author Alexander
-@date Wed Mar 19 15:34:57 CET 2014
-*/
-
-
 @@Operation
 icrash.environment.actComCompany.outactComCompany.oeInfoFam
 //parameters
@@ -15,9 +9,9 @@ icrash.environment.actComCompany.outactComCompany.oeInfoFam
 @return "ptBoolean"
 
 @description
-" 
-Actor Coordinator wants to send cafefully selected intomfation to accident victim's family (information diffusion). Communication Company that delivers the message as an SMS. The information is sent after the crisis has been closed by
-a Coordinator."
+"
+Actor Coordinator wants to send cafefully selected intomfation to accident victim's family (information diffusion).
+Communication Company that delivers the message as an SMS. The information is sent after the crisis has been closed by a Coordinator."
 
 //preFunctional descriptions
 @preF
@@ -30,12 +24,12 @@ a Coordinator."
 @endPreP
 
 //postFunctional descriptions
-@postF 
+@postF
 " "
 @endPostF
 
 //postProtocol descriptions
-@postP 
+@postP
 " "
 @endPostP
 

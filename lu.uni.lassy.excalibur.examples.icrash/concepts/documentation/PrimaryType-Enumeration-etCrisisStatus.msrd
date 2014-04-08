@@ -1,17 +1,9 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:08 CET 2014
-*/
-
-
 @@Primary Type Enumeration icrash.concepts.primarytypes.datatypes.etCrisisStatus
 
 @description
-"
-Describes the status of the crisis (pending, active, resolved).
-"
+"Describes the status of the crisis (pending, active, resolved)."
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @endoperations

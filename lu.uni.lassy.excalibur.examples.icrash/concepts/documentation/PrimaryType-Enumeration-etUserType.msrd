@@ -1,15 +1,9 @@
-/*
-@author Alexander
-@date Sun Apr 06 23:51:54 CEST 2014
-*/
-
-
 @@Primary Type Enumeration icrash.concepts.primarytypes.datatypes.etUserType
 
 @description
 " "
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @endoperations

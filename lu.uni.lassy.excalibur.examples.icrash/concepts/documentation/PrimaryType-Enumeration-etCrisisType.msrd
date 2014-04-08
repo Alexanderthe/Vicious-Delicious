@@ -1,15 +1,9 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:09 CET 2014
-*/
-
-
 @@Primary Type Enumeration icrash.concepts.primarytypes.datatypes.etCrisisType
 
 @description
-"Describes the type of the crises (Pedestrian, Wildlife, Property, Injury) "
+"Describes the type of the crises (Pedestrian, Wildlife, Property, Injury)."
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:" 
 
 @endoperations

@@ -1,18 +1,13 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:03 CET 2014
-*/
-
-
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtAlertID
 
 @description
 "Every alert is auto-assigned an AlertID by the system."
 
-@extends "null"
+@extends
+"null"
 @endextends
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @endoperations

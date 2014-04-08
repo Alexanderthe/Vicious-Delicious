@@ -1,23 +1,17 @@
-/*
-@author nicolas.guelfi
-@date Sun Feb 09 12:53:34 CET 2014
-*/
-
-
 @@Operation
 icrash.environment.actComCompany.outactComCompany.oeAlert
 //parameters
-@parameter "AetKind: etHumanKind" 
+@parameter "AetKind: etHumanKind"
 " "
-@parameter "AdtMyDate: dtDate" 
+@parameter "AdtMyDate: dtDate"
 " "
-@parameter "AdtTime: dtTime" 
+@parameter "AdtTime: dtTime"
 " "
-@parameter "AdtPhoneNumber: dtPhoneNumber" 
+@parameter "AdtPhoneNumber: dtPhoneNumber"
 " "
-@parameter "AdtGPSLocation: dtGPSLocation" 
+@parameter "AdtGPSLocation: dtGPSLocation"
 " "
-@parameter "AdtComment: dtComment" 
+@parameter "AdtComment: dtComment"
 " "
 @endparameters
 
@@ -25,8 +19,7 @@ icrash.environment.actComCompany.outactComCompany.oeAlert
 @return "ptBoolean"
 
 @description
-" The ComCompany transfers a decleration of a car crash by an etHumanKind (victim, anonymous, witness) 
-indicating specific information about the accident. "
+"The ComCompany transfers a decleration of a car crash by an etHumanKind (victim, anonymous, witness) indicating specific information about the accident."
 
 //preFunctional descriptions
 @preF
@@ -35,20 +28,21 @@ indicating specific information about the accident. "
 
 //preProtocol descriptions
 @preP
-" 1. the iCrash system has been deployed.
-
-2. a message has been sent by a etHuman to ComCompany. "
+"
+- the iCrash system has been deployed;
+- a message has been sent by a etHuman to ComCompany.
+"
 @endPreP
 
 //postFunctional descriptions
 @postF 
-" A crisis is received by the system."
+"A crisis is received by the system."
 @endPostF
 
 //postProtocol descriptions
 @postP 
-" A crisis is created. "
+"A crisis is created. "
 @endPostP
 
-@example" the ctComCompanyActor actor tango sends the message oeAlert(witness, 2017-11-26-at-10-10-16AM, +3524666445252, 49.627675-6.159590,'3 cars invloved in an accident.') "
+@example "the actComCompany actor tango sends the message oeAlert(witness, 2017-11-26-at-10-10-16AM, +3524666445252, 49.627675-6.159590,'3 cars invloved in an accident.') "
 

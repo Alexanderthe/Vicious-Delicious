@@ -1,9 +1,3 @@
-/*
-@author heidiflinkman
-@date Mon Feb 24 13:01:59 CET 2014
-*/
-
-
 @@Operation
 icrash.environment.actCoordinator.outactCoordinator.oeGetAlertsSet
 //parameters
@@ -14,7 +8,7 @@ icrash.environment.actCoordinator.outactCoordinator.oeGetAlertsSet
 @return "null"
 
 @description
-" The actCoordinator -actor wants to reecive information about all the pending alerts. "
+"The actCoordinator actor wants to reecive information about all the pending alerts."
 
 //preFunctional descriptions
 @preF
@@ -23,19 +17,18 @@ icrash.environment.actCoordinator.outactCoordinator.oeGetAlertsSet
 
 //preProtocol descriptions
 @preP
-" 1. the iCrash system has been deployed."
+"- the iCrash system has been deployed."
 @endPreP
 
 //postFunctional descriptions
-@postF 
+@postF
 " "
 @endPostF
 
 //postProtocol descriptions
-@postP 
+@postP
 " "
 @endPostP
 
 //example
-@example" "
-
+@example " "

@@ -1,18 +1,13 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:06 CET 2014
-*/
-
-
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtComment
 
 @description
-"This describes a comment that can be inserted into an accident report or a message. "
+"This describes a comment that can be inserted into an accident report or a message."
 
-@extends "null"
+@extends
+"null"
 @endextends
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @endoperations

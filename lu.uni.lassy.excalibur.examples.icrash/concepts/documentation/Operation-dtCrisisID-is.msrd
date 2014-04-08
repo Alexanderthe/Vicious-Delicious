@@ -1,30 +1,21 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:04 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.datatypes.dtCrisisID.is
+
 //return type
 @return "null"
 
 @description
-"
-Displays the unique identification number that each crisis is auto-assigned by the system.
-
-"
+"Displays the unique identification number that each crisis is auto-assigned by the system."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" True "
+"True"
 @endPostF
 
 //example
-@example"Crisis Id is: 172624 "
-
+@example "Crisis Id is: 172624 "

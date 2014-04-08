@@ -1,15 +1,4 @@
-/*
-@author heidiflinkman
-@date Mon Feb 24 13:02:13 CET 2014
-*/
-
-
 @@Primary Type Association icrash.concepts.primarytypes.associations.assctHumanactComCompany
 
 @description
-"
-
-The initial SMS sent by witness/victim/anonymous gets delivered to iCrash by Communication Company. 
-
-"
-
+"The initial SMS sent by witness/victim/anonymous gets delivered to iCrash by Communication Company."

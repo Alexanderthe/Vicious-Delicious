@@ -1,27 +1,19 @@
-/*
-@author heidiflinkman
-@date Mon Mar 10 13:09:04 CET 2014
-*/
-
-
 @@Actor icrash.environment.actMsrCreator
 
 @description
 
-"A Creator is a human working at/for company ABC, possessing high enough technical 
-capabilities to perform the installation of iCrash. 
-
-In addition to installation of iCrash, a Creator's role also includes definition of values for intial 
-system's state and environment.
-
-A Creator and Administrator are separate humans and one cannot behold the tasks of both."
+"
+A Creator is a human working at/for company ABC, possessing high enough technical capabilities to perform the installation of iCrash.\\
+In addition to installation of iCrash, a Creator's role also includes definition of values for intial system's state and environment.\\
+A Creator and Administrator are separate humans and one cannot behold the tasks of both.
+"
 
 //input events
 
 
 //output events
 @outputEvent
-"\msrcode{oeCreateSystemAndEnvironment(ptInteger AqtyComCompanies):ptBoolean}"
+"\msrcode{oeCreateSystemAndEnvironment( ptInteger AqtyComCompanies): ptBoolean}"
 ""
 
 @endOutputEvents

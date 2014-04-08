@@ -1,9 +1,4 @@
 package icrash.concepts.secondarytypes.associations {
-	
-	Concept Model {
-		
-		Secondary Types{
-		
-		}
-	}
-}
+    Concept Model {
+        Secondary Types{
+}}}

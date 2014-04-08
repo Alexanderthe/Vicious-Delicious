@@ -1,19 +1,13 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:05 CET 2014
-*/
-
-
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtHumanName
 
 @description
-"This presents the name of the accident victim or for example a witness, whatever the system Coordinator
-thinks is important to save into the system regarding the crisis. "
+"This presents the name of the accident victim or for example a witness, whatever the system Coordinator thinks is important to save into the system regarding the crisis."
 
-@extends "null"
+@extends
+"null"
 @endextends
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @endoperations

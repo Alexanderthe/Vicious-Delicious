@@ -1,21 +1,14 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:03 CET 2014
-*/
-
-
 @@Secondary Type Datatype icrash.concepts.secondarytypes.datatypes.dtSMS
 
 @description
-"This describes the message containing detailed information about the accident and its 
-victimes sent to the family."
+"This describes the message containing detailed information about the accident and its victimes sent to the family."
 
-@attribute 
- "\msrcode{value: null}: "
+@attribute
+"\msrcode{value: null}:"
 
 @endattributes
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @endoperations

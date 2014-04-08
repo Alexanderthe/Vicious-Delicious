@@ -1,83 +1,77 @@
-
-/*
-* @author Alexander
-* @date Wed Feb 26 15:06:34 CET 2014
-*/
 package lu.uni.lassy.excalibur.examples.icrash.operations.environment.actCoordinator {
-
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
-
 import icrash.concepts.primarytypes.datatypes
 import icrash.concepts.primarytypes.classes
 import icrash.concepts.secondarytypes.datatypes
 import icrash.concepts.secondarytypes.classes
 
+Operation Model {
+operation: icrash.environment.actCoordinator.outactCoordinator.oeCloseAlert(
+    dtAlertID AdtAlertID
+    ): ptBoolean
+    preF: true
+    postF: true
+    ocl: ""
 
-	Operation Model {
-		
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeCloseAlert(dtAlertID AdtAlertID):ptBoolean //never used
-		preF: true
-		postF: true
-		ocl: ""
-		
-			
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeCloseCrisis(dtCrisisID AdtCrisisoID):ptBoolean
-		preF: true
-		postF: true
-	
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeGetAlertsSet(etAlertStatus AetAlertStatus):ptBoolean
-		preF: true
-		postF: true
-	
-			
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeGetCrisisSet(etCrisisStatus AetCrisisoStatus):ptBoolean//Never used
-		preF: true
-		postF: true
-		
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisHandler(dtCrisisID AdtCrisisuID,
-																					  etCrisisType AetCrisisType,
-																					  etCrisisStatus AetCrisisuStatus,
-																					  dtGPSLocation AdtGPSLocatino, 
-																					  dtDateAndTime AdtDateAndTime
-																					  ):ptBoolean
-		preF: true
-		postF: true	
-	
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeReportOnCrisis(
-											dtCrisisID AdtCrisislID,
-											dtComment AdtCommento,
-											dtUserID AdtUserID,
-											etCrisisType AdtCrisisType,
-											etCrisisStatus AdtCrisisStatus,
-											dtRecievedMessage AdtReceivedMessage,
-											dtNbrofVehiculesInAccident AdtVehiculesInAccidento,
-					 						dtNbrOfVictims AdtNbrVictimso
-											):ptBoolean
-		preF: true
-		postF: true			
+operation: icrash.environment.actCoordinator.outactCoordinator.oeCloseCrisis(
+    dtCrisisID AdtCrisisoID
+    ): ptBoolean
+    preF: true
+    postF: true
+    
+operation: icrash.environment.actCoordinator.outactCoordinator.oeGetAlertsSet(
+    etAlertStatus AetAlertStatus
+    ): ptBoolean
+    preF: true
+    postF: true
 
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisStatus(
-											dtCrisisID AdtCrisisID,
-											etCrisisStatus AetCrisisStatus
-											):ptBoolean
-		preF: true
-		postF: true
-	
-	operation: icrash.environment.actCoordinator.outactCoordinator.oeRequestEMSAssistance(
-											dtComment AdtComment,
-											dtRequestID AdtRequest,
-											dtGPSLocation AdtGPSLocation,
-											dtNbrofVehiculesInAccident AdtVehiculesInAccident,
-					 						dtNbrOfVictims AdtNbrVictims,
-					 						ctEMStype ActEMSType
-											):ptBoolean
-		preF: true
-		postF: true
-		
-	
-	
-}
+operation: icrash.environment.actCoordinator.outactCoordinator.oeGetCrisisSet(
+    etCrisisStatus AetCrisisoStatus
+    ): ptBoolean
+    preF: true
+    postF: true
 
-}
+operation: icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisHandler(
+    dtCrisisID AdtCrisisuID,
+    etCrisisType AetCrisisType,
+    etCrisisStatus AetCrisisuStatus,
+    dtGPSLocation AdtGPSLocatino,
+    dtDateAndTime AdtDateAndTime
+    ): ptBoolean
+    preF: true
+    postF: true
+
+operation: icrash.environment.actCoordinator.outactCoordinator.oeReportOnCrisis(
+    dtCrisisID AdtCrisislID,
+    dtComment AdtCommento,
+    dtUserID AdtUserID,
+    etCrisisType AdtCrisisType,
+    etCrisisStatus AdtCrisisStatus,
+    dtRecievedMessage AdtReceivedMessage,
+    dtNbrofVehiculesInAccident AdtVehiculesInAccidento,
+    dtNbrOfVictims AdtNbrVictimso
+    ): ptBoolean
+    preF: true
+    postF: true
+
+operation: icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisStatus(
+    dtCrisisID AdtCrisisID,
+    etCrisisStatus AetCrisisStatus
+    ): ptBoolean
+    preF: true
+    postF: true
+
+operation: icrash.environment.actCoordinator.outactCoordinator.oeRequestEMSAssistance(
+    dtComment AdtComment,
+    dtRequestID AdtRequest,
+    dtGPSLocation AdtGPSLocation,
+    dtNbrofVehiculesInAccident AdtVehiculesInAccident,
+    dtNbrOfVictims AdtNbrVictims,
+    ctEMStype ActEMSType
+    ): ptBoolean
+    preF: true
+    postF: true
+
+}}

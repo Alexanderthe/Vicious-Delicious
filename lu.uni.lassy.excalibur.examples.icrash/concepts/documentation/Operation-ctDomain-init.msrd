@@ -1,11 +1,6 @@
-/*
-@author heidiflinkman
-@date Sun Mar 09 19:28:34 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.classes.ctDomain.init
+
 //parameters
 @parameter "ptBoolean" "AvpIsPedestrian"
 @parameter "ptBoolean" "AvpIsVehicular"
@@ -18,18 +13,18 @@ icrash.concepts.primarytypes.classes.ctDomain.init
 @return "ptBoolean"
 
 @description
-" This opration initialises the class Domain. "
+"This opration initialises the class Domain."
 
 //preFunctional descriptions
 @preF
-" True"
+"True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" True"
+"True"
 @endPostF
 
 //example
-@example" "
+@example ""
 

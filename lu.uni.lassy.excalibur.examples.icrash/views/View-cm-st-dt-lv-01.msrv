@@ -1,12 +1,8 @@
-/*
-* @author nicolas.guelfi
-* @date Sun Jan 26 15:54:37 CET 2014
-*/
 @@view cm-st-dt-lv-01
 @model Concept
 @level Local
 @sublevel Secondary Datatype
 @number 1
-@description 'shows the secondary types datatype types.'
+@description 'Shows the secondary types datatype types.'
 @caption 'Local view of the secondary types datatype types'
 @size Scaled

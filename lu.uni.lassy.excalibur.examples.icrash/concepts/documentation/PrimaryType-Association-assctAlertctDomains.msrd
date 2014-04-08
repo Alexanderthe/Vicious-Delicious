@@ -1,14 +1,4 @@
-/*
-@author Alexander
-@date Sun Mar 09 19:28:35 CET 2014
-*/
-
-
 @@Primary Type Association icrash.concepts.primarytypes.associations.assctAlertctDomains
 
 @description
-" 
-Every crisis must be assigned a domain (Wildlide, Pedestrian, Property, Injury).
-
-"
-
+"Every crisis must be assigned a domain (Wildlide, Pedestrian, Property, Injury)."

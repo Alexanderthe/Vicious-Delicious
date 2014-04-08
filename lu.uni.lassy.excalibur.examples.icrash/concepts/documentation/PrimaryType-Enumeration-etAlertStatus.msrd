@@ -1,15 +1,9 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:08 CET 2014
-*/
-
-
 @@Primary Type Enumeration icrash.concepts.primarytypes.datatypes.etAlertStatus
 
 @description
-" Describes the status of the alert (valid, invalid). "
+"Describes the status of the alert (valid, invalid)."
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @endoperations

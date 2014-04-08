@@ -1,35 +1,24 @@
-/*
-@author heidiflinkman
-@date Sun Mar 30 21:13:26 CEST 2014
-*/
-
 @@Actor icrash.environment.actEMS
 
 @description
 
 "
-EMS services is an acronym of Emergency Services. The person operating at EMS end of the system is a human provided with 
-an interface including a login, password and tokenID. The objectives of EMS services are:
-
-- To communicate with a Coordinator at company ABC by receiving and sending messages through iCrash
-- Report back to iCrash when a rescue unit (and its consistency) has been dispatched to the accident site.
-- Send infromation about the accident back to iCrash
-
-Therefore the responsibilities are: 
-
-- To be aware how to securely use the iCrash system by posessing information about identification. 
-- Provive the information needed to iCrash in order to send the SMS to correct family number"
+EMS services is an acronym of Emergency Services. The person operating at EMS end of the system is a human provided with an interface including a login, password and tokenID. The objectives of EMS services are:\\
+to communicate with a Coordinator at company ABC by receiving and sending messages through iCrash; report back to iCrash when a rescue unit (and its consistency) has been dispatched to the accident site; send infromation about the accident back to iCrash.
+\\
+Therefore the responsibilities are:\\
+to be aware how to securely use the iCrash system by posessing information about identification; provive the information needed to iCrash in order to send the SMS to correct family number.
+"
 
 //input events
 
 
 //output events
 
-@outputEvent "\msrcode{oeReplyToRequest(dtCrisisID AdtCrisisID,dtComment AdtComment,dtRequestID AdtRequest,etEMSCrisisStatus AdtEMsCrisisStatus,
-dtHospitalName AdtHospitalName,dtName AdtVictimsName,dtName AdtVictimICEContactNamme,dtPhoneNumber AdtVictimICEContactPhoneNumber):ptBoolean}"
+@outputEvent "\msrcode{oeReplyToRequest( dtCrisisID AdtCrisisID, dtComment AdtComment, dtRequestID AdtRequest, etEMSCrisisStatus AdtEMsCrisisStatus, dtHospitalName AdtHospitalName, dtName AdtVictimsName, dtName AdtVictimICEContactNamme, dtPhoneNumber AdtVictimICEContactPhoneNumber): ptBoolean}"
 ""
 
 @outputEvent
-"\msrcode{oeReportEMSCrisisStatus(dtCrisisID AdtCrisisID,dtComment AdtComment,etEMSCrisisStatus AdtEMSCrisisStatus):ptBoolean}"
+"\msrcode{oeReportEMSCrisisStatus( dtCrisisID AdtCrisisID, dtComment AdtComment, etEMSCrisisStatus AdtEMSCrisisStatus): ptBoolean}"
 ""
 @endOutputEvents

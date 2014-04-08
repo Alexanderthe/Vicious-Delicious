@@ -1,11 +1,6 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:10 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.classes.ctState.init
+
 //parameters
 @parameter "null" "AnextValueForAlertID"
 @parameter "null" "AnextValueForCrisisID"
@@ -20,17 +15,17 @@ icrash.concepts.primarytypes.classes.ctState.init
 @return "null"
 
 @description
-" This operation initialises the class State. "
+"This operation initialises the class State."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+""
 @endPostF
 
 //example
-@example" True "
+@example "True"

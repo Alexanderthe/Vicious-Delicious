@@ -1,11 +1,6 @@
-/*
-@author Alexander
-@date Sun Apr 06 23:51:54 CEST 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.classes.ctDomainExpert.init
+
 //parameters
 @parameter "dtUserID" "Aid"
 @parameter "dtLogin" "Alogin"
@@ -17,18 +12,17 @@ icrash.concepts.primarytypes.classes.ctDomainExpert.init
 @return "ptBoolean"
 
 @description
-" "
+""
 
 //preFunctional descriptions
 @preF
-" "
+""
 @endPreF
 
 //postFunctional descriptions
-@postF 
-" "
+@postF
+""
 @endPostF
 
 //example
-@example" "
-
+@example ""

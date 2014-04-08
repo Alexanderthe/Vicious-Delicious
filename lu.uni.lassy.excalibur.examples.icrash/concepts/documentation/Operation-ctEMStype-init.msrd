@@ -1,11 +1,6 @@
-/*
-@author Alexander
-@date Sun Apr 06 23:51:54 CEST 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.classes.ctEMStype.init
+
 //parameters
 @parameter "ptBoolean" "AvpRequestFireFighter"
 @parameter "ptBoolean" "AvpRequestPolice"
@@ -16,18 +11,17 @@ icrash.concepts.primarytypes.classes.ctEMStype.init
 @return "ptBoolean"
 
 @description
-" "
+""
 
 //preFunctional descriptions
 @preF
-" "
+""
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+""
 @endPostF
 
 //example
-@example" "
-
+@example ""

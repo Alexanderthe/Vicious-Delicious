@@ -1,12 +1,4 @@
-/*
-@author heidiflinkman
-@date Sun Mar 09 19:28:35 CET 2014
-*/
-
-
 @@Primary Type Association icrash.concepts.primarytypes.associations.assctCoordinatorctDomains
 
 @description
-
 "Every coordinator is assigned an alert linked to a specific accident domain by the Domain Expert."
-

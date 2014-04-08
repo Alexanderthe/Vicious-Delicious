@@ -1,11 +1,4 @@
-/*
-@author heidiflinkman
-@date Sun Mar 09 19:28:35 CET 2014
-*/
-
-
 @@Primary Type Association icrash.concepts.primarytypes.associations.assctAuthenticatedctToken
 
 @description
-" Every authenticated user must have a token."
-
+"Every authenticated user must have a token."

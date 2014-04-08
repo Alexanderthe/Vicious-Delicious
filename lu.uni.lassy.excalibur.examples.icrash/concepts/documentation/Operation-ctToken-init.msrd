@@ -1,11 +1,6 @@
-/*
-@author Alexander
-@date Sun Mar 09 19:28:34 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.classes.ctToken.init
+
 //parameters
 @parameter "dtTokenID" "AsymetricKey"
 @parameter "dtKey" "AtokenID"
@@ -15,18 +10,18 @@ icrash.concepts.primarytypes.classes.ctToken.init
 @return "ptBoolean"
 
 @description
-" This operation initialises the class Token. "
+"This operation initialises the class Token."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" True "
+"True"
 @endPostF
 
 //example
-@example" "
+@example ""
 

@@ -1,28 +1,21 @@
-/*
-@author Alexander
-@date Wed Mar 19 15:34:59 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.datatypes.dtHospitalName.is
+
 //return type
 @return "ptBoolean"
 
 @description
-" This displays the name of the hospital where the possible victims of the accident were taken to
-for the later reunion with the family."
+"This displays the name of the hospital where the possible victims of the accident were taken to for the later reunion with the family."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" True "
+"True"
 @endPostF
 
 //example
-@example"Hospital name is: Hôpital Kirchberg"
-
+@example "Hospital name is: Hôpital Kirchberg."

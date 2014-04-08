@@ -1,11 +1,6 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:11 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.classes.ctHuman.init
+
 //parameters
 @parameter "null" "Aid"
 @parameter "null" "Akind"
@@ -15,18 +10,18 @@ icrash.concepts.primarytypes.classes.ctHuman.init
 @return "null"
 
 @description
-" This operation initialises the class Human. "
+"This operation initialises the class Human."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" True "
+"True"
 @endPostF
 
 //example
-@example" "
+@example ""
 

@@ -1,9 +1,3 @@
-/*
-@author Alexander
-@date Sun Apr 06 23:51:50 CEST 2014
-*/
-
-
 @@Operation
 icrash.environment.actEMS.outactEMS.oeReportEMSCrisisStatus
 //parameters
@@ -31,15 +25,14 @@ icrash.environment.actEMS.outactEMS.oeReportEMSCrisisStatus
 @endPreP
 
 //postFunctional descriptions
-@postF 
+@postF
 " "
 @endPostF
 
 //postProtocol descriptions
-@postP 
+@postP
 " "
 @endPostP
 
 //example
 @example" "
-

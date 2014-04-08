@@ -1,25 +1,17 @@
-/*
-@author nicolas.guelfi
-@author Yan
-@date Tue Feb 04 11:06:01 CET 2014
-*/
-
 @@Primary Type Class icrash.concepts.primarytypes.classes.ctHuman
 
 @description
-"
-This class is a human that sends an alert to the system through the communication company.
-"
+"This class is a human that sends an alert to the system through the communication company."
 
-@attribute 
+@attribute
 "\msrcode{id}: this attribute is an ID of a human. The type is a string which covers the phone numbers of human who reports an alert of a crisis."
 
-@attribute 
+@attribute
 "\msrcode{kind}: this attribute is a status of a human. The status is enum and it could take as a value: ''witness``, ''victim``, ''anonymous``."
 
 @endattributes
 
 @operation
- "\msrcode{init}: this operation initializes ctHuman with necessary attributes."
+"\msrcode{init}: this operation initializes ctHuman with necessary attributes."
 
 @endoperations

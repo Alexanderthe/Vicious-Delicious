@@ -1,11 +1,6 @@
-/*
-@author Alexander
-@date Sun Apr 06 23:51:52 CEST 2014
-*/
-
-
 @@Operation
 icrash.environment.actAdministrator.outactAdministrator.oeDeleteUser
+
 //parameters
 @parameter "dtUserID" "AdtUserID"
 @endparameters
@@ -23,26 +18,26 @@ icrash.environment.actAdministrator.outactAdministrator.oeDeleteUser
 
 //preProtocol descriptions
 @preP
-" 
-1. the iCrash system has been deployed.
-
-2. the Coordinator has previously been added to the system. 
-
+"
+- the iCrash system has been deployed;
+- the Coordinator has previously been added to the system.
 "
 @endPreP
 
 //postFunctional descriptions
 @postF 
 
-" 1. the Coordinator is removed from the system no longer enabling him to use or access the system safely. 
-
+"
+- the Coordinator is removed from the system no longer enabling him to use or access the system safely.
 "
 @endPostF
 
 //postProtocol descriptions
 @postP 
-" 1. All data concerning the Coordinator not including his crisises is removed from the system. "
+"
+- all data concerning the Coordinator not including his crisises is removed from the system.
+"
 @endPostP
 
 //example
-@example" the ctAdministartorActor bill sends the message oeDeleteCoordinator(1) deleting the Coordinator with the ID (i.e. 1) from the system."
+@example "The actAdministrator bill sends the message oeDeleteCoordinator(1) deleting the Coordinator with the ID (i.e. 1) from the system."

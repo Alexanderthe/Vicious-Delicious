@@ -1,18 +1,13 @@
-/*
-@author Alexander
-@date Mon Mar 17 12:09:46 CET 2014
-*/
-
-
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtRecievedMessage
 
 @description
-" This descibes the message/messages received to iCrash. "
+"This descibes the message/messages received to iCrash."
 
-@extends "lu.uni.lassy.messir.libraries.string.dtString"
+@extends
+"lu.uni.lassy.messir.libraries.string.dtString"
 @endextends
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @endoperations

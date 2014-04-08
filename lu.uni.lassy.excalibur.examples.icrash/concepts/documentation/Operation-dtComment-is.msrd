@@ -1,31 +1,22 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:06 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.datatypes.dtComment.is
+
 //return type
 @return "null"
 
 @description
-"
-A comment can be added or be included in any message received from a human or EMS. Comments can 
-also be used by Coordinators to add comments into reports.
-
-"
+"A comment can be added or be included in any message received from a human or EMS. Comments can also be used by Coordinators to add comments into reports."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" True "
+"True"
 @endPostF
 
 //example
-@example"A message from a witness to iCrash: 'Please send ambulance'"
+@example "A message from a witness to iCrash: 'Please send ambulance'"
 

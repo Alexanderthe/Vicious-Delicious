@@ -1,26 +1,21 @@
-/*
-@author Alexander
-@date Sun Apr 06 23:51:54 CEST 2014
-*/
-
-
 @@Primary Type Class icrash.concepts.primarytypes.classes.ctVictim
 
 @description
 " "
 
-@extends "icrash.concepts.primarytypes.classes.ctHuman"
+@extends
+"icrash.concepts.primarytypes.classes.ctHuman"
 @endextends
 
-@attribute 
-"\msrcode{VictimICEPhoneNumber: dtPhoneNumber}: "
+@attribute
+"\msrcode{VictimICEPhoneNumber: dtPhoneNumber}:"
 
-@attribute 
-"\msrcode{VictimICEContactName: dtName}: "
+@attribute
+"\msrcode{VictimICEContactName: dtName}:"
 
 @endattributes
 
 @operation
- "\msrcode{init}: "
+"\msrcode{init}:"
 
 @endoperations

@@ -1,9 +1,3 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:00 CET 2014
-*/
-
-
 @@Operation
 icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisHandler
 //parameters
@@ -14,7 +8,7 @@ icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisHandler
 @return "null"
 
 @description
-" Actor DomainExpert wants to declare that he is taking care of the crisis."
+"Actor DomainExpert wants to declare that he is taking care of the crisis."
 
 //preFunctional descriptions
 @preF
@@ -23,23 +17,22 @@ icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisHandler
 
 //preProtocol descriptions
 @preP
-" 1. the iCrash system has been deployed.
-
-2. a Coordinator has been added to the system.
-
-3. an Alert has been recieved by the system and a coordinator with the correct Domain is aware of the crisis."
+"
+- the iCrash system has been deployed;
+- a Coordinator has been added to the system;
+- an Alert has been recieved by the system and a coordinator with the correct Domain is aware of the crisis.
+"
 @endPreP
 
 //postFunctional descriptions
-@postF 
-" the Coordinator has declared that he is taking care of the crisis"
+@postF
+"- the Coordinator has declared that he is taking care of the crisis."
 @endPostF
 
 //postProtocol descriptions
-@postP 
+@postP
 " the protocol variable of the crisis has changed"
 @endPostP
 
 //example
-@example" the ctCoordinatorActor actor steve sends the message oeSetCrisisHandler(1) ot declare that he is taking care of the crisis wiht the ID equal to 1."
-
+@example "the ctCoordinatorActor actor steve sends the message oeSetCrisisHandler(1) ot declare that he is taking care of the crisis wiht the ID equal to 1."

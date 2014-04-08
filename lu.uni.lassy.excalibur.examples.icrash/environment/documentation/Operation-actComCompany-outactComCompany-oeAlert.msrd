@@ -1,11 +1,6 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:01 CET 2014
-*/
-
-
 @@Operation
 icrash.environment.actComCompany.outactComCompany.oeAlert
+
 //parameters
 @parameter "null" "AetKind"
 @parameter "null" "AdtMyDate"
@@ -19,7 +14,7 @@ icrash.environment.actComCompany.outactComCompany.oeAlert
 @return "null"
 
 @description
-" The ComCompany transfers a decleration of a car crash by an etHumanKind indicating specific information. "
+"The ComCompany transfers a decleration of a car crash by an etHumanKind indicating specific information."
 
 //preFunctional descriptions
 @preF
@@ -28,22 +23,21 @@ icrash.environment.actComCompany.outactComCompany.oeAlert
 
 //preProtocol descriptions
 @preP
-" 
-1. the iCrash system has been deployed.
-
-2. a message has been sent by a etHuman to ComCompany."
+"
+- the iCrash system has been deployed;
+- a message has been sent by a etHuman to ComCompany.
+"
 @endPreP
 
 //postFunctional descriptions
-@postF 
-"  A crisis is received by the system. "
+@postF
+"A crisis is received by the system."
 @endPostF
 
 //postProtocol descriptions
-@postP 
-" A crisis is created.  "
+@postP
+"A crisis is created."
 @endPostP
 
 //example
-@example" the ctComCompanyActor actor tango sends the message oeAlert(witness, 2017-11-26-at-10-10-16AM, +3524666445252, 49.627675-6.159590,'3 cars invloved in an accident.') "
-
+@example "The ctComCompanyActor actor tango sends the message oeAlert(witness, 2017-11-26-at-10-10-16AM, +3524666445252, 49.627675-6.159590,'3 cars invloved in an accident.')"

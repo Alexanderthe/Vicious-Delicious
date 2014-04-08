@@ -1,27 +1,21 @@
-/*
-@author Alexander
-@date Sun Apr 06 23:51:53 CEST 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.datatypes.dtName.is
+
 //return type
 @return "ptBoolean"
 
 @description
-" "
+""
 
 //preFunctional descriptions
 @preF
-" "
+""
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" "
+""
 @endPostF
 
 //example
-@example" "
-
+@example ""

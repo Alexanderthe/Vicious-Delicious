@@ -1,27 +1,21 @@
-/*
-@author Alexander
-@date Mon Mar 17 12:09:46 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.datatypes.dtRecievedMessage.is
+
 //return type
 @return "ptBoolean"
 
 @description
-" This describes the "
+""
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
-@postF 
-" True "
+@postF
+"True"
 @endPostF
 
 //example
-@example" "
-
+@example ""

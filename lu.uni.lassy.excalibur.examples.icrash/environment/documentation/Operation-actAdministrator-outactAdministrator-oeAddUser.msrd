@@ -1,9 +1,3 @@
-/*
-@author Alexander
-@date Sun Apr 06 23:51:51 CEST 2014
-*/
-
-
 @@Operation
 icrash.environment.actAdministrator.outactAdministrator.oeAddUser
 //parameters
@@ -23,26 +17,26 @@ icrash.environment.actAdministrator.outactAdministrator.oeAddUser
 
 //preFunctional descriptions
 @preF
-" No Coordinator can have the same Token "
+"No Coordinator can have the same Token."
 @endPreF
 
 //preProtocol descriptions
 @preP
-" 1. the iCrash system has been deployed.
-
-2. the ctAdministartorActor has is logged in. "
+"
+- the iCrash system has been deployed;
+- the ctAdministartorActor has is logged in.
+"
 @endPreP
 
 //postFunctional descriptions
 @postF 
-" A new Coordinator has been aded to the system as a CoordinatorActor and he is now able to use the sytem safely. "
+"A new Coordinator has been aded to the system as a CoordinatorActor and he is now able to use the sytem safely."
 @endPostF
 
 //postProtocol descriptions
 @postP 
-" 1. A new Coordinator has been added to the sytem with his own token, username, password and Domains "
+"A new Coordinator has been added to the sytem with his own token, username, password and Domains."
 @endPostP
 
 //example
-@example" The ctAdministratorActor actor bill sends the message oeAddCoodrinator(1,Steve, pwdMessirExcalibur2017, 12345, 'Vehicular' 'Pedestrian') to setup a crisis management team made 
-one coordinator and indicating his identification information in terms of ID (i.e. 1), password (i.e.pwdMessirExcalibur2017), tokenID (i.e. 12345) and Domain (i.e.'Vehicular''Pedestrian') "
+@example "The ctAdministratorActor actor bill sends the message oeAddCoodrinator( 1, Steve, pwdMessirExcalibur2017, 12345, 'Vehicular' 'Pedestrian') to setup a crisis management team made one coordinator and indicating his identification information in terms of ID (i.e. 1), password (i.e.pwdMessirExcalibur2017), tokenID (i.e. 12345) and Domain (i.e.'Vehicular''Pedestrian') "

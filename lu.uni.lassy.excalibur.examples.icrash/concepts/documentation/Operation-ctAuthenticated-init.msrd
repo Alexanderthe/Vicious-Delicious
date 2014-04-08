@@ -1,11 +1,6 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:11 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.classes.ctAuthenticated.init
+
 //parameters
 @parameter "null" "Alogin"
 @parameter "null" "Apwd"
@@ -15,18 +10,18 @@ icrash.concepts.primarytypes.classes.ctAuthenticated.init
 @return "null"
 
 @description
-" This operation initialises the class Authenticated. "
+"This operation initialises the class Authenticated."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" True "
+"True"
 @endPostF
 
 //example
-@example" "
+@example ""
 

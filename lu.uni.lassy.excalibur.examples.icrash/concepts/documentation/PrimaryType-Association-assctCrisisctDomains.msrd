@@ -1,14 +1,4 @@
-/*
-@author heidiflinkman
-@date Sun Mar 09 19:28:34 CET 2014
-*/
-
-
 @@Primary Type Association icrash.concepts.primarytypes.associations.assctCrisisctDomains
 
 @description
-"
-Every crisis gets assigned a Domain (pedestrian, wildlife, property, injury).
-
-"
-
+"Every crisis gets assigned a Domain (pedestrian, wildlife, property, injury)."

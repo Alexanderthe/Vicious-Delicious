@@ -1,11 +1,6 @@
-/*
-@author Alexander
-@date Mon Mar 10 14:58:14 CET 2014
-*/
-
-
 @@Operation
 icrash.environment.actMsrCreator.outactMsrCreator.oeCreateSystemAndEnvironment
+
 //parameters
 @parameter "ptInteger" "AqtyComCompanies"
 @endparameters
@@ -14,9 +9,8 @@ icrash.environment.actMsrCreator.outactMsrCreator.oeCreateSystemAndEnvironment
 @return "ptBoolean"
 
 @description
-" 
-Actor MsrCreator aims to create the iCrash system and envrioment at company ABC. 
-
+"
+Actor MsrCreator aims to create the iCrash system and envrioment at company ABC.
 "
 
 //preFunctional descriptions
@@ -30,17 +24,14 @@ Actor MsrCreator aims to create the iCrash system and envrioment at company ABC.
 @endPreP
 
 //postFunctional descriptions
-@postF 
-" 1. the iCrash system has been deployed."
+@postF
+"the iCrash system has been deployed."
 @endPostF
 
 //postProtocol descriptions
-@postP 
+@postP
 " "
 @endPostP
 
 //example
-@example" the ctMSRCreatorActor actor the Creator sends the message oeCreateSystemAndEnviroment(1) requesting the initialization fo the system and its enviroment(made of one adminsistrator identified by clock)
- and indicating that the number of communication company actor instances for the system's enviroment is 1(identified here by tango) "
-
-
+@example "The ctMSRCreatorActor actor the Creator sends the message oeCreateSystemAndEnviroment(1) requesting the initialization fo the system and its enviroment(made of one adminsistrator identified by clock)  and indicating that the number of communication company actor instances for the system's enviroment is 1(identified here by tango)."

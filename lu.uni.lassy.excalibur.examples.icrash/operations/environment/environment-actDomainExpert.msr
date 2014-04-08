@@ -1,32 +1,27 @@
-package icrash.operations.environment.actDomainExpert{ 
-	
+package icrash.operations.environment.actDomainExpert {
 import icrash.environment
-
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
-
 import icrash.concepts.primarytypes.datatypes
 import icrash.concepts.primarytypes.classes
 import icrash.concepts.secondarytypes.datatypes
 import icrash.concepts.secondarytypes.classes
 
 Operation Model {
-
 operation: icrash.environment.actDomainExpert.outactDomainExpert.oeValidateAlert(
-											dtAlertID AdtAlertID,
-											dtGPSLocation AdtGPSLocation,
-											dtDateAndTime AdtDateandTime,
-											etAlertStatus edtAlertStatus,
-											ctDomain ActDomain
-											):ptBoolean
-	preF: true
-	postF: true
+    dtAlertID AdtAlertID,
+    dtGPSLocation AdtGPSLocation,
+    dtDateAndTime AdtDateandTime,
+    etAlertStatus edtAlertStatus,
+    ctDomain ActDomain
+    ): ptBoolean
+    preF: true
+    postF: true
 
-operation: icrash.environment.actDomainExpert.outactDomainExpert.oeSollicitateCrisisHandling() : ptBoolean
-	preF: true
-	postF: true
+operation: icrash.environment.actDomainExpert.outactDomainExpert.oeSollicitateCrisisHandling(
+    ): ptBoolean
+    preF: true
+    postF: true
 
-
-	}
-}
+}}

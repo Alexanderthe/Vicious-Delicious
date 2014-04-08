@@ -1,34 +1,25 @@
-/*
-@author Alexander
-@date Sun Mar 09 19:28:33 CET 2014
-*/
-
-
 @@Primary Type Class icrash.concepts.primarytypes.classes.ctDomain
 
 @description
-" This class contains information regarding Accident domains, every alert gets assigned one. This helps to 
-categorize accidents and to provide best possible Coordinator with specified knowledge to each crisis. 
-The accident domain is assigned by a Domain Expert. "
+"This class contains information regarding Accident domains, every alert gets assigned one. This helps to categorize accidents and to provide best possible Coordinator with specified knowledge to each crisis. The accident domain is assigned by a Domain Expert."
 
-@attribute 
-"\msrcode{vpIsPedestrian: ptBoolean}: "
+@attribute
+"\msrcode{vpIsPedestrian: ptBoolean}:"
 
-@attribute 
-"\msrcode{vpIsVehicular: ptBoolean}: "
+@attribute
+"\msrcode{vpIsVehicular: ptBoolean}:"
 
-@attribute 
-"\msrcode{vpIsWildlife: ptBoolean}: "
+@attribute
+"\msrcode{vpIsWildlife: ptBoolean}:"
 
-@attribute 
-"\msrcode{vpIsProperty: ptBoolean}: "
+@attribute
+"\msrcode{vpIsProperty: ptBoolean}:"
 
-@attribute 
-"\msrcode{vpIsInjury: ptBoolean}: "
+@attribute
+"\msrcode{vpIsInjury: ptBoolean}:"
 
 @endattributes
 
 @operation
- "\msrcode{init}: "
-
+"\msrcode{init}:"
 @endoperations

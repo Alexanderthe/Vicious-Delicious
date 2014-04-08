@@ -1,31 +1,21 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:06 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.datatypes.dtPhoneNumber.is
+
 //return type
 @return "null"
 
 @description
-"
-This presents the mobile phone number of the human sending in the initial SMS about
-the accident as well as the phone number of the family contact.
-
-"
+"This presents the mobile phone number of the human sending in the initial SMS about the accident as well as the phone number of the family contact."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
-@postF 
-" True "
+@postF
+"True"
 @endPostF
 
 //example
-@example"The phone number of the witness is: 5813935"
-
+@example "The phone number of the witness is: 5813935."

@@ -1,28 +1,20 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:01:59 CET 2014
-*/
-
-
 @@Operation
 icrash.environment.actCoordinator.init
 //return type
 @return "null"
 
 @description
-" Declaration of the actor Coordinator."
+"Declaration of the actor Coordinator."
 
 //preFunctional descriptions
 @preF
 "
-1. the iCrash system has been deployed.
-
-
- "
+- the iCrash system has been deployed.
+"
 @endPreF
 
 //postFunctional descriptions
-@postF 
+@postF
 " "
 @endPostF
 

@@ -1,9 +1,3 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:10 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.classes.ctAlert.init
 //parameters
@@ -18,17 +12,17 @@ icrash.concepts.primarytypes.classes.ctAlert.init
 @return "null"
 
 @description
-" This operation initialises the class Alert. "
+"This operation initialises the class Alert."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
-@postF 
-" True "
+@postF
+"True"
 @endPostF
 
 //example
-@example" "
+@example""

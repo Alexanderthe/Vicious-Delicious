@@ -1,32 +1,21 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:08 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.datatypes.dtGPSLocation.is
+
 //return type
 @return "null"
 
 @description
-"
-This operation displays the GPS-location of the accident, including longitude and latitude. GPS-
-coordinates are used to determine whether (near to) and to be sent to the EMS for the dispatch of the 
-ambulance.
-
-"
+"This operation displays the GPS-location of the accident, including longitude and latitude. GPS coordinates are used to determine whether (near to) and to be sent to the EMS for the dispatch of the ambulance."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" True "
+"True"
 @endPostF
 
 //example
-@example"The accident location is:+40.689060  -74.044636"
-
+@example "The accident location is:+40.689060  -74.044636"

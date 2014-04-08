@@ -1,40 +1,32 @@
-/*
-@author nicolas.guelfi
-@author Yan
-@date Tue Feb 04 11:06:00 CET 2014
-*/
-
 @@Primary Type Class icrash.concepts.primarytypes.classes.ctState
 
 @description
-"
-This class is the main class that represents the system and the state of the system.
-"
+"This class is the main class that represents the system and the state of the system."
 
-@attribute 
+@attribute
 "\msrcode{nextValueForAlertID}: this attribute keeps track of the next value for an ID of an alert."
 
-@attribute 
+@attribute
 "\msrcode{nextValueForCrisisID}: this attribute keeps track of the next value for an ID of a crisis."
 
-@attribute 
+@attribute
 "\msrcode{clock}: this attribute keeps the track of time."
 
-@attribute 
-"\msrcode{crisisReminderPeriod}: "
+@attribute
+"\msrcode{crisisReminderPeriod}:"
+
+@attribute
+"\msrcode{initialCrisisReminderPeriod}:"
+
+@attribute
+"\msrcode{maxCrisisReminderPeriod}:"
 
 @attribute 
-"\msrcode{initialCrisisReminderPeriod}: "
-
-@attribute 
-"\msrcode{maxCrisisReminderPeriod}: "
-
-@attribute 
-"\msrcode{vpStarted}: "
+"\msrcode{vpStarted}:"
 
 @endattributes
 
 @operation
- "\msrcode{init}: this operation initializes ctState with necessary attributes."
+"\msrcode{init}: this operation initializes ctState with necessary attributes."
 
 @endoperations

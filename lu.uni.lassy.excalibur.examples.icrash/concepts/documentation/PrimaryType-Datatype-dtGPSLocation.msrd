@@ -1,26 +1,20 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:07 CET 2014
-*/
-
-
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtGPSLocation
 
 @description
-"Describes the longitude and latitude GPS-coordinates of the accident location. "
+"Describes the longitude and latitude GPS-coordinates of the accident location."
 
-@attribute 
- "\msrcode{latitude: dtLatitude}: "
+@attribute
+"\msrcode{latitude: dtLatitude}:"
 
-@attribute 
- "\msrcode{longitude: dtLongitude}: "
+@attribute
+"\msrcode{longitude: dtLongitude}:"
 
 @endattributes
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @operation
- "\msrcode{isNearTo}: "
+"\msrcode{isNearTo}:"
 
 @endoperations

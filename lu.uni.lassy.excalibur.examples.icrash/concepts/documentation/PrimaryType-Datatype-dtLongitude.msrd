@@ -1,18 +1,13 @@
-/*
-@author heidiflinkman
-@date Mon Feb 24 13:02:07 CET 2014
-*/
-
-
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtLongitude
 
 @description
 "Describes the longitude GPS-coordinates of the accident venue."
 
-@extends "null"
+@extends
+"null"
 @endextends
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @endoperations

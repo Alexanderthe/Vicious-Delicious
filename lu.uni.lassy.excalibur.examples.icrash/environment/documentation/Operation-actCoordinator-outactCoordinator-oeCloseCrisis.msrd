@@ -1,9 +1,3 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:01:59 CET 2014
-*/
-
-
 @@Operation
 icrash.environment.actCoordinator.outactCoordinator.oeCloseCrisis
 //parameters
@@ -23,24 +17,23 @@ icrash.environment.actCoordinator.outactCoordinator.oeCloseCrisis
 
 //preProtocol descriptions
 @preP
-" 
-1. the iCrash system has been deployed
-2. An alert was received by our system
-3. The alert was handled by a coordinator.
-
+"
+- the iCrash system has been deployed;
+- an alert was received by our system;
+- the alert was handled by a coordinator.
 "
 @endPreP
 
 //postFunctional descriptions
-@postF 
-" 1. The crisis is closed and stored in the database."
+@postF
+"- the crisis is closed and stored in the database."
 @endPostF
 
 //postProtocol descriptions
-@postP 
-" The crisis proctocol variable indicating that a crisis is not closed must change"
+@postP
+"- the crisis proctocol variable indicating that a crisis is not closed must change"
 @endPostP
 
 //example
-@example" the ctCoordinatorActor actor Steve sends teh message oeCloseCrisis(1) to declare the crisis with ID equal to 1 as closed."
+@example "The ctCoordinatorActor actor Steve sends teh message oeCloseCrisis(1) to declare the crisis with ID equal to 1 as closed."
 

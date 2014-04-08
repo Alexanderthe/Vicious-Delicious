@@ -1,11 +1,6 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:12 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.classes.ctCoordinator.init
+
 //parameters
 @parameter "null" "Aid"
 @parameter "null" "Alogin"
@@ -16,18 +11,18 @@ icrash.concepts.primarytypes.classes.ctCoordinator.init
 @return "null"
 
 @description
-" This operation initialises the class Coordinator. "
+"This operation initialises the class Coordinator."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" True "
+"True"
 @endPostF
 
 //example
-@example" "
+@example ""
 

@@ -1,16 +1,10 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:01 CET 2014
-*/
-
-
 @@Operation
 icrash.environment.actComCompany.init
 //return type
 @return "null"
 
 @description
-" This declares the actor ComCompany. "
+"This declares the actor ComCompany."
 
 //preFunctional descriptions
 @preF
@@ -18,9 +12,9 @@ icrash.environment.actComCompany.init
 @endPreF
 
 //postFunctional descriptions
-@postF 
+@postF
 " "
 @endPostF
 
 //example
-@example" "
+@example " "

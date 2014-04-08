@@ -1,9 +1,3 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:01 CET 2014
-*/
-
-
 @@Operation
 icrash.environment.actAuthenticated.outactAuthenticated.oeLogin
 //parameters
@@ -25,21 +19,21 @@ icrash.environment.actAuthenticated.outactAuthenticated.oeLogin
 
 //preProtocol descriptions
 @preP
-" 
-1. the iCrash system has been deployed.
-
-2. the authenticated user that is trying to login has to exsist within the system. "
+"
+- the iCrash system has been deployed;
+- the authenticated user that is trying to login has to exsist within the system.
+"
 @endPreP
 
 //postFunctional descriptions
-@postF 
-" The authenticated user has now been logged into the system and can now use it safely. "
+@postF
+"The authenticated user has now been logged into the system and can now use it safely."
 @endPostF
 
 //postProtocol descriptions
-@postP 
-" The the protocol variable for the authenticated user executing this opperation, preP must be vpLogged = true "
+@postP
+"The the protocol variable for the authenticated user executing this opperation, preP must be vpLogged = true."
 @endPostP
 
 //example
-@example" ctAdministartorActor actor bill sends the message oeLogin(icrashadmin,7WXC1359) to securly connect to the system."
+@example "actAdministartor actor bill sends the message oeLogin(icrashadmin,7WXC1359) to securly connect to the system."

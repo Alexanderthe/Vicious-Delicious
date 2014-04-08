@@ -1,19 +1,13 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:04 CET 2014
-*/
-
-
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtLogin
 
 @description
-" Every user (actAdministrator, actCoordinator, actDomainExpert, actEMS) must have a username for 
-logging in."
+"Every user (actAdministrator, actCoordinator, actDomainExpert, actEMS) must have a username for logging in."
 
-@extends "null"
+@extends
+"null"
 @endextends
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @endoperations

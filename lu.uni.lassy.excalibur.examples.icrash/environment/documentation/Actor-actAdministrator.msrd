@@ -1,46 +1,34 @@
-/*
-@author Heidi
-@date Mon Mar 10 13:00:52 CET 2014
-*/
-
-
 @@Actor icrash.environment.actAdministrator
 
 @description
 "
-Administrating the iCrash system is the responsibility of an Administrator, who is also a human. To fullfill his/her objective: 
-
-- Adding users (Coordinators, EMS or DomainExpert) to and from the system and its environment
-- Deleting users to and from the system and its environment
-
-The responsibilities include:
-
-- Identifying the company ABC employees that are users with access to the system
-- Be aware of the security policies of company ABC
-- Be aware of the the system's identification information for secure system usage
-- Communication with users (Coordinators, EMS or DomainExpert) in order to provide them with identification information to guarantee the secure use of the system.
-
+Administrating the iCrash system is the responsibility of an Administrator, who is also a human. To fullfill his/her objective:\\
+adding users (Coordinators, EMS or DomainExpert) to and from the system and its environment; deleting users to and from the system and its environment.
+\\
+The responsibilities include:\\
+identifying the company ABC employees that are users with access to the system; be aware of the security policies of company ABC; be aware of the the system's identification information for secure system usage; communication with users (Coordinators, EMS or DomainExpert) in order to provide them with identification information to guarantee the secure use of the system.
 "
 
-@extends "icrash.environment.actAuthenticated"
+@extends
+"icrash.environment.actAuthenticated"
 @endextends
 
 //input events
 @inputEvent
-"\msrcode{ieUserAdded():ptBoolean}"
+"\msrcode{ieUserAdded(): ptBoolean}"
 ""
 @inputEvent
-"\msrcode{ieUserDeleted():ptBoolean}"
+"\msrcode{ieUserDeleted(): ptBoolean}"
 ""
 
 @endInputEvents
 
 //output events
 @outputEvent
-"\msrcode{oeAddUser(dtUserID AdtUserID, dtLogin AdtLogin, dtPassword AdtPassword, dtTokenID AdtTokenID):ptBoolean}"
+"\msrcode{oeAddUser( dtUserID AdtUserID, dtLogin AdtLogin, dtPassword AdtPassword, dtTokenID AdtTokenID): ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeDeleteUser(dtUserID AdtUserID):ptBoolean}"
+"\msrcode{oeDeleteUser( dtUserID AdtUserID): ptBoolean}"
 ""
 
 @endOutputEvents

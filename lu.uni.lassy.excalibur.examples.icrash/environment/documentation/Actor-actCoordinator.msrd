@@ -1,74 +1,60 @@
-/*
-@author Heidi
-@date Mon Mar 10 13:00:07 CET 2014
-*/
-
-
 @@Actor icrash.environment.actCoordinator
 
 @description
 "
-A Coordinator is a human who has the following objectives:
-- Monitoring excisting alerts and crisis and to 
-- Managing alerts and crisis until they have been declared resolved 
-
-To achieve the objectives, the responsibilities for a Coordinator therefore are: 
-
-- Communicating with EMS though iCrash system in order to request for dispatch of vehicles
-- To be available for crising handling (requests and alerts) 
-- Being able to make a decision if an alert or or crisis can be closed
-- To be able to use the system safely regarding identification
-- To send a message to the victim's family through ComCompany containing carefully chosen information about the accident and its victims.
+A Coordinator is a human who has the following objectives:\\
+monitoring excisting alerts and crisis and to; managing alerts and crisis until they have been declared resolved.
+\\
+To achieve the objectives, the responsibilities for a Coordinator therefore are:\\
+communicating with EMS though iCrash system in order to request for dispatch of vehicles; to be available for crising handling (requests and alerts); being able to make a decision if an alert or or crisis can be closed; to be able to use the system safely regarding identification; to send a message to the victim's family through ComCompany containing carefully chosen information about the accident and its victims.
 "
 
-@extends "icrash.environment.actAuthenticated"
+@extends
+"icrash.environment.actAuthenticated"
 @endextends
 
 //input events
 @inputEvent
-"\msrcode{ieSendAnAlert(ctAlert AclAlert):ptBoolean}"
+"\msrcode{ieSendAnAlert( ctAlert AclAlert): ptBoolean}"
 ""
 @inputEvent
-"\msrcode{ieSendACrisis(ctCrisis ActCrisis):ptBoolean}"
+"\msrcode{ieSendACrisis( ctCrisis ActCrisis): ptBoolean}"
 ""
 @inputEvent
-"\msrcode{ieMessage(ptString AMessage):ptBoolean}"
+"\msrcode{ieMessage( ptString AMessage): ptBoolean}"
 ""
 
 @endInputEvents
 
 //output events
 @outputEvent
-"\msrcode{oeCloseAlert(dtAlertID AdtAlertID):ptBoolean}"
+"\msrcode{oeCloseAlert( dtAlertID AdtAlertID): ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeCloseCrisis(dtCrisisID AdtCrisisID):ptBoolean}"
+"\msrcode{oeCloseCrisis( dtCrisisID AdtCrisisID): ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeGetAlertsSet(etAlertStatus AetAlertStatus):ptBoolean}"
+"\msrcode{oeGetAlertsSet( etAlertStatus AetAlertStatus): ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeGetCrisisSet(etCrisisStatus AetCrisisStatus):ptBoolean}"
+"\msrcode{oeGetCrisisSet( etCrisisStatus AetCrisisStatus): ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeSetCrisisHandler(etCrisisStatus AetCrisisID):ptBoolean}"
+"\msrcode{oeSetCrisisHandler( etCrisisStatus AetCrisisID): ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeReportOnCrisis(dtAlertID AdtCrisisID,dtComment AdtComment,dtUserID AdtUserID,etCrisisType AdtCrisisType,
-etCrisisStatus AdtCrisisStatus, dtRecievedMessage AdtReceivedMessage, dtNbrofVehiculesInAccident AdtVehiculesInAccident,
-dtNbrOfVictims AdtNbrVictims):ptBoolean}"
+"\msrcode{oeReportOnCrisis( dtAlertID AdtCrisisID, dtComment AdtComment, dtUserID AdtUserID, etCrisisType AdtCrisisType, etCrisisStatus AdtCrisisStatus, dtRecievedMessage AdtReceivedMessage, dtNbrofVehiculesInAccident AdtVehiculesInAccident, dtNbrOfVictims AdtNbrVictims): ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeSetCrisisStatus(dtCrisisID AdtCrisisID,etCrisisStatus AetCrisisStatus):ptBoolean}"
+"\msrcode{oeSetCrisisStatus( dtCrisisID AdtCrisisID, etCrisisStatus AetCrisisStatus): ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeValidateAlert(dtAlertID AdtAlertID):ptBoolean}"
+"\msrcode{oeValidateAlert( dtAlertID AdtAlertID): ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeInfoFam(dtComment AdtComment,dtPhoneNumber AdtVictimICEContactPhoneNumber,dtHospitalName AdtHospitalName):ptBoolean}"
+"\msrcode{oeInfoFam( dtComment AdtComment, dtPhoneNumber AdtVictimICEContactPhoneNumber, dtHospitalName AdtHospitalName): ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeRequestEMSAssistance(dtComment AdtComment,dtRequestID AdtRequest,dtGPSLocation AdtGPSLocation,dtNbrofVehiculesInAccident AdtVehiculesInAccident,
-dtNbrOfVictims AdtNbrVictims):ptBoolean}"
+"\msrcode{oeRequestEMSAssistance( dtComment AdtComment, dtRequestID AdtRequest, dtGPSLocation AdtGPSLocation, dtNbrofVehiculesInAccident AdtVehiculesInAccident, dtNbrOfVictims AdtNbrVictims): ptBoolean}"
 ""
 @endOutputEvents

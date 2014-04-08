@@ -1,22 +1,14 @@
-/*
-* @author nicolas.guelfi
-* @date Mon Sep 30 17:11:03 CEST 2013
-*/
-
-package icrash.operations.concepts.primarytypes.datatypes.dtPhoneNumber{ 
-	
+package icrash.operations.concepts.primarytypes.datatypes.dtPhoneNumber {
 import lu.uni.lassy.messir.libraries.primitives
-
 import icrash.concepts.primarytypes.datatypes
 import icrash.concepts.primarytypes.classes
 import icrash.concepts.secondarytypes.datatypes
 import icrash.concepts.secondarytypes.classes
 
-
 Operation Model {
-
-		operation: icrash.concepts.primarytypes.datatypes.dtPhoneNumber.is():ptBoolean
-		ocl:"
+operation: icrash.concepts.primarytypes.datatypes.dtPhoneNumber.is(
+    ):ptBoolean
+ocl:"
 context PrimaryTypesDatatypes::dtPhoneNumber::
 is():Boolean
 /*--------------------------------------------*/
@@ -38,5 +30,4 @@ endif
 and result = TheResult
 /*--------------------------------------------*/
 "
-	}
-}
+}}

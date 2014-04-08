@@ -1,33 +1,23 @@
-/*
-@author Heidi
-* 
-@date Mon Mar 10 13:03:28 CET 2014
-*/
-
-
 @@Actor icrash.environment.actAuthenticated
 
 @description
 "
-Authenticated is a super user of iCrash System whom all other users inherit from for safe use of
-the system.
-
-
+Authenticated is a super user of iCrash System whom all other users inherit from for safe use of the system.
 "
 
 //input events
 @inputEvent
-"\msrcode{ieMessage(ptString AMessage):ptBoolean}"
+"\msrcode{ieMessage(ptString AMessage): ptBoolean}"
 ""
 
 @endInputEvents
 
 //output events
 @outputEvent
-"\msrcodeoperation{oeLogin(dtLogin AdtLogin, dtPassword AdtPassword, dtKey AdtKey):ptBoolean}"
+"\msrcodeoperation{oeLogin( dtLogin AdtLogin, dtPassword AdtPassword, dtKey AdtKey): ptBoolean}"
 ""
 @outputEvent
-"\msrcode{oeLogout():ptBoolean}"
+"\msrcode{oeLogout(): ptBoolean}"
 ""
 
 @endOutputEvents

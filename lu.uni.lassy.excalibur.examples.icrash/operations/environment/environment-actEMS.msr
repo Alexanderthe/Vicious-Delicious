@@ -1,8 +1,3 @@
-/*
-* @author Alexander
-* @date Mon Mar 31 11:21:28 CEST 2014
-*/
-
 package lu.uni.lassy.excalibur.examples.icrash.operations.environment.environment.actEMS {
 
 import lu.uni.lassy.messir.libraries.primitives
@@ -11,32 +6,26 @@ import icrash.concepts.primarytypes.classes
 import icrash.concepts.secondarytypes.datatypes
 import icrash.concepts.secondarytypes.classes
 
-	Operation Model { 
-		
-		operation: icrash.environment.actEMS.outactEMS.oeReportEMSCrisisStatus(dtCrisisID AdtCrisisIDo,
-											dtComment AdtCommento,
-											etEMSCrisisStatus AdtEMSCrisisStatus,
-											dtHospitalName AdtHospitalName,
-											ctVictim ActVictim
-											):ptBoolean
-			preF: true
-			postF: true
-			
-		operation: icrash.environment.actEMS.outactEMS.oeReplyToRequest(
-											dtCrisisID AdtCrisisID,
-											dtComment AdtComment,
-											dtRequestID AdtRequest,
-											etEMSCrisisStatus AdtEMsCrisisStatus
-											):ptBoolean
-			preF: true
-			postF: true
-		
-		
-		
-		
-		
+Operation Model {
 
-	}
+operation: icrash.environment.actEMS.outactEMS.oeReportEMSCrisisStatus(
+    dtCrisisID AdtCrisisIDo,
+    dtComment AdtCommento,
+    etEMSCrisisStatus AdtEMSCrisisStatus,
+    dtHospitalName AdtHospitalName,
+    ctVictim ActVictim
+    ): ptBoolean
+    preF: true
+    postF: true
 
+operation: icrash.environment.actEMS.outactEMS.oeReplyToRequest(
+    dtCrisisID AdtCrisisID,
+    dtComment AdtComment,
+    dtRequestID AdtRequest,
+    etEMSCrisisStatus AdtEMsCrisisStatus
+    ): ptBoolean
+    
+    preF: true
+    postF: true
 
-}
+}}

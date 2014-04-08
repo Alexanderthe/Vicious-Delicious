@@ -1,35 +1,29 @@
-package icrash.operations.environment.actAdministrator{ 
-	
+package icrash.operations.environment.actAdministrator {
 import icrash.environment
-
 import lu.uni.lassy.messir.libraries.primitives
-
 import icrash.concepts.primarytypes.datatypes
 import icrash.concepts.primarytypes.classes
 import icrash.concepts.secondarytypes.datatypes
 import icrash.concepts.secondarytypes.classes
 
 Operation Model {
-
-
 operation: icrash.environment.actAdministrator.outactAdministrator.oeAddUser(
-											dtUserID AdtUseroID,
-											dtLogin AdtLogin, 
-											dtPassword AdtPassword,
-											dtTokenID AdtTokenID,
-											etUserType AdtUserType,
-											ctDomain AdtDomain
-											):ptBoolean
-	preF: true
-	postF: true
-	ocl:""
+    dtUserID AdtUseroID,
+    dtLogin AdtLogin,
+    dtPassword AdtPassword,
+    dtTokenID AdtTokenID,
+    etUserType AdtUserType,
+    ctDomain AdtDomain
+    ): ptBoolean
+
+    preF: true
+    postF: true
+    ocl: " "
 
 operation: icrash.environment.actAdministrator.outactAdministrator.oeDeleteUser(
-											dtUserID AdtUserID):ptBoolean
-	preF: true
-	postF: true
-	ocl:""
-
-
-}
-}
+    dtUserID AdtUserID
+    ): ptBoolean
+    preF: true
+    postF: true
+    ocl:""
+}}

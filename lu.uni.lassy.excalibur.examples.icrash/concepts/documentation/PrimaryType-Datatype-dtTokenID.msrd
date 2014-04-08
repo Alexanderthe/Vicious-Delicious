@@ -1,18 +1,13 @@
-/*
-@author heidiflinkman
-@date Mon Mar 03 12:30:39 CET 2014
-*/
-
-
 @@Primary Type Datatype icrash.concepts.primarytypes.datatypes.dtTokenID
 
 @description
 "Every token has a unique tokenID, therefore every human with a login has a unique tokenID."
 
-@extends "lu.uni.lassy.messir.libraries.string.dtString"
+@extends
+"lu.uni.lassy.messir.libraries.string.dtString"
 @endextends
 
 @operation
- "\msrcode{is}: "
+"\msrcode{is}:"
 
 @endoperations

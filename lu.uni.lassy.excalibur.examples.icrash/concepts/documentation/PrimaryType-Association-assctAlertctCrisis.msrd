@@ -1,14 +1,4 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:12 CET 2014
-*/
-
-
 @@Primary Type Association icrash.concepts.primarytypes.associations.assctAlertctCrisis
 
 @description
-"
-Every alert is turned into a crisis after the alert has been validated by the Coordinator.
-
-"
-
+"Every alert is turned into a crisis after the alert has been validated by the Coordinator."

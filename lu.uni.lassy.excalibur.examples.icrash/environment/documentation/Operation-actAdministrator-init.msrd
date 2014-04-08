@@ -1,16 +1,11 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:01:58 CET 2014
-*/
-
-
 @@Operation
 icrash.environment.actAdministrator.init
+
 //return type
 @return "null"
 
 @description
-" The declaration of the actor. "
+"The declaration of the actor."
 
 //preFunctional descriptions
 @preF

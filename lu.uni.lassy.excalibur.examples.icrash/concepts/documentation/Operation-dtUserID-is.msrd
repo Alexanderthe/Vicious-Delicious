@@ -1,27 +1,21 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:05 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.datatypes.dtUserID.is
+
 //return type
 @return "null"
 
 @description
-"This operation describes the unique identification number assigned to each User"
+"This operation describes the unique identification number assigned to each User."
 
 //preFunctional descriptions
 @preF
-" "
+""
 @endPreF
 
 //postFunctional descriptions
-@postF 
-" "
+@postF
+""
 @endPostF
 
 //example
-@example"User has id: 3 "
-
+@example "User has id: 3."

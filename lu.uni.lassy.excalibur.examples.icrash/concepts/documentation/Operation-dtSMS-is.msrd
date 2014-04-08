@@ -1,26 +1,21 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:03 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.secondarytypes.datatypes.dtSMS.is
+
 //return type
 @return "null"
 
 @description
-" "
+""
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
-@postF 
-" True "
+@postF
+"True"
 @endPostF
 
 //example
-@example" "
+@example ""

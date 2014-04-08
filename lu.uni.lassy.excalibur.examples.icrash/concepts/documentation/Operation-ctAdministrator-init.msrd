@@ -1,11 +1,6 @@
-/*
-@author Alexander
-@date Mon Feb 24 13:02:12 CET 2014
-*/
-
-
 @@Operation
 icrash.concepts.primarytypes.classes.ctAdministrator.init
+
 //parameters
 @parameter "null" "Alogin"
 @parameter "null" "Apwd"
@@ -15,16 +10,16 @@ icrash.concepts.primarytypes.classes.ctAdministrator.init
 @return "null"
 
 @description
-" This operation initialises the class Administrator."
+"This operation initialises the class Administrator."
 
 //preFunctional descriptions
 @preF
-" True "
+"True"
 @endPreF
 
 //postFunctional descriptions
 @postF 
-" True "
+"True"
 @endPostF
 
 //example
