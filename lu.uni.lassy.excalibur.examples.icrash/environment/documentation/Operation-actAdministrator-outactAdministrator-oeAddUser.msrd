@@ -40,3 +40,4 @@ icrash.environment.actAdministrator.outactAdministrator.oeAddUser
 
 //example
 @example "The ctAdministratorActor actor bill sends the message oeAddCoodrinator( 1, Steve, pwdMessirExcalibur2017, 12345, 'Vehicular' 'Pedestrian') to setup a crisis management team made one coordinator and indicating his identification information in terms of ID (i.e. 1), password (i.e.pwdMessirExcalibur2017), tokenID (i.e. 12345) and Domain (i.e.'Vehicular''Pedestrian') "
+

@@ -18,4 +18,5 @@ icrash.concepts.primarytypes.datatypes.dtGPSLocation.is
 @endPostF
 
 //example
-@example "The accident location is:+40.689060  -74.044636"
+@example "The accident location is: +40.689060  -74.044636."
+

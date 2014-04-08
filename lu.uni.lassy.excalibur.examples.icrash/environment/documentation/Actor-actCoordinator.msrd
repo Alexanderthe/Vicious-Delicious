@@ -58,3 +58,4 @@ communicating with EMS though iCrash system in order to request for dispatch of 
 "\msrcode{oeRequestEMSAssistance( dtComment AdtComment, dtRequestID AdtRequest, dtGPSLocation AdtGPSLocation, dtNbrofVehiculesInAccident AdtVehiculesInAccident, dtNbrOfVictims AdtNbrVictims): ptBoolean}"
 ""
 @endOutputEvents
+

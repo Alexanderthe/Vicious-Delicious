@@ -36,3 +36,4 @@ icrash.environment.actDomainExpert.outactDomainExpert.oeValidateAlert
 
 //example
 @example "the ctCoorinatorActor actor steve sends the message oeValidateAlert(1) to declare that the alert with ID equal to 1 ca be considered as a valid one."
+

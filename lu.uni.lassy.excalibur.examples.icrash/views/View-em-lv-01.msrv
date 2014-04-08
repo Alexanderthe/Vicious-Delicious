@@ -6,3 +6,4 @@
 "Shows the overview of the environment model of the system in term of its state class, actors with their input and output interfaces and all related associations."
 @caption "Part 1"
 @size Scaled
+

@@ -4,6 +4,7 @@
 "Describes the type of the crises (Pedestrian, Wildlife, Property, Injury)."
 
 @operation
-"\msrcode{is}:" 
+"\msrcode{is}:"
 
 @endoperations
+

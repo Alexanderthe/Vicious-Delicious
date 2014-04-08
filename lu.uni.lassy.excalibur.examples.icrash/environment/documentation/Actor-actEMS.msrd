@@ -22,3 +22,4 @@ to be aware how to securely use the iCrash system by posessing information about
 "\msrcode{oeReportEMSCrisisStatus( dtCrisisID AdtCrisisID, dtComment AdtComment, etEMSCrisisStatus AdtEMSCrisisStatus): ptBoolean}"
 ""
 @endOutputEvents
+

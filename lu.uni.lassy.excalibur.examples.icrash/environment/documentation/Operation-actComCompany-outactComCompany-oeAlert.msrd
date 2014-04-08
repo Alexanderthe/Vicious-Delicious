@@ -41,3 +41,4 @@ icrash.environment.actComCompany.outactComCompany.oeAlert
 
 //example
 @example "The ctComCompanyActor actor tango sends the message oeAlert(witness, 2017-11-26-at-10-10-16AM, +3524666445252, 49.627675-6.159590,'3 cars invloved in an accident.')"
+

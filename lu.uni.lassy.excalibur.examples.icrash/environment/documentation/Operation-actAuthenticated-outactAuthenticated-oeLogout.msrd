@@ -31,3 +31,4 @@ icrash.environment.actAuthenticated.outactAuthenticated.oeLogout
 
 //example
 @example "The ctAdministratorActor bill sends the message oeLogout() to disconnect from the system."
+

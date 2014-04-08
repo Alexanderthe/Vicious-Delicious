@@ -18,4 +18,5 @@ icrash.concepts.primarytypes.datatypes.dtCrisisID.is
 @endPostF
 
 //example
-@example "Crisis Id is: 172624 "
+@example "Crisis Id is: 172624."
+

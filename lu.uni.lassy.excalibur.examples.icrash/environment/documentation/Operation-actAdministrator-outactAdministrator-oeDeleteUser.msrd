@@ -41,3 +41,4 @@ icrash.environment.actAdministrator.outactAdministrator.oeDeleteUser
 
 //example
 @example "The actAdministrator bill sends the message oeDeleteCoordinator(1) deleting the Coordinator with the ID (i.e. 1) from the system."
+

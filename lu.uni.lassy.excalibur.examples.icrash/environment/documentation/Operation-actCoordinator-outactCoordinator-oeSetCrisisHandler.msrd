@@ -36,3 +36,4 @@ icrash.environment.actCoordinator.outactCoordinator.oeSetCrisisHandler
 
 //example
 @example "the ctCoordinatorActor actor steve sends the message oeSetCrisisHandler(1) ot declare that he is taking care of the crisis wiht the ID equal to 1."
+
