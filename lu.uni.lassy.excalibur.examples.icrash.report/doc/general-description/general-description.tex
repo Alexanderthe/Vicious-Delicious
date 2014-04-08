@@ -10,20 +10,11 @@ In the context of the \msrmessir method, the information provided in this sectio
 \section{Domain Stakeholders}
 \label{sec:icrash-gendescr-stakeholders}
 
-All stakeholders of the system are detailed in this section. After a brief description of a
-stakeholder, its objectives are first stated. Thereafter, the responsibilities of
-the stakeholder are detailed which help to achieve the stakeholder objectives to a certain
-degree. While the objectives characterize the general problems addressed by the \msricrash system,
-the responsibilities describe concrete actions that are expected from a stakeholder. Some of
-these responsibilities can be traced looking at the use case described in Section \ref{sec:icrash-gendescr-usecasemodel},and hence must be supported by the \msricrash  system. 
-All stakeholders listed in this section have an interest in the system or are affected
-by the system in some way, but only a subset of the stakeholders are directly involved in the use
-cases described.
+All stakeholders of the system are detailed in this section. After a brief description of a stakeholder, its objectives are first stated. Thereafter, the responsibilities of the stakeholder are detailed which help to achieve the stakeholder objectives to a certain degree. While the objectives characterize the general problems addressed by the \msricrash system, the responsibilities describe concrete actions that are expected from a stakeholder. Some of these responsibilities can be traced looking at the use case described in Section~\ref{sec:icrash-gendescr-usecasemodel},and hence must be supported by the \msricrash  system. All stakeholders listed in this section have an interest in the system or are affected by the system in some way, but only a subset of the stakeholders are directly involved in the use cases described.\\
 Let us remind that use case diagrams or descriptions are not \msrmessir analysis phase mandatory outputs. They are proposed as informal means to help understanding the semantics of the system specification made of the mandatory analysis models, which provide a complete executable specification.
 
 \subsection{Communication Company}
-A Communication Company is a company that has the capacity to ensure communication of information between its customers and the \msricrash system. 
-The objectives of a Communication Company are:
+A Communication Company is a company that has the capacity to ensure communication of information between its customers and the \msricrash system. The objectives of a Communication Company are:
 \begin{itemize}
   \item to be able to deliver any SMS sent by any human to the \msricrash's phone number.
   \item to be able to transmit SMS messages from the ABC company that owns the \msricrash system to any human having a SMS compatible device accessible using a phone number.
@@ -126,7 +117,7 @@ In order to achieve these objectives, the responsibilities of a \msrcode{activat
 The objective of this section is not to provide the full requirement elicitation document in this section but to reuse a part of this document to provide a informal introduction to the \msrmessir specification of the system under development. The use case model is made of a use case diagrams modelling abstractly and informally the actors and their use cases together with a set of use cases descriptions. 
 In addition, those diagrams and description tables are adapted to the \msrmessir specification since actor and messages names together with parameters are partly adapted to be consistent with the specification identifiers (see \cite{messirbook} for more details). 
 
-Among all the stakeholders presented in the previous section, we can determine five types of \glspl{direct actor}\footnote{The naming conventions in \msrmessir propose to start each type name by lowercase letters indicating the meta model type used (i.e. act for actors, ct for class type, \ldots. In addition to ease the reading it makes the translational semantics into Prolog code more straightforward.}: 
+Among all the stakeholders presented in the previous section, we can determine five types of \glspl{direct actor}\footnote{The naming conventions in \msrmessir propose to start each type name by lowercase letters indicating the meta model type used (i.e. act for actors, ct for class type, \ldots. In addition to ease the reading it makes the translational semantics into Prolog code more straightforward.}:
 \begin{itemize}
   \item \msrcode{actComCompany}: for the Communication Company stakeholder.
   \item \msrcode{actAdministrator}: for the Administrator stakeholder.
@@ -143,9 +134,9 @@ In addition to those system actors, we can add five other types of actors relate
     \item \textit{Victim}: for any human that is a victim of a car crash
     \item \textit{Anonymous}: for any human that want to inform about a car crash while staying anonymous.
   \end{itemize}
-  
+
   \item \Glspl{abstract actor}
-	\begin{itemize}
+      \begin{itemize}
     \item \msrcode{actHuman}: represent abstractly any kind of human being actor wanting to communicate with the ABC system in the context of a car crash.
     \item \msrcode{actAuthenticated}: for the logical Activator stakeholder.
   \end{itemize}
@@ -159,15 +150,13 @@ In addition to those system actors, we can add five other types of actors relate
 
 \subsection{Use Case Diagram(s)}
 
-The figures \ref{fig:icrash-UCM-icrash-suDeployAndRun}, \ref{fig:icrash-UCM-icrash-suGlobalCrisisHandling}, \ref{fig:icrash-UCM-icrash-ugManageCrisis}, \ref{fig:icrash-UCM-icrash-ugAdministrateTheSystem} and \ref{fig:icrash-UCM-icrash-ugSecurelyUseSystem} provide \msrmessir use casediagrams for the ABC system use cases.
+The figures~\ref{fig:icrash-UCM-icrash-suDeployAndRun},~\ref{fig:icrash-UCM-icrash-suGlobalCrisisHandling},~\ref{fig:icrash-UCM-icrash-ugManageCrisis},~\ref{fig:icrash-UCM-icrash-ugAdministrateTheSystem} and~\ref{fig:icrash-UCM-icrash-ugSecurelyUseSystem} provide \msrmessir use casediagrams for the ABC system use cases.
 
 Even though this general description is not formal, follow the advice given in the \msrmessir book \cite{messirbook} which proposes to have for each actor an input interface to receive messages from the system and an output one to send messages to the system.
 
 \begin{figure}
 \begin{center}
-\scalebox{0.8}{
-\includegraphics[width=150mm]{./images/suDeployAndRun.eps}
-\normalsize}
+\scalebox{0.8}{\includegraphics[width=150mm]{./images/suDeployAndRun.eps}\normalsize}
 \end{center}
 \caption{\msricrash suDeployAndRun Use Case Diagram}
 \label{fig:icrash-UCM-icrash-suDeployAndRun}
@@ -176,9 +165,7 @@ Even though this general description is not formal, follow the advice given in t
 
 \begin{figure}
 \begin{center}
-\scalebox{0.8}{
-\includegraphics[width=150mm]{./images/ugGlobalCrisisHandling.eps}
-\normalsize}
+\scalebox{0.8}{\includegraphics[width=150mm]{./images/ugGlobalCrisisHandling.eps}\normalsize}
 \end{center}
 \caption{\msricrash suGlobalCrisisHandling Use Case Diagram}
 \label{fig:icrash-UCM-icrash-suGlobalCrisisHandling}
@@ -187,9 +174,7 @@ Even though this general description is not formal, follow the advice given in t
 
 \begin{figure}
 \begin{center}
-\scalebox{0.8}{
-\includegraphics[width=150mm]{./images/UgManageCrisis.eps}
-\normalsize}
+\scalebox{0.8}{\includegraphics[width=150mm]{./images/UgManageCrisis.eps}\normalsize}
 \end{center}
 \caption{\msricrash ugManageCrisis Use Case Diagram}
 \label{fig:icrash-UCM-icrash-ugManageCrisis}
@@ -198,9 +183,7 @@ Even though this general description is not formal, follow the advice given in t
 
 \begin{figure}
 \begin{center}
-\scalebox{0.8}{
-\includegraphics[width=150mm]{./images/ugAdministrateTheSystem.eps}
-\normalsize}
+\scalebox{0.8}{\includegraphics[width=150mm]{./images/ugAdministrateTheSystem.eps}\normalsize}
 \end{center}
 \caption{\msricrash ugAdministrateTheSystem Use Case Diagram}
 \label{fig:icrash-UCM-icrash-ugAdministrateTheSystem}
@@ -209,9 +192,7 @@ Even though this general description is not formal, follow the advice given in t
 
 \begin{figure}
 \begin{center}
-\scalebox{0.8}{
-\includegraphics[width=150mm]{./images/ugSecurelyUseSystem.eps}
-\normalsize}
+\scalebox{0.8}{\includegraphics[width=150mm]{./images/ugSecurelyUseSystem.eps}\normalsize}
 \end{center}
 \caption{\msricrash ugSecurelyUseSystem Use Case Diagram}
 \label{fig:icrash-UCM-icrash-ugSecurelyUseSystem}
@@ -220,9 +201,7 @@ Even though this general description is not formal, follow the advice given in t
 
 \begin{figure}
 \begin{center}
-\scalebox{0.8}{
-\includegraphics[width=150mm]{./images/UgMonitor.eps}
-\normalsize}
+\scalebox{0.8}{\includegraphics[width=150mm]{./images/UgMonitor.eps}\normalsize}
 \end{center}
 \caption{\msricrash ugMonitor Use Case Diagram}
 \label{fig:icrash-UCM-icrash-ugMonitor}
@@ -233,6 +212,7 @@ Even though this general description is not formal, follow the advice given in t
 
 \subsection{Use Case Instance(s)}
 
-The use case instance described below represents a summary level use case instance intended to illustrate a small and complete execution scenario of the \msricrash system. Figure \ref{fig:icrash-RE-UC-icrash-Test01-Communication-Diagram} provides informal graphical view (using a sequence diagram) of the messages sent during the scenario. The use case instance is described textually in the following use case description form as suggested by the \msrmessir method and inspired by the standard Cokburn template~\cite{armour01usecase}. We chose to indicate only messages sent by the environment to the system and not reply messages for readability.
+The use case instance described below represents a summary level use case instance intended to illustrate a small and complete execution scenario of the \msricrash system. Figure~\ref{fig:icrash-RE-UCD-SequenceDiagram} provides informal graphical view (using a sequence diagram) of the messages sent during the scenario. The use case instance is described textually in the following use case description form as suggested by the \msrmessir method and inspired by the standard Cokburn template~\cite{armour01usecase}. We chose to indicate only messages sent by the environment to the system and not reply messages for readability.
 
 \input{./doc/appendix/icrash-RE-use-cases-instance-suDeployAndRun-01-table.tex}
+

@@ -1,60 +1,47 @@
 \clearpage
 
 \begin{usecase}
-  \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{oeValidateAlert}
-  \addsingletwocolumnrow{Scope}{System}
-  \addsingletwocolumnrow{Altitude}{subfunction}
-  
-  \addrowheading{Parameters}
-  \addnumberedsinglerow{}{\msrcode{AlertID:dtAlertID} - the Alert unique identification.}
-  \addnumberedsinglerow{}{\msrcode{GPSLocation:dtGPSLocation} – the GPS location of the Alert.}
-  \addnumberedsinglerow{}{\msrcode{DateAndTime:dtDateAndTime} - the date and time of when the alert was sent.}
-  \addnumberedsinglerow{}{\msrcode{AlertStatus:etAlertStatus} - the Alert status.}
-  \addnumberedsinglerow{}{\msrcode{AlertDomains:dtDomain} – Domains of expertise required to handle this Alert.}
-  
-  \addrowheading{Primary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actDomainExpert[active]}}
-  
-  \addrowheading{Secondary actor(s)}
-  \addnumberedsinglerow{}{None.}
-  
-  \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actDomainExpert}'s goal is to verfy that an Alert is valid and to assign Domains to that Alert in order select the right Coordinator handle it.}
-  
-  \addrowheading{Reuse}
-  \addnumberedsinglerow{}{none}
+    \addheading{Use-Case Description}
+    \addsingletwocolumnrow{Name}{oeValidateAlert}
+    \addsingletwocolumnrow{Scope}{System}
+    \addsingletwocolumnrow{Altitude}{subfunction}
+    \addrowheading{Parameters}
+    \addnumberedsinglerow{}{\msrcode{AlertID:dtAlertID} - the Alert unique identification.}
+    \addnumberedsinglerow{}{\msrcode{GPSLocation:dtGPSLocation} - the GPS location of the Alert.}
+    \addnumberedsinglerow{}{\msrcode{DateAndTime:dtDateAndTime} - the date and time of when the alert was sent.}
+    \addnumberedsinglerow{}{\msrcode{AlertStatus:etAlertStatus} - the Alert status.}
+    \addnumberedsinglerow{}{\msrcode{AlertDomains:dtDomain} - Domains of expertise required to handle this Alert.}
+    \addrowheading{Primary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actDomainExpert[active]}}
+    \addrowheading{Secondary actor(s)}
+    \addnumberedsinglerow{}{None.}
+    \addrowheading{Goal(s) description}
+    \addsinglerow{the \msrcode{actDomainExpert}'s goal is to verfy that an Alert is valid and to assign Domains to that Alert in order select the right Coordinator handle it.}
+    \addrowheading{Reuse}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Protocol condition(s)}
+    \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+    \addnumberedsinglerow{}{an Alert with the given ID exists in the system.}
+    \addrowheading{Pre-condition(s)}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Main post-condition(s)}
+    \addnumberedsinglerow{}{an Alert's status has been changed to verifed and given Domains of expertise required to handle it.}
+    \addrowheading{Main success steps}
+    \addalphanumberedsinglerow{}{the actor \msrcode{actDomainExpert} sends the message \msrucname{oeVerifyAlert(dtAlertID, dtGPSLocation, dtDateAndTime, etAlertStatus, dtDomain)} to the system.}
+    \addrowheading{Step Constraints Ordering and Extensions}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Additional Information}
+    \addsinglerow{none}
+\end{usecase}
 
-  \addrowheading{Protocol condition(s)}
-  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
-  \addnumberedsinglerow{}{an Alert with the given ID exists in the system.}
+\clearpage
 
-  \addrowheading{Pre-condition(s)}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{an Alert's status has been changed to verifed and given Domains of expertise required to handle it.}
-  
-  \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actDomainExpert} sends the message \msrucname{oeVerifyAlert(dtAlertID, dtGPSLocation, dtDateAndTime, etAlertStatus, dtDomain)} to the system.}
-  
-  \addrowheading{Step Constraints Ordering and Extensions}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Additional Information}
-  \addsinglerow{none}
-  
-\end{usecase} 
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.95}{\includegraphics[width=180mm]{./images/oeValidateAlert.eps}\normalsize}
+\end{center}
+\caption[\msricrash Use Case Diagram: oeValidateAlert Diagram]{\msricrash Use Case Diagram: oeValidateAlert}
+\label{fig:icrash-RE-UCD-oeValidateAlert}
+\end{figure}
+\vspace{0.5cm}
 
- \clearpage
-
- \begin{figure}[htbp]
- \begin{center} 
- \scalebox{0.95}{
- \includegraphics[width=180mm]{./images/oeValidateAlert.eps}
- \normalsize}
- \end{center}
- \caption[\msricrash Use Case Diagram:  oeValidateAlert Diagram]{\msricrash Use Case Diagram:  oeValidateAlert}
- \label{fig:icrash-RE-UCD- oeValidateAlert}
- \end{figure}
- \vspace{0.5cm}

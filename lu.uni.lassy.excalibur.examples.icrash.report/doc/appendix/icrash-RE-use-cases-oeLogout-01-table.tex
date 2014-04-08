@@ -1,64 +1,46 @@
 \newpage
 
 \begin{usecase}
-  \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{oeLogout}
-  \addsingletwocolumnrow{Scope}{System}
-  \addsingletwocolumnrow{Altitude}{subfunction}
-   
-  \addrowheading{Parameters}
-  \addnumberedsinglerow{}{None.}
-  
-  \addrowheading{Primary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actAuthenicated[active]}}
-  
-  \addrowheading{Secondary actor(s)} 
-  \addnumberedsinglerow{}{\msrcode{actAdministrator[passive]}}
-  \addnumberedsinglerow{}{\msrcode{actCoordinator[passive]}}
-  \addnumberedsinglerow{}{\msrcode{actDomainExpert[passive]}}
-  \addnumberedsinglerow{}{\msrcode{actEMS[passive]}}
-  
-  \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actAuthenticated}'s to logoff from the system.}
-  
-  \addrowheading{Reuse}
-  \addnumberedsinglerow{}{none}
+    \addheading{Use-Case Description}
+    \addsingletwocolumnrow{Name}{oeLogout}
+    \addsingletwocolumnrow{Scope}{System}
+    \addsingletwocolumnrow{Altitude}{subfunction}
+    \addrowheading{Parameters}
+    \addnumberedsinglerow{}{None.}
+    \addrowheading{Primary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actAuthenicated[active]}}
+    \addrowheading{Secondary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actAdministrator[passive]}}
+    \addnumberedsinglerow{}{\msrcode{actCoordinator[passive]}}
+    \addnumberedsinglerow{}{\msrcode{actDomainExpert[passive]}}
+    \addnumberedsinglerow{}{\msrcode{actEMS[passive]}}
+    \addrowheading{Goal(s) description}
+    \addsinglerow{the \msrcode{actAuthenticated}'s to logoff from the system.}
+    \addrowheading{Reuse}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Protocol condition(s)}
+    \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+    \addnumberedsinglerow{}{the \msrcode{actAuthenticated} performing the opperation is logged in.}
+    \addrowheading{Pre-condition(s)}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Main post-condition(s)}
+    \addnumberedsinglerow{}{the \msrcode{actAuthenicated} has securely logged off from the system.}
+    \addrowheading{Main success steps}
+    \addalphanumberedsinglerow{}{the actor \msrcode{actAuthenticatedActor} sends the message \msrucname{oeLogoff()} to the system.}
+    \addrowheading{Step Constraints Ordering and Extensions}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Additional Information}
+    \addsinglerow{}
+\end{usecase}
 
-  \addrowheading{Protocol condition(s)}
-  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
-  \addnumberedsinglerow{}{the \msrcode{actAuthenticated} performing the
-  opperation is logged in.}
+\clearpage
 
-  
-  \addrowheading{Pre-condition(s)}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{the \msrcode{actAuthenicated} has securely logged off
-  from the system.}
-  
-  \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actAuthenticatedActor} sends
-  the message \msrucname{oeLogoff()} to the system.}
-  
-  \addrowheading{Step Constraints Ordering and Extensions}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Additional Information}
-  \addsinglerow{}
-  
-\end{usecase} 
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.95}{\includegraphics[width=180mm]{./images/oeLogout.eps}\normalsize}
+\end{center}
+\caption[\msricrash Use Case Diagram: oeLogout Diagram]{\msricrash Use Case Diagram: oeLogout}
+\label{fig:icrash-RE-UCD-oeLogout}
+\end{figure}
+\vspace{0.5cm}
 
-
- \clearpage
-
- \begin{figure}[htbp]
- \begin{center} 
- \scalebox{0.95}{
- \includegraphics[width=180mm]{./images/oeLogout.eps}
- \normalsize}
- \end{center}
- \caption[\msricrash Use Case Diagram:  oeLogout Diagram]{\msricrash Use Case Diagram:  oeLogout}
- \label{fig:icrash-RE-UCD- oeLogout}
- \end{figure}
- \vspace{0.5cm}

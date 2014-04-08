@@ -1,62 +1,47 @@
 \clearpage
 
 \begin{usecase}
-  \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{ugAdministrateTheSystem}
-  \addsingletwocolumnrow{Scope}{System}
-  \addsingletwocolumnrow{Altitude}{Summary}
-  
-  \addrowheading{Parameters}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Primary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actAdministrator[active]}}
-   
-  \addrowheading{Secondary actor(s)}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actAdministrator}'s goal is to follow an identification procedure to be allowed to add or delete the necessary crisis coordinators that will be granted the responsibility to handle alerts and crisis.}
-  
-  \addrowheading{Reuse}
-  \addnumberedsinglerow{}{\msrucname{ugSecurelyUseSystem}[1..*]}
-  \addnumberedsinglerow{}{\msrucname{oeAddUser}[1..*]}
-  \addnumberedsinglerow{}{\msrucname{oeDeleteUser}[1..*]}
-  
-  \addrowheading{Protocol condition(s)}
-  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
-  
-  \addrowheading{Pre-condition(s)}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{a new user is added to the system and can now
-  securely use the system.}
-  
-  \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actAdministrator} executes the \msrucname{ugSecurelyUseSystem} use case.}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actAdministrator} executes the
-  \msrucname{oeAddUser} use case.}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actAdministrator} executes the
-  \msrucname{oeDeleteUser} use case.}
-  
-  \addrowheading{Step Constraints Ordering and Extensions}
-  \addnumberedsinglerow{}{steps (a) (b) and (c) executions are interleaved (steps (b) and (c) have there protocol constrained by steps of (a)).}
-  \addnumberedsinglerow{}{steps (a) (b) and (c) can be executed multiple times.}
-  
-  \addrowheading{Additional Information}
-  \addsinglerow{none}
+    \addheading{Use-Case Description}
+    \addsingletwocolumnrow{Name}{ugAdministrateTheSystem}
+    \addsingletwocolumnrow{Scope}{System}
+    \addsingletwocolumnrow{Altitude}{Summary}
+    \addrowheading{Parameters}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Primary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actAdministrator[active]}}
+    \addrowheading{Secondary actor(s)}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Goal(s) description}
+    \addsinglerow{the \msrcode{actAdministrator}'s goal is to follow an identification procedure to be allowed to add or delete the necessary crisis coordinators that will be granted the responsibility to handle alerts and crisis.}
+    \addrowheading{Reuse}
+    \addnumberedsinglerow{}{\msrucname{ugSecurelyUseSystem}[1..*]}
+    \addnumberedsinglerow{}{\msrucname{oeAddUser}[1..*]}
+    \addnumberedsinglerow{}{\msrucname{oeDeleteUser}[1..*]}
+    \addrowheading{Protocol condition(s)}
+    \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+    \addrowheading{Pre-condition(s)}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Main post-condition(s)}
+    \addnumberedsinglerow{}{a new user is added to the system and can now securely use the system.}
+    \addrowheading{Main success steps}
+    \addalphanumberedsinglerow{}{the actor \msrcode{actAdministrator} executes the \msrucname{ugSecurelyUseSystem} use case.}
+    \addalphanumberedsinglerow{}{the actor \msrcode{actAdministrator} executes the \msrucname{oeAddUser} use case.}
+    \addalphanumberedsinglerow{}{the actor \msrcode{actAdministrator} executes the \msrucname{oeDeleteUser} use case.}
+    \addrowheading{Step Constraints Ordering and Extensions}
+    \addnumberedsinglerow{}{steps (a) (b) and (c) executions are interleaved (steps (b) and (c) have there protocol constrained by steps of (a)).}
+    \addnumberedsinglerow{}{steps (a) (b) and (c) can be executed multiple times.}
+    \addrowheading{Additional Information}
+    \addsinglerow{none}
 \end{usecase}
 
- \clearpage
+\clearpage
 
- \begin{figure}[htbp]
- \begin{center} 
- \scalebox{0.95}{
- \includegraphics[width=180mm]{./images/ugAdministrateTheSystem.eps}
- \normalsize}
- \end{center}
- \caption[\msricrash Use Case Diagram:  ugAdministrateTheSystem Diagram]{\msricrash Use Case Diagram:  ugAdministrateTheSystem}
- \label{fig:icrash-RE-UCD- ugAdministrateTheSystem}
- \end{figure}
- \vspace{0.5cm}
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.95}{\includegraphics[width=180mm]{./images/ugAdministrateTheSystem.eps}\normalsize}
+\end{center}
+\caption[\msricrash Use Case Diagram: ugAdministrateTheSystem Diagram]{\msricrash Use Case Diagram: ugAdministrateTheSystem}
+\label{fig:icrash-RE-UCD-ugAdministrateTheSystem}
+\end{figure}
+\vspace{0.5cm}
+

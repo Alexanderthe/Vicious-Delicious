@@ -1,62 +1,46 @@
 \newpage
 
 \begin{usecase}
-  \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{oeDeleteUser}
-  \addsingletwocolumnrow{Scope}{System}
-  \addsingletwocolumnrow{Altitude}{subfunction}
-   
-  \addrowheading{Parameters}
-  \addnumberedsinglerow{}{\msrcode{UserID:dtUserID} - the
-  user's identification}
-  
-  \addrowheading{Primary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actAdministrator[active]}}
-  
-  \addrowheading{Secondary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actCoordinator[passive]}}
-  \addnumberedsinglerow{}{\msrcode{actDomainExpert[passive]}}
-  \addnumberedsinglerow{}{\msrcode{actEMS[passive]}}
-  
-  \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actAdministrator}'s goal is to remove a user from the system.}
-  
-  \addrowheading{Reuse}
-  \addnumberedsinglerow{}{none}
-
-  \addrowheading{Protocol condition(s)}
-  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
-  \addnumberedsinglerow{}{the user with the specified user ID already exists in the system.}
-
-  
-  \addrowheading{Pre-condition(s)}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{A user has been removed from the system.}
-  \addnumberedsinglerow{}{The specified user can no longer log on to the system.}
-  
-  \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actAdmnistrator} sends the
-  message \msrucname{oeDeleteUser(UserID)} to the system.}
-  
-  \addrowheading{Step Constraints Ordering and Extensions}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Additional Information}
-  \addsinglerow{}
-  
-\end{usecase} 
+    \addheading{Use-Case Description}
+    \addsingletwocolumnrow{Name}{oeDeleteUser}
+    \addsingletwocolumnrow{Scope}{System}
+    \addsingletwocolumnrow{Altitude}{subfunction}
+    \addrowheading{Parameters}
+    \addnumberedsinglerow{}{\msrcode{UserID:dtUserID} - the user's identification}
+    \addrowheading{Primary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actAdministrator[active]}}
+    \addrowheading{Secondary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actCoordinator[passive]}}
+    \addnumberedsinglerow{}{\msrcode{actDomainExpert[passive]}}
+    \addnumberedsinglerow{}{\msrcode{actEMS[passive]}}
+    \addrowheading{Goal(s) description}
+    \addsinglerow{the \msrcode{actAdministrator}'s goal is to remove a user from the system.}
+    \addrowheading{Reuse}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Protocol condition(s)}
+    \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+    \addnumberedsinglerow{}{the user with the specified user ID already exists in the system.}
+    \addrowheading{Pre-condition(s)}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Main post-condition(s)}
+    \addnumberedsinglerow{}{A user has been removed from the system.}
+    \addnumberedsinglerow{}{The specified user can no longer log on to the system.}
+    \addrowheading{Main success steps}
+    \addalphanumberedsinglerow{}{the actor \msrcode{actAdmnistrator} sends the message \msrucname{oeDeleteUser(UserID)} to the system.}
+    \addrowheading{Step Constraints Ordering and Extensions}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Additional Information}
+    \addsinglerow{}
+\end{usecase}
 
 \clearpage
 
- \begin{figure}[htbp]
- \begin{center} 
- \scalebox{0.95}{
- \includegraphics[width=180mm]{./images/oeDeleteUser.eps}
- \normalsize}
- \end{center}
- \caption[\msricrash Use Case Diagram:  oeDeleteUser Diagram]{\msricrash Use Case Diagram:  oeDeleteUser}
- \label{fig:icrash-RE-UCD- oeDeleteUser}
- \end{figure}
- \vspace{0.5cm}
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.95}{\includegraphics[width=180mm]{./images/oeDeleteUser.eps}\normalsize}
+\end{center}
+\caption[\msricrash Use Case Diagram: oeDeleteUser Diagram]{\msricrash Use Case Diagram: oeDeleteUser}
+\label{fig:icrash-RE-UCD-oeDeleteUser}
+\end{figure}
+\vspace{0.5cm}
+

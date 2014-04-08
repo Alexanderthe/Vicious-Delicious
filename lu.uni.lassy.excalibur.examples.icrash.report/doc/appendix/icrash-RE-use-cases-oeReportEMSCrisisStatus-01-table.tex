@@ -1,69 +1,48 @@
 \clearpage
 
 \begin{usecase}
-  \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{oeReportEMSCrisisStatus}
-  \addsingletwocolumnrow{Scope}{System}
-  \addsingletwocolumnrow{Altitude}{subfunction}
-  
-  \addrowheading{Parameters}
-  \addnumberedsinglerow{}{\msrcode{crisisID:dtCrisisID} - the crisis identification.}
-  \addnumberedsinglerow{}{\msrcode{Comment:dtComment} - a comment field for the
-  EMS actor to describe the situation.}
-  \addnumberedsinglerow{}{\msrcode{EMSCrisisStatus:etEMSCrisisStatus} - the
-  status of the situation(here crisis) as seen from their perspective.}
-  \addnumberedsinglerow{}{\msrcode{HospitalName:dtHospitalName} - the name of
-  the hospital.} \addnumberedsinglerow{}{\msrcode{Victim information:ctVictim} -
-  information about the victim.(VictimName,VictimPhonnumber,HumanKind, VictimICEContactName and VictimICEPhoneNumber)}
-  
-  \addrowheading{Primary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actEMS[active]}}
-  
-  \addrowheading{Secondary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actCoordinator[passive]}}
-  
-  \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actEMS}'s goal is to describe the status of the situation they were asked to provide assistance to.}
-  
-  \addrowheading{Reuse}
-  \addnumberedsinglerow{}{none}
-
-  \addrowheading{Protocol condition(s)}
-  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
-  \addnumberedsinglerow{}{a crisis with the given ID exsits in the system.}
-  \addnumberedsinglerow{}{an \msrcode{actCoordinator} has requested EMS assistance for the specified crisis.}
-
-  \addrowheading{Pre-condition(s)}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{the report of the current status of the crisis from
-  the \msrcode{actEMS}'s point of view has been sent to the system.}
-  
-  \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actEMS} sends the
-  message \msrucname{oeoeReportEMSCrisisStatus((dtCrisisID, dtComment,
-  dtEMSCrisisStatus, HospitalName, ctVictim)} to the system.}
-  
-  \addrowheading{Step Constraints Ordering and Extensions}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Additional Information}
-  \addsinglerow{This is just an example of data types that might be used in a
-  message to report the ems crisis status, ultimately the
-  \msrcode{actEMS} decides what he puts in to such a message.}
-  
-\end{usecase} 
+    \addheading{Use-Case Description}
+    \addsingletwocolumnrow{Name}{oeReportEMSCrisisStatus}
+    \addsingletwocolumnrow{Scope}{System}
+    \addsingletwocolumnrow{Altitude}{subfunction}
+    \addrowheading{Parameters}
+    \addnumberedsinglerow{}{\msrcode{crisisID:dtCrisisID} - the crisis identification.}
+    \addnumberedsinglerow{}{\msrcode{Comment:dtComment} - a comment field for the EMS actor to describe the situation.}
+    \addnumberedsinglerow{}{\msrcode{EMSCrisisStatus:etEMSCrisisStatus} - the status of the situation(here crisis) as seen from their perspective.}
+    \addnumberedsinglerow{}{\msrcode{HospitalName:dtHospitalName} - the name of the hospital.}
+    \addnumberedsinglerow{}{\msrcode{Victim information:ctVictim} - information about the victim.(VictimName,VictimPhonnumber,HumanKind, VictimICEContactName and VictimICEPhoneNumber)}
+    \addrowheading{Primary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actEMS[active]}}
+    \addrowheading{Secondary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actCoordinator[passive]}}
+    \addrowheading{Goal(s) description}
+    \addsinglerow{the \msrcode{actEMS}'s goal is to describe the status of the situation they were asked to provide assistance to.}
+    \addrowheading{Reuse}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Protocol condition(s)}
+    \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+    \addnumberedsinglerow{}{a crisis with the given ID exsits in the system.}
+    \addnumberedsinglerow{}{an \msrcode{actCoordinator} has requested EMS assistance for the specified crisis.}
+    \addrowheading{Pre-condition(s)}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Main post-condition(s)}
+    \addnumberedsinglerow{}{the report of the current status of the crisis from the \msrcode{actEMS}'s point of view has been sent to the system.}
+    \addrowheading{Main success steps}
+    \addalphanumberedsinglerow{}{the actor \msrcode{actEMS} sends the message \msrucname{oeReportEMSCrisisStatus(dtCrisisID, dtComment, dtEMSCrisisStatus, HospitalName, ctVictim)} to the system.}
+    \addrowheading{Step Constraints Ordering and Extensions}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Additional Information}
+    \addsinglerow{This is just an example of data types that might be used in a message to report the ems crisis status, ultimately the \msrcode{actEMS} decides what he puts in to such a message.}
+\end{usecase}
 
 \clearpage
 
-\begin{figure}[htbp] 
-\begin{center} 
-\scalebox{0.95}{
-\includegraphics[width=180mm]{./images/iCrash-UseCase-oeCloseCrisis-Diagram.eps} 
-\normalsize}
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.95}{\includegraphics[width=180mm]{./images/iCrash-UseCase-oeCloseCrisis-Diagram.eps}\normalsize}
 \end{center}
-\caption[\msricrash Use Case Diagram:  oeCloseCrisis Diagram]{\msricrash Use Case Diagram:  oeCloseCrisis}
-\label{fig:icrash-RE-UCD- oeCloseCrisis} 
+\caption[\msricrash Use Case Diagram: oeCloseCrisis Diagram]{\msricrash Use Case Diagram: oeCloseCrisis}
+\label{fig:icrash-RE-UCD-oeCloseCrisis}
 \end{figure}
 \vspace{0.5cm}
+

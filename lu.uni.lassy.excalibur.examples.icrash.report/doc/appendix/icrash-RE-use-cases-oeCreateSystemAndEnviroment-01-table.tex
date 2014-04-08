@@ -1,47 +1,32 @@
 \newpage
 
 \begin{usecase}
-  \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{oeCreateSystemAndEnviroment}
-  \addsingletwocolumnrow{Scope}{System}
-  \addsingletwocolumnrow{Altitude}{subfunction}
-   
-  \addrowheading{Parameters}
-  \addnumberedsinglerow{}{\msrcode{quantityofComCompanies)} – the number of ComCompanies in the system.}
-  
-  \addrowheading{Primary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actMsrCreator[active]}}
-  
-  \addrowheading{Secondary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actAdministrator[passive]}}
-  \addnumberedsinglerow{}{\msrcode{actComCompany[passive]}}
-  
-  
-  \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actMsrCreator}is to create the system and
-  enviroment for the \msricrash system.}
-  
-  \addrowheading{Reuse}
-  \addnumberedsinglerow{}{none}
+    \addheading{Use-Case Description}
+    \addsingletwocolumnrow{Name}{oeCreateSystemAndEnviroment}
+    \addsingletwocolumnrow{Scope}{System}
+    \addsingletwocolumnrow{Altitude}{subfunction}
+    \addrowheading{Parameters}
+    \addnumberedsinglerow{}{\msrcode{quantityofComCompanies)} - the number of ComCompanies in the system.}
+    \addrowheading{Primary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actMsrCreator[active]}}
+    \addrowheading{Secondary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actAdministrator[passive]}}
+    \addnumberedsinglerow{}{\msrcode{actComCompany[passive]}}
+    \addrowheading{Goal(s) description}
+    \addsinglerow{the \msrcode{actMsrCreator}is to create the system and enviroment for the \msricrash system.}
+    \addrowheading{Reuse}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Protocol condition(s)}
+    \addnumberedsinglerow{}{None.}
+    \addrowheading{Pre-condition(s)}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Main post-condition(s)}
+    \addnumberedsinglerow{}{The system and envirments needed to deploy and run the system have been created.}
+    \addrowheading{Main success steps}
+    \addalphanumberedsinglerow{}{the actor \msrcode{actMsrCreator} sends the message \msrucname{oeCreateSystemAndEnviroment(ptInteger)} to the system.}
+    \addrowheading{Step Constraints Ordering and Extensions}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Additional Information}
+    \addsinglerow{}
+\end{usecase}
 
-  \addrowheading{Protocol condition(s)}
-  \addnumberedsinglerow{}{None.}
-  
-  \addrowheading{Pre-condition(s)}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{The system and envirments needed to deploy and run the system have been created.}
-  
-  \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actMsrCreator} sends the
-  message
-  \msrucname{oeCreateSystemAndEnviroment(ptInteger)} to the system.}
-  
-  \addrowheading{Step Constraints Ordering and Extensions}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Additional Information}
-  \addsinglerow{}
-  
-\end{usecase} 

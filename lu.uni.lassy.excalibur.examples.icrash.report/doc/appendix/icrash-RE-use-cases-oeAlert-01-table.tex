@@ -1,72 +1,47 @@
 \newpage
 
 \begin{usecase}
-  \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{oeAlert}
-  \addsingletwocolumnrow{Scope}{System}
-  \addsingletwocolumnrow{Altitude}{subfunction}
-
-  \addrowheading{Parameters}
-  \addnumberedsinglerow{}{\msrcode{HumanKind:etHumanKind} - the type of
-  individual trying to use the system.(victim, witness or anonymous)}
-  \addnumberedsinglerow{}{\msrcode{Date:dtDate} - the date the Alert was sent.}
-  \addnumberedsinglerow{}{\msrcode{Time:dtTime} - the time the Alert was sent.}
-   \addnumberedsinglerow{}{\msrcode{PhoneNumber:dtPhoneNumber} - the phone number from which the Alert was sent.}
-   \addnumberedsinglerow{}{\msrcode{GPSLocation:dtGPSLocation} - the GPS
-   location the Alert originated from.}
-  \addnumberedsinglerow{}{\msrcode{Comment:dtComment} - a text meant for the
-  human to describe his situation.}
-  
-  \addrowheading{Primary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actComCompany[active]}}
-  
-  \addrowheading{Secondary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actDomainExpert[passive]}}
-  
-  \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actComCompany}'s goal is to send an Alert from a human to the system.}
-  
-  \addrowheading{Reuse}
-  \addnumberedsinglerow{}{none}
-
-  \addrowheading{Protocol condition(s)}
-  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
-  
-  \addrowheading{Pre-condition(s)}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{An Alert is received by the system.}
-  
-  \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actComCompany} sends the
-  message
-  \msrucname{oeAlert(etHumanKind, dtDate, dtTime, dtPhoneNumber, dtGPSLocation, dtComment)} to the system.}
-  
-  \addrowheading{Step Constraints Ordering and Extensions}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Additional Information}
-  \addsinglerow{}
-  
-\end{usecase} 
+    \addheading{Use-Case Description}
+    \addsingletwocolumnrow{Name}{oeAlert}
+    \addsingletwocolumnrow{Scope}{System}
+    \addsingletwocolumnrow{Altitude}{subfunction}
+    \addrowheading{Parameters}
+    \addnumberedsinglerow{}{\msrcode{HumanKind:etHumanKind} - the type of individual trying to use the system(victim, witness or anonymous).}
+    \addnumberedsinglerow{}{\msrcode{Date:dtDate} - the date the Alert was sent.}
+    \addnumberedsinglerow{}{\msrcode{Time:dtTime} - the time the Alert was sent.}
+    \addnumberedsinglerow{}{\msrcode{PhoneNumber:dtPhoneNumber} - the phone number from which the Alert was sent.}
+    \addnumberedsinglerow{}{\msrcode{GPSLocation:dtGPSLocation} - the GPS location the Alert originated from.}
+    \addnumberedsinglerow{}{\msrcode{Comment:dtComment} - a text meant for the human to describe his situation.}
+    \addrowheading{Primary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actComCompany[active]}}
+    \addrowheading{Secondary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actDomainExpert[passive]}}
+    \addrowheading{Goal(s) description}
+    \addsinglerow{the \msrcode{actComCompany}'s goal is to send an Alert from a human to the system.}
+    \addrowheading{Reuse}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Protocol condition(s)}
+    \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+    \addrowheading{Pre-condition(s)}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Main post-condition(s)}
+    \addnumberedsinglerow{}{An Alert is received by the system.}
+    \addrowheading{Main success steps}
+    \addalphanumberedsinglerow{}{the actor \msrcode{actComCompany} sends the message \msrucname{oeAlert(etHumanKind, dtDate, dtTime, dtPhoneNumber, dtGPSLocation, dtComment)} to the system.}
+    \addrowheading{Step Constraints Ordering and Extensions}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Additional Information}
+    \addsinglerow{}
+\end{usecase}
 
 \clearpage
 
- \clearpage
-
- \begin{figure}[htbp]
- \begin{center} 
- \scalebox{0.95}{
- \includegraphics[width=180mm]{./images/oeAlert.eps}
- \normalsize}
- \end{center}
- \caption[\msricrash Use Case Diagram:  oeAlert Diagram]{\msricrash Use Case Diagram:  oeAlert}
- \label{fig:icrash-RE-UCD- oeAlert}
- \end{figure}
- \vspace{0.5cm}
-
-
-
-
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.95}{\includegraphics[width=180mm]{./images/oeAlert.eps}\normalsize}
+\end{center}
+\caption[\msricrash Use Case Diagram: oeAlert Diagram]{\msricrash Use Case Diagram: oeAlert}
+\label{fig:icrash-RE-UCD-oeAlert}
+\end{figure}
+\vspace{0.5cm}
 

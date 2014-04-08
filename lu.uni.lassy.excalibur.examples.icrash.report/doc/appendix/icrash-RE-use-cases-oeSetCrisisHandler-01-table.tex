@@ -1,62 +1,46 @@
 \clearpage
 
 \begin{usecase}
-  \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{oeSetCrisisHandler}
-  \addsingletwocolumnrow{Scope}{System}
-  \addsingletwocolumnrow{Altitude}{subfunction}
-  
-  \addrowheading{Parameters}
-  \addnumberedsinglerow{}{\msrcode{AlertID:dtAlertID} - the Alert's unique
-  identification.}
-  \addnumberedsinglerow{}{\msrcode{Crisisdata:ctCrisis} - the data required to
-  initiate a crisis(CrisisType, CrisisStatus, GPSLocation, Date and Time).}
-  
-  \addrowheading{Primary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actCoordinator[active]}}
-  
-  \addrowheading{Secondary actor(s)}
-  \addnumberedsinglerow{}{None.}
-  
-  \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actCoordinator}'s goal is to indicate to the system that he will take care of a certain Alert and thus create a crisis in the system.}
-  
-  \addrowheading{Reuse}
-  \addnumberedsinglerow{}{none}
+    \addheading{Use-Case Description}
+    \addsingletwocolumnrow{Name}{oeSetCrisisHandler}
+    \addsingletwocolumnrow{Scope}{System}
+    \addsingletwocolumnrow{Altitude}{subfunction}
+    \addrowheading{Parameters}
+    \addnumberedsinglerow{}{\msrcode{AlertID:dtAlertID} - the Alert's unique identification.}
+    \addnumberedsinglerow{}{\msrcode{Crisisdata:ctCrisis} - the data required to initiate a crisis(CrisisType, CrisisStatus, GPSLocation, Date and Time).}
+    \addrowheading{Primary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actCoordinator[active]}}
+    \addrowheading{Secondary actor(s)}
+    \addnumberedsinglerow{}{None.}
+    \addrowheading{Goal(s) description}
+    \addsinglerow{the \msrcode{actCoordinator}'s goal is to indicate to the system that he will take care of a certain Alert and thus create a crisis in the system.}
+    \addrowheading{Reuse}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Protocol condition(s)}
+    \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+    \addnumberedsinglerow{}{the \msrcode{actCoordinator} has logged on to the system.}
+    \addnumberedsinglerow{}{the \msrcode{actCoordinator} has to have the right domains of expertise to be allowed access to the crisis.}
+    \addrowheading{Pre-condition(s)}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Main post-condition(s)}
+    \addnumberedsinglerow{}{ A crisis has been created for a certain Alert.}
+    \addnumberedsinglerow{}{the \msrcode{actCoordinator} has indicated to the system that he will now take care of the Alert sepecified.}
+    \addrowheading{Main success steps}
+    \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} sends the message \msrucname{oeSetCrisisHandler(AlertID,ctCrisis)} to the system.}
+    \addrowheading{Step Constraints Ordering and Extensions}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Additional Information}
+    \addsinglerow{none}
+\end{usecase}
 
-  \addrowheading{Protocol condition(s)}
-  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
-  \addnumberedsinglerow{}{the \msrcode{actCoordinator} has logged on to the system.}
-  \addnumberedsinglerow{}{the \msrcode{actCoordinator} has to have the right domains of expertise to be allowed access to the crisis.}
+\clearpage
 
-  \addrowheading{Pre-condition(s)}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{ A crisis has been created for a certain Alert.}
-  \addnumberedsinglerow{}{the \msrcode{actCoordinator} has indicated to the system that he will now take care of the Alert sepecified.}
-  
-  
-  \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} sends the message \msrucname{oeSetCrisisHandler(AlertID,ctCrisis)} to the system.}
-  
-  \addrowheading{Step Constraints Ordering and Extensions}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Additional Information}
-  \addsinglerow{none}
-  
-\end{usecase} 
+\begin{figure}[htbp]
+\begin{center}
+\scalebox{0.95}{\includegraphics[width=180mm]{./images/oeSetCrisisHandler.eps}\normalsize}
+\end{center}
+\caption[\msricrash Use Case Diagram: oeSetCrisisHandler Diagram]{\msricrash Use Case Diagram: oeSetCrisisHandler}
+\label{fig:icrash-RE-UCD-oeSetCrisisHandler}
+\end{figure}
+\vspace{0.5cm}
 
- \clearpage
-
- \begin{figure}[htbp]
- \begin{center} 
- \scalebox{0.95}{
- \includegraphics[width=180mm]{./images/oeSetCrisisHandler.eps}
- \normalsize}
- \end{center}
- \caption[\msricrash Use Case Diagram:  oeSetCrisisHandler Diagram]{\msricrash Use Case Diagram:  oeSetCrisisHandler}
- \label{fig:icrash-RE-UCD- oeSetCrisisHandler}
- \end{figure}
- \vspace{0.5cm}

@@ -1,57 +1,44 @@
 \clearpage
 
 \begin{usecase}
-  \addheading{Use-Case Description}
-  \addsingletwocolumnrow{Name}{oeCloseCrisis}
-  \addsingletwocolumnrow{Scope}{System}
-  \addsingletwocolumnrow{Altitude}{subfunction}
-  
-  \addrowheading{Parameters}
-  \addnumberedsinglerow{}{\msrcode{crisisID:dtCrisisID} - the crisis identification}
-  
-  \addrowheading{Primary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actCoordinator[active]}}
-  
-  \addrowheading{Secondary actor(s)}
-  \addnumberedsinglerow{}{\msrcode{actComCompany[passive]}}
-  
-  \addrowheading{Goal(s) description}
-  \addsinglerow{the \msrcode{actCoordinator}'s goal is to declare a crisis as closed.}
-  
-  \addrowheading{Reuse}
-  \addnumberedsinglerow{}{none}
+    \addheading{Use-Case Description}
+    \addsingletwocolumnrow{Name}{oeCloseCrisis}
+    \addsingletwocolumnrow{Scope}{System}
+    \addsingletwocolumnrow{Altitude}{subfunction}
+    \addrowheading{Parameters}
+    \addnumberedsinglerow{}{\msrcode{crisisID:dtCrisisID} - the crisis identification}
+    \addrowheading{Primary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actCoordinator[active]}}
+    \addrowheading{Secondary actor(s)}
+    \addnumberedsinglerow{}{\msrcode{actComCompany[passive]}}
+    \addrowheading{Goal(s) description}
+    \addsinglerow{the \msrcode{actCoordinator}'s goal is to declare a crisis as closed.}
+    \addrowheading{Reuse}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Protocol condition(s)}
+    \addnumberedsinglerow{}{the \msricrash system has been deployed.}
+    \addnumberedsinglerow{}{a crisis with the given ID exsits in the system.}
+    \addrowheading{Pre-condition(s)}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Main post-condition(s)}
+    \addnumberedsinglerow{}{the crisis is closed.}
+    \addnumberedsinglerow{}{a message \msrcode{ieSmsSend(AdtPhoneNumber,AdtComment)} is sent to the \msrcode{actComCompany} actor for each registered alert declared by a SMS coming from phone number \msrcode{AdtPhoneNumber} and related to the crisis \msrcode{crisisID}. All the messages have the same textual message \msrcode{AdtComment} giving them the minimal information on the crisis they alerted.}
+    \addrowheading{Main success steps}
+    \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} sends the message \msrucname{oeCloseCrisis(crisisID)} to the system.}
+    \addrowheading{Step Constraints Ordering and Extensions}
+    \addnumberedsinglerow{}{none}
+    \addrowheading{Additional Information}
+    \addsinglerow{none}
+\end{usecase}
 
-  \addrowheading{Protocol condition(s)}
-  \addnumberedsinglerow{}{the \msricrash system has been deployed.}
-  \addnumberedsinglerow{}{a crisis with the given ID exsits in the system.}
+\clearpage
 
-  \addrowheading{Pre-condition(s)}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Main post-condition(s)}
-  \addnumberedsinglerow{}{the crisis is closed.}
-  \addnumberedsinglerow{}{a message \msrcode{ieSmsSend(AdtPhoneNumber,AdtComment)} is sent to the \msrcode{actComCompany} actor for each registered alert declared by a SMS coming from phone number \msrcode{AdtPhoneNumber} and related to the crisis \msrcode{crisisID}. All the messages have the same textual message \msrcode{AdtComment} giving them the minimal information on the crisis they alerted.}
-  
-  \addrowheading{Main success steps}
-  \addalphanumberedsinglerow{}{the actor \msrcode{actCoordinator} sends the message \msrucname{oeCloseCrisis(crisisID)} to the system.}
-  
-  \addrowheading{Step Constraints Ordering and Extensions}
-  \addnumberedsinglerow{}{none}
-  
-  \addrowheading{Additional Information}
-  \addsinglerow{none}
-  
-\end{usecase} 
+\begin{figure}[htbp]
+\begin{center} 
+\scalebox{0.95}{\includegraphics[width=180mm]{./images/oeCloseCrisis.eps}\normalsize}
+\end{center}
+\caption[\msricrash Use Case Diagram: oeCloseCrisis Diagram]{\msricrash Use Case Diagram: oeCloseCrisis}
+\label{fig:icrash-RE-UCD-oeCloseCrisis}
+\end{figure}
+\vspace{0.5cm}
 
- \clearpage
-
- \begin{figure}[htbp]
- \begin{center} 
- \scalebox{0.95}{
- \includegraphics[width=180mm]{./images/oeCloseCrisis.eps}
- \normalsize}
- \end{center}
- \caption[\msricrash Use Case Diagram:  oeCloseCrisis Diagram]{\msricrash Use Case Diagram:  oeCloseCrisis}
- \label{fig:icrash-RE-UCD- oeCloseCrisis}
- \end{figure}
- \vspace{0.5cm}
