@@ -27,4 +27,3 @@ Displays the domain of the accident (pedestrian, wildlife, property, injury).
 
 //example
 @example"The accident domain is:wildlife"
-

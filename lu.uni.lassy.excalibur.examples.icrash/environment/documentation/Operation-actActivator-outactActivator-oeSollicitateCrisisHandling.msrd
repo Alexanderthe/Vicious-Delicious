@@ -41,4 +41,3 @@ thus decreases the number of unhandled cisis "
 
 //example
 @example" The ctActivatorActor actor clock sends the periodic message oeSollicitateCrisisHandling() indicating that a reported alert is still not beeing handled by the coordinators. "
-

@@ -38,6 +38,3 @@ icrash.environment.actActivator.outactActivator.oeSetClock
 
 //example
 @example" the ctActivatorActor actor clock sends the message oeSetClock(2017-11-24-at-03-20-00PM) indicating the current time. "
-
-
-

@@ -6,6 +6,7 @@
 !.gitignore
 !lu.uni.lassy.excalibur.examples.icrash/*
 !lu.uni.lassy.excalibur.examples.icrash/**/*
+!lu.uni.lassy.excalibur.examples.icrash.report/*
 !lu.uni.lassy.excalibur.examples.icrash.report/doc/*
 !lu.uni.lassy.excalibur.examples.icrash.report/doc/**/*
 !lu.uni.lassy.excalibur.examples.icrash.report/defs/*
